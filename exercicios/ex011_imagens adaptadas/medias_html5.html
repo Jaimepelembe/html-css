@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex009_listas/html_favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <h1></h1>
+
+    <h2>Imagem dinâmica</h2>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu
+        navegador.</p>
+
+    <h2>Imagem de Paisagem</h2>
+    <picture>
+        <source media="(max-width: 898px)" srcset="imagens/paisagem_320.jpg" type="image/jpg">
+        <source media="(max-width: 1330px)" srcset="imagens/paisagem_848.jpg" type="image/jpg">
+        <img src="imagens/paisagem_1280.jpg" alt="Imagem grande">
+
+    </picture>
+
+    <h2>Imagem de carros</h2>
+    <picture>
+        <source media="(max-width: 898px)" srcset="imagens/toyota_320.jpg" type="image/jpg">
+        <source media="(max-width: 1330px)" srcset="imagens/toyota_848.jpg" type="image/jpg">
+        <img src="imagens/toyota_1280.jpg" alt="Toyota">
+    </picture>
+
+    <h2>Imagem de Modelos</h2>
+    <picture>
+        <source media="(max-width: 898px)" srcset="imagens/modelos_320.jpg" type="image/jpg">
+        <source media="(max-width: 1330px)" srcset="imagens/modelos_848.jpg" type="image/jpg">
+        <img src="imagens/modelos_1280.jpg" alt="Modelos">
+
+    </picture>
+
+
+</body>
+
+</html>
