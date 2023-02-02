@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,25 @@
     <link rel="shortcut icon" href="exercicios/ex010_links/html_favicon.ico" type="image/x-icon">
     <title>Página inicial</title>
 </head>
+
 <body>
- <h1>Apresentação</h1>  
-<p><img src="./foto de perfil/foto de perfil_256.png" alt="Foto de perfil">
-    </p>
-    
+    <h1>Olá Mundo!</h1>
+    <h2>Apresentação</h2>
+    <picture>
+
+        <source media="(max-width: 750px)" srcset="pagina_inicial/fotos_apresentacao/foto_perfil_144.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="pagina_inicial/fotos_apresentacao/foto_perfil_256.png" type="image/png">
+        <img src="pagina_inicial/fotos_apresentacao/foto_perfil_320.png" alt="Foto de perfil">
+
+    </picture>
+
     <p>Meu nome é <strong>Jaime Fernando Pelembe</strong>, Sou estudante de engenharia informática na faculdade de
         engenharia da Universidade Eduardo Mondlane.
-        <br>Eu gosto de me desenvolver continuamente e aprender novas coisas, as tecnologias que uso actualmente são
-        <strong><em>Java, Python, html e css, MarkDown e Mysql</em></strong>.
-    </p> 
+        <br>Eu gosto de me desenvolver continuamente e aprender novas coisas.
+    </p>
+    <h3>Tecnologias que uso:</h3>
+    <strong><em>Java, Python, html e css, MarkDown e Mysql</em></strong>
+
 </body>
+
 </html>
