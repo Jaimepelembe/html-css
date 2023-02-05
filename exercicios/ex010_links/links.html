@@ -9,19 +9,23 @@
     <title>Links</title>
 </head>
 
+<link rel="stylesheet" href="css_links.css">
+
 <body>
     <h1>Links</h1>
-    <p>Nessa aula vamos falar sobre links que são um recurso muito importante da internet.
-        <br>
-        Usamos a tag <strong>a</strong> para criar links externos, essa tag deve ter os parâmetros
-        <strong>target</strong> e <strong>rel</strong>.
+    <p>Nessa aula vamos falar sobre links que são um recurso muito importante da internet, em html Usamos a tag
+        <strong>&lt;a&gt;</strong> para criar links que podem ser internos ou externos. <br>
+        A tag <strong>a</strong> tem os parâmetros
+        <strong>target</strong> e <strong>rel</strong>, o parâmetro target indica em que aba abrir o novo arquivo e o
+        parâmetro rel indica a relação entre o link e o target.
     </p>
     <h2>Links Externos</h2>
     <p>São usados para acessar o conteúdo de outros sites.</p>
     <h3>Exemplos:</h3>
     <p>
     <ul>
-        <li>Repositorio do <a href="https://github.com/gustavoguanabara/html-css">Curso em video</a></li>
+        <li>Repositorio do <a href="https://github.com/gustavoguanabara/html-css" target="_blank" rel="external">Curso
+                em video</a></li>
         <li>Site da <a href="https://www.artstation.com/?sort_by=community" target="_blank"
                 rel="external">Artstation</a>
         </li>
@@ -30,8 +34,6 @@
         </li>
         <li>Site da <a href="https://www.compal.pt/" target="_blanket" rel="external">Compal</a></li>
         <li>Site da <a href="https://www.nike.com/" target="_blank" rel="external">Nike</a></li>
-
-
     </ul>
     </p>
 
@@ -51,20 +53,33 @@
         <li>Página da <a href="../ex006_hierarquia titulos/hierarquia_English.html" target="_self" rel="next"
                 hreflang="pt-br">lingua inglesa</a></li>
     </p>
-<h2>Downloads</h2>
-<p></p>
-<h3>Exemplos:</h3>
-<p>
-<ul>
-<li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar livro pdf</a></li>
-<li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Baixar livro Zip</a></li>
-<li><a href="Video_1674844507.wmv" download type="application/wmv">Baixar video wmv</a></li>
-<li><a href="Vídeos curtos e engraçados 1.mp4" download type="application/mp4">Baixar videos mp4</a></li>
+    <h2>Downloads</h2>
+    <p></p>
+    <h3>Exemplos:</h3>
+    <p>
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar Ebook de exemplo
+                [pdf]</a></li>
 
+        <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Baixar Ebook de exemplo
+                [zip]</a></li>
+        <li> <a href="arquivos zip/consciencia negra.zip" download="consciencia negra" type="application/zip">Baixar
+                Consciência negra [zip]</a> </li>
+        <li><a href="arquivos zip/tecnica pomodoro.rar" download="tecnica pomodoro" type="application/rar">Baixar mapa
+                mental da técnica pomodoro [rar]</a></li>
 
-</ul>
+        <li><a href="videos/codigo html.wmv" download type="application/wmv">Baixar video de código em html [wmv]</a>
+        </li>
+        <li><a href="videos/Vídeos curtos e engraçados 1.mp4" download type="application/mp4">Baixar video curto e
+                engraçado
+                [mp4]</a></li>
 
-</p>
+    </ul>
+    </p>
+
+    <a href="../../index.html" target="_self" rel="prev"><img src="../../pagina_inicial/pagina-inicial_32.png"
+            alt="Simbolo da página inicial"></a>
+
 </body>
 
 </html>
