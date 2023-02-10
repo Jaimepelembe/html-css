@@ -11,8 +11,6 @@
 
 <body>
     <h1>Midias dinâmicas</h1>
-
-    <h2>Imagem dinâmica</h2>
     <p>É muito importante possuir um site com responsividade pois isso melhora a experiência do usuario fazendo com que
         ele fique mais tempo no nosso site. <br>
         para ver a responsividade desse site
@@ -20,21 +18,33 @@
         aumente e diminua o tamanho do seu
         navegador.</p>
 
-    <h3>Imagem de Paisagem</h3>
+    <h2>Imagens dinâmica</h2>
+    <p>Uma imagem dinâmica é aquela que se ajusta ao tamanho da tela fazendo com que o usuario não precise usar a barra
+        de
+        rolagem lateral para ver toda a imagem.
+        <br>
+        Para que o nosso site tenha imagens dinâmicas devemos gerar tamanhos diferentes da mesma imagem e usar a tag
+        <strong>&lt;picture&gt;</strong> que é um contentor de sources.
+    </p>
+
+
+    <h3>Exemplos</h3>
+    <p> <strong>Paisagem</strong></p>
+
     <picture>
         <source media="(max-width: 898px)" srcset="imagens/paisagem_320.jpg" type="image/jpg">
         <source media="(max-width: 1330px)" srcset="imagens/paisagem_848.jpg" type="image/jpg">
         <img src="imagens/paisagem_1280.jpg" alt="Imagem grande">
     </picture>
 
-    <h3>Imagem de carros</h3>
+    <p> <strong>Carro</strong></p>
     <picture>
         <source media="(max-width: 898px)" srcset="imagens/toyota_320.jpg" type="image/jpg">
         <source media="(max-width: 1330px)" srcset="imagens/toyota_848.jpg" type="image/jpg">
         <img src="imagens/toyota_1280.jpg" alt="Toyota">
     </picture>
 
-    <h3>Imagem de Modelos</h3>
+    <p><strong>Modelos</strong></p>
     <picture>
         <source media="(max-width: 898px)" srcset="imagens/modelos_320.jpg" type="image/jpg">
         <source media="(max-width: 1330px)" srcset="imagens/modelos_848.jpg" type="image/jpg">
@@ -88,44 +98,73 @@
         </p>
     </audio>
 
-    <h2>Reproduzindo vídeos</h2>
+    <h2>Reproduzindo vídeos </h2>
     <p>Agora vamos aprender a colocar vídeos internos e externos no nosso site, para isso usamos a tag
         <strong>&lt;video&gt;</strong>
     </p>
     <h3>Vídeos internos</h3>
     <p>Esse tipo de vídeo consome muita banda larga e consequentemente vai acarretar mais custos ao cliente.</p>
     <h4>Exemplos</h4>
+
+    Naruto
+    <br>
+    <video controls preload="metadata" width="476" poster="videos/naruto/Poster de Naruto.jpg">
+        <source src="videos/naruto/Naruto Shippuden Opening 7   Toumei Datta Sekai (HD[1].mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo. <br><a
+                href="videos/naruto/Naruto Shippuden Opening 7   Toumei Datta Sekai (HD[1].mp4">clique
+                aqui para baixar o vídeo.</a></p>
+    </video>
+    <br>
     Limões
     <br>
-    <video preload="metadata" controls poster="imagens/limoes-capa.png" width="540">
-        <source src="videos/mp4/limoes.mp4" type="video/mp4">
-        <source src="videos/mp4v/limoes.m4v" type="video/mp4">
-        <source src="videos/ogv/limoes.ogv" type="video/ogg">
-        <source src="videos/webm/limoes.webm" type="video/webm">
-        <p>Seu navegador não tem compatibilidade com reprodução de vídeo. <br><a href="videos/mp4/limoes.mp4">clique
+    <video preload="metadata" controls poster="imagens/limoes-capa.png" width="476">
+        <source src="videos/limoes/limoes.mp4" type="video/mp4">
+        <source src="videos/limoes/limoes.m4v" type="video/mp4">
+        <source src="videos/limoes/limoes.ogv" type="video/ogg">
+        <source src="videos/limoes/limoes.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo. <br><a href="videos/limoes/limoes.mp4">clique
                 aqui para baixar o vídeo.</a></p>
     </video>
     <br>
     Beautifull girl
     <br>
-    <video preload="metadata" controls width="540" height="400" poster="imagens/modelos_1280.jpg">
-        <source src="videos/mp4/beautifull girl.mp4" type="video/mp4">
-        <source src="videos/mp4v/Beautifull Girl.mp4" type="video/mp4">
-        <source src="videos/ogv/beautifull-girl.ogv" type="video/ogg">
-        <source src="videos/webm/Beautifull Girl.webm" type="video/webm">
+    <video preload="metadata" controls width="476" height="400" poster="imagens/modelos_1280.jpg">
+        <source src="videos/beautifull_girl/beautifull girl.mp4" type="video/mp4">
+        <source src="videos/beautifull_girl/Beautifull Girl mp4v.mp4" type="video/mp4">
+        <source src="videos/beautifull_girl/beautifull-girl.ogv" type="video/ogg">
+        <source src="videos/beautifull_girl/Beautifull Girl.webm" type="video/webm">
         <p>Seu navegador não tem compatibilidade com reprodução de vídeo. <br><a
-                href="videos/mp4/beautifull girl.mp4">clique aqui para baixar o vídeo.</a></p>
+                href="videos/beautifull_girl/beautifull girl.mp4">clique aqui para baixar o vídeo.</a></p>
     </video>
     <br>
     Sports
     <br>
-    <video controls preload="metadata" width="540" poster="imagens/bike_poster.jpg">
-        <source src="videos/mp4/sports.mp4" type="video/mp4">
-        <source src="videos/mp4v/Sports.mp4" type="video/mp4">
-        <p>Seu navegador não tem compatibilidade com reprodução de vídeo. <br><a href="videos/mp4/sports.mp4">clique
+    <video controls preload="metadata" width="476" poster="videos/sports/poster sports.jpg">
+        <source src="videos/sports/sports.mp4" type="video/mp4">
+        <source src="videos/sports/Sports.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo. <br><a href="videos/sports/sports.mp4">clique
                 aqui para baixar o vídeo.</a></p>
     </video>
 
+    <h3>Videos externos</h3>
+    <p>Os principais serviços de hospedagem de video são o YouTube e o vimeo</p>
+    <h4>Exemplos</h4>
+    hospedagem no YouTube:
+    <br>
+    Urbance
+    <br>
+    <iframe width="476" height="315" src="https://www.youtube.com/embed/nrLdXY_lsy8" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    <br>
+
+    Hospedagem no Vimeo:
+    <br>
+    Wargroove cinematic
+    <br>
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/312931432?h=2235780c4c" width="476" height="315"
+        frameborder="0" allowfullscreen></iframe>
 </body>
 
 </html>
