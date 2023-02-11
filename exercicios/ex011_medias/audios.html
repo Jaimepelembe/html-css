@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex010_links/html_favicon.ico" type="image/x-icon">
+    <title>Audio</title>
+</head>
+<link rel="stylesheet" href="css_medias.css">
+
+<body>
+    <h1>Áudio</h1>
+    <p>O áudio é um recurso muito importante para os sites pois ele pode ser usado para apresentar várias informações ao
+        usuario como músicas, podcasts, hinos, etc. <br> O áudio utilizado para apresentação de um conteúdo no
+        site deve ser de baixa qualidade para evitar arquivos muito grandes.
+        <br>
+        Para inserir áudio usamos a tag <strong>&lt;audio&gt;</strong> que é um contetor de áudios;
+    </p>
+
+    <h2>Os principais parâmetros da tag <mark>audio</mark> são:</h2>
+    <ul>
+        <li><strong>Preload</strong>: indica se o áudio será pre-carregado ou não;
+            <br> os valores desse parâmetro são: <ul>
+                <li><strong>metadata</strong> - carrega as informações do arquivo;</li>
+                <li><strong>none</strong> - não carrega nenhuma informação do arquivo;</li>
+                <li><strong>auto(padrão)</strong> - carrega todo o arquivo;</li>
+            </ul>
+        </li>
+        <li><strong>controls</strong>: apresenta o player na tela;</li>
+        <li><strong>autoplay</strong>: toca o áudio automaticamente logo que a página é carregada;</li>
+        <li><strong>loop</strong>: repete o áudio infinitamente;</li>
+    </ul>
+
+    <h2>Componente source:src</h2>
+    <p>Serve para colocar diferentes formatos do mesmo áudio dentro da tag <strong>audio</strong>; deve-se criar um
+        parágrafo dentro da tag <strong>audio</strong> para permitir o download do arquivo mp3 no caso do navegador não
+        suportar nenhum dos formatos disponibilizados.
+    </p>
+
+    <h2>Os principais formatos de áudio são:</h2>
+    <ul>
+        <li><strong>mp3</strong>(mpeg): é o padrão</li>
+        <li><strong>ogg</strong></li>
+        <li><strong>wav</strong>: é muito pesado
+        </li>
+    </ul>
+
+    <h3>Exemplos</h3>
+    <p>Naruto</p>
+    <audio preload="metadata" controls loop>
+        <source src="audios/naruto/Naruto_Shippuden_Opening7_Toumei_Datta_Sekai.mp3" type="audio/mpeg">
+        <source src="audios/naruto/Naruto_Shippuden_Opening7_Toumei_Datta_Sekai.ogg" type="audio/ogg">
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio. <br>
+            <a href="audios/naruto/Naruto_Shippuden_Opening7_Toumei_Datta_Sekai.mp3">clique aqui para baixar o arquivo
+                mp3</a>
+        </p>
+    </audio>
+
+    <p>Box cat games</p>
+    <audio preload="metadata" controls loop>
+        <source src="audios/boxcat/boxcatgames.mp3" type="audio/mpeg">
+        <source src="audios/boxcat/boxcatgames.ogg" type="audio/ogg">
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio. <br>
+            <a href="audios/boxcat/boxcatgames.mp3">clique aqui para baixar o arquivo mp3</a>
+        </p>
+    </audio>
+    <br>
+
+    <p>Air nail wood</p>
+    <audio preload="metadata" controls loop>
+        <source src="audios/airnailerwood/airnailerwood.mp3" type="audio/mpeg">
+        <source src="audios/airnailerwood/airnailerwood.ogg" type="audio/ogg">
+        <source src="audios/airnailerwood/airnailerwood.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio.
+            <br>
+            <a href="audios/airnailerwood/airnailerwood.mp3">clique aqui para baixar o arquivo mp3</a>
+        </p>
+    </audio>
+    <br>
+    <p>Low motorcycle</p>
+    <audio preload="metadata" controls loop>
+        <source src="audios/low_motorcycle/low_motorcycle.mp3" type="audio/mpeg">
+        <source src="audios/low_motorcycle/low_motorcycle.ogg" type="audio/ogg">
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio.
+            <br>
+            <a href="audios/low_motorcycle/low_motorcycle.mp3">clique aqui para baixar o arquivo mp3</a>
+        </p>
+    </audio>
+    <br>
+    <p>Songs of birds</p>
+    <audio preload="metadata" controls loop>
+        <source src="audios/songbirds/songbirds.mp3" type="audio/mpeg">
+        <source src="audios/songbirds/songbirds.ogg" type="audio/ogg">
+        <source src="audios/songbirds/songbirds.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio.
+            <br>
+            <a href="audios/songbirds/songbirds.mp3">clique aqui para baixar o arquivo mp3</a>
+        </p>
+    </audio>
+    <br>
+    <a href="medias.html"><img src="../../pagina_inicial/btn-back.png" alt="voltar"></a>
+</body>
+
+</html>

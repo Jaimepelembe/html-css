@@ -5,166 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../ex009_listas/html_favicon.ico" type="image/x-icon">
-    <title>Imagem dinâmica</title>
+    <link rel="shortcut icon" href="../ex010_links/html_favicon.ico" type="image/x-icon">
+    <title>Medias</title>
 </head>
+<link rel="stylesheet" href="css_medias.css">
 
 <body>
-    <h1>Midias dinâmicas</h1>
+    <h1>Medias</h1>
     <p>É muito importante possuir um site com responsividade pois isso melhora a experiência do usuario fazendo com que
-        ele fique mais tempo no nosso site. <br>
+        ele fique mais tempo no site. <br>
         para ver a responsividade desse site
         acesse o em vários dispositivos de tamanho de tela diferentes ou se estiver usando um computador simplesmente
         aumente e diminua o tamanho do seu
-        navegador.</p>
-
-    <h2>Imagens dinâmica</h2>
-    <p>Uma imagem dinâmica é aquela que se ajusta ao tamanho da tela fazendo com que o usuario não precise usar a barra
-        de
-        rolagem lateral para ver toda a imagem.
-        <br>
-        Para que o nosso site tenha imagens dinâmicas devemos gerar tamanhos diferentes da mesma imagem e usar a tag
-        <strong>&lt;picture&gt;</strong> que é um contentor de sources.
+        navegador.
+        <br> veja nos links abaixo as principais medias.
+    <ul>
+        <li><a href="imagens.html">Imagens</a></li>
+        <li><a href="audios.html">Audios</a></li>
+        <li><a href="videos.html">Videos</a></li>
+    </ul>
     </p>
-
-
-    <h3>Exemplos</h3>
-    <p> <strong>Paisagem</strong></p>
-
-    <picture>
-        <source media="(max-width: 898px)" srcset="imagens/paisagem_320.jpg" type="image/jpg">
-        <source media="(max-width: 1330px)" srcset="imagens/paisagem_848.jpg" type="image/jpg">
-        <img src="imagens/paisagem_1280.jpg" alt="Imagem grande">
-    </picture>
-
-    <p> <strong>Carro</strong></p>
-    <picture>
-        <source media="(max-width: 898px)" srcset="imagens/toyota_320.jpg" type="image/jpg">
-        <source media="(max-width: 1330px)" srcset="imagens/toyota_848.jpg" type="image/jpg">
-        <img src="imagens/toyota_1280.jpg" alt="Toyota">
-    </picture>
-
-    <p><strong>Modelos</strong></p>
-    <picture>
-        <source media="(max-width: 898px)" srcset="imagens/modelos_320.jpg" type="image/jpg">
-        <source media="(max-width: 1330px)" srcset="imagens/modelos_848.jpg" type="image/jpg">
-        <img src="imagens/modelos_1280.jpg" alt="Modelos">
-    </picture>
-
-    <h2>Reproduzindo Áudio</h2>
-    <p>Reproduzimos áudio usando a tag <strong>&lt;audio&gt;</strong> que é um contetor de áudios; em html usamos três
-        formatos principais de áudio que são mp3(mpeg), ogg e wav(muito pesado).</p>
-    <h3>Exemplos</h3>
-    Box cat games
     <br>
-    <audio preload="metadata" controls loop>
-        <source src="audios/mp3/boxcatgames.mp3" type="audio/mpeg">
-        <source src="audios/ogg/boxcatgames.ogg" type="audio/ogg">
-        <p>Infelizmente o seu navegador não consegue reproduzir áudio.
-            <a href="audios/mp3/boxcatgames.mp3">clique aqui para baixar o arquivo mp3</a>
-        </p>
-    </audio>
-    <br>
-
-    Air nail wood
-    <br>
-    <audio preload="metadata" controls loop>
-        <source src="audios/mp3/airnailerwood.mp3" type="audio/mpeg">
-        <source src="audios/ogg/airnailerwood.ogg" type="audio/ogg">
-        <source src="audios/wav/airnailerwood.wav" type="audio/wav">
-        <p>Infelizmente o seu navegador não consegue reproduzir áudio.
-            <a href="audios/mp3/airnailerwood.mp3">clique aqui para baixar o arquivo mp3</a>
-        </p>
-    </audio>
-    <br>
-    Low motorcycle
-    <br>
-    <audio preload="metadata" controls loop>
-        <source src="audios/mp3/low_motorcycle.mp3" type="audio/mpeg">
-        <source src="audios/ogg/low_motorcycle.ogg" type="audio/ogg">
-        <p>Infelizmente o seu navegador não consegue reproduzir áudio.
-            <a href="audios/mp3/low_motorcycle.mp3">clique aqui para baixar o arquivo mp3</a>
-        </p>
-    </audio>
-    <br>
-    Songs of birds
-    <br>
-    <audio preload="metadata" controls loop>
-        <source src="audios/mp3/songbirds.mp3" type="audio/mpeg">
-        <source src="audios/ogg/songbirds.ogg" type="audio/ogg">
-        <source src="audios/wav/songbirds.wav" type="audio/wav">
-        <p>Infelizmente o seu navegador não consegue reproduzir áudio.
-            <a href="audios/mp3/songbirds.mp3">clique aqui para baixar o arquivo mp3</a>
-        </p>
-    </audio>
-
-    <h2>Reproduzindo vídeos </h2>
-    <p>Agora vamos aprender a colocar vídeos internos e externos no nosso site, para isso usamos a tag
-        <strong>&lt;video&gt;</strong>
-    </p>
-    <h3>Vídeos internos</h3>
-    <p>Esse tipo de vídeo consome muita banda larga e consequentemente vai acarretar mais custos ao cliente.</p>
-    <h4>Exemplos</h4>
-
-    Naruto
-    <br>
-    <video controls preload="metadata" width="476" poster="videos/naruto/Poster de Naruto.jpg">
-        <source src="videos/naruto/Naruto Shippuden Opening 7   Toumei Datta Sekai (HD[1].mp4" type="video/mp4">
-        <p>Seu navegador não tem compatibilidade com reprodução de vídeo. <br><a
-                href="videos/naruto/Naruto Shippuden Opening 7   Toumei Datta Sekai (HD[1].mp4">clique
-                aqui para baixar o vídeo.</a></p>
-    </video>
-    <br>
-    Limões
-    <br>
-    <video preload="metadata" controls poster="imagens/limoes-capa.png" width="476">
-        <source src="videos/limoes/limoes.mp4" type="video/mp4">
-        <source src="videos/limoes/limoes.m4v" type="video/mp4">
-        <source src="videos/limoes/limoes.ogv" type="video/ogg">
-        <source src="videos/limoes/limoes.webm" type="video/webm">
-        <p>Seu navegador não tem compatibilidade com reprodução de vídeo. <br><a href="videos/limoes/limoes.mp4">clique
-                aqui para baixar o vídeo.</a></p>
-    </video>
-    <br>
-    Beautifull girl
-    <br>
-    <video preload="metadata" controls width="476" height="400" poster="imagens/modelos_1280.jpg">
-        <source src="videos/beautifull_girl/beautifull girl.mp4" type="video/mp4">
-        <source src="videos/beautifull_girl/Beautifull Girl mp4v.mp4" type="video/mp4">
-        <source src="videos/beautifull_girl/beautifull-girl.ogv" type="video/ogg">
-        <source src="videos/beautifull_girl/Beautifull Girl.webm" type="video/webm">
-        <p>Seu navegador não tem compatibilidade com reprodução de vídeo. <br><a
-                href="videos/beautifull_girl/beautifull girl.mp4">clique aqui para baixar o vídeo.</a></p>
-    </video>
-    <br>
-    Sports
-    <br>
-    <video controls preload="metadata" width="476" poster="videos/sports/poster sports.jpg">
-        <source src="videos/sports/sports.mp4" type="video/mp4">
-        <source src="videos/sports/Sports.mp4" type="video/mp4">
-        <p>Seu navegador não tem compatibilidade com reprodução de vídeo. <br><a href="videos/sports/sports.mp4">clique
-                aqui para baixar o vídeo.</a></p>
-    </video>
-
-    <h3>Videos externos</h3>
-    <p>Os principais serviços de hospedagem de video são o YouTube e o vimeo</p>
-    <h4>Exemplos</h4>
-    hospedagem no YouTube:
-    <br>
-    Urbance
-    <br>
-    <iframe width="476" height="315" src="https://www.youtube.com/embed/nrLdXY_lsy8" title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    <br>
-
-    Hospedagem no Vimeo:
-    <br>
-    Wargroove cinematic
-    <br>
-    <iframe title="vimeo-player" src="https://player.vimeo.com/video/312931432?h=2235780c4c" width="476" height="315"
-        frameborder="0" allowfullscreen></iframe>
+    <a href="../../index.html"><img src="../../pagina_inicial/pagina-inicial_32.png"
+            alt="Simbolo de página inicial"></a>
 </body>
 
 </html>
