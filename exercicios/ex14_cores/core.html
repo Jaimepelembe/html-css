@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Representação de cores</title>
+    <link rel="shortcut icon" href="../ex010_links/html_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+
+<body>
+
+    <h1>Representação de cores</h1>
+    <p>Em CSS as cores podem ser representadas usando quatro padrões que são o Nome, HEX, RGB e HSL, continue a leitura
+        para saber
+        mais sobre esses padrões.</p>
+    <!--Representação por nomes-->
+    <h2 style="background-color:green; color:white">Representação pelo nome</h2>
+    <p>Usa-se o nome da cor para a representar, essa representação é limitada porque possui poucas opções de cores
+        disponiveis.</p>
+    <p><img src="imagens/cor_nome.png" alt="Exemplo de cor pelo nome"> <br>
+        Fig 1: Cor representada pelo nome;
+
+    </p>
+
+    <p color: green>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis temporibus, ducimus sunt tempore
+        officia dolorem
+        reprehenderit ratione nobis nihil repudiandae cupiditate id fugit optio eveniet enim at perspiciatis iusto
+        dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut consequuntur consectetur voluptate magni porro
+        nihil dicta perferendis numquam optio ab doloribus eveniet nisi dolorum, excepturi laboriosam ex ipsum eius
+        aspernatur.
+    </p>
+    <!--Representação por códigos hexadecimal-->
+    <h2 style="background-color: #0000ff; color:#ffffff;">Representação hexadecimal</h2>
+    <p>Usa-se números hexadecimais com 6 digitos precedidos de <strong>#</strong> para representar a cor, os primeiros
+        dois digitos representam a cor
+        vermelha, os dois seguintes o verde e os ultimos dois o azul.
+        Podemos ainda adicionar a transparência na cor ficando assim com mais dois digitos, totalizando 8 digitos.
+        <br>Os valores hexadecimais variam de 00(mais escuro) até FF(mais claro);
+    </p>
+
+    <p><img src="imagens/cor_hexadecimal.png" alt="Representação de cor pelo código hexadecimal sem transparência">
+        <br>Fig 2: Cor hexadecimal sem transparência;
+    </p>
+    <p><img src="imagens/cor_hexadecimal_transparencia.png"
+            alt="Representação de cor pelo código hexadecimal com transparência">
+        <br>Fig 3:Cor hexadecimal com transparência;
+    </p>
+
+    <p style="color:purple
+    ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolorum ducimus obcaecati error aperiam quaerat
+        accusantium deserunt cupiditate, rem voluptas minus optio minima voluptatibus placeat pariatur! Perspiciatis
+        expedita sapiente sit?
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum labore corrupti perferendis hic quae vero
+        maxime tempore architecto recusandae deleniti culpa consequatur aperiam molestias voluptas veniam, autem iusto
+        magni illum?
+    </p>
+    <!--Representação RGB-->
+    <h2 style="background-color: rgb(255, 85, 0); color:rgb(250, 250, 250)">Representação RGB</h2>
+    <p>
+        Esse padrão é baseado nas cores da luz, e é utilizado em todos os dispositivos electrónicos que tem uma tela
+        colorida, As cores primarias da representação são Vermelho(<strong>R</strong>ed),
+        verde(<strong>G</strong>een) e azul
+        (<strong>B</strong>lue). Os seus valores variam de 0 até 255.
+    </p>
+
+    <p><img src="imagens/cor_rgb.png" alt="Representação de cores em rgb sem transparência"> <br>Fig 4: Cor RGB sem
+        transparência;</p>
+    <p><img src="imagens/cor_rgb_transparencia.png" alt="Representação de cores em rgb com transparência"> <br>Fig 5:
+        Cor
+        RGB com
+        transparência;</p>
+
+    <p style="color:rgb(255,0,169)">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus neque, et
+        assumenda, omnis cupiditate porro
+        sint soluta ea ipsum molestiae fugit quos voluptatum minus, molestias at harum doloremque perspiciatis velit?
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem doloribus nesciunt excepturi,
+        consectetur iste eveniet odio quae, veritatis, nostrum molestiae totam minima? Doloribus cum accusamus commodi
+        in, quia harum similique.
+    </p>
+    <!--Representação HSL-->
+    <h2 style="background-color: hsl(200, 100%, 50%);color:hsl(0, 0%, 100%)">
+
+        Representação HSL
+    </h2>
+    <p>O padrão HSL é representado por Hue(tom), Saturation(saturação) e Lightness(luminosidade). O valor do tom é
+        medido em ângulos e expresso em graus, a saturação e a luminosidade são medidas em porcentagem. Esse padrão
+        é de facíl legibilidade para humanos.</p>
+    <p>
+        <img src="imagens/cor_hsl.png" alt="Representação de cores em hsl">
+        <br>Fig 6: Cor
+        HSL sem
+        transparência
+    </p>
+    <p>
+        <img src="imagens/cor_hsl_transparencia.png" alt="Representação de cores em hsl com transparência">
+        <br>
+        Fig 6: Cor
+        HSL com
+        transparência
+    </p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam molestiae exercitationem minima aperiam mollitia
+        nisi dolorum dolor maxime tenetur dolorem vitae consectetur, ullam eveniet, reprehenderit corrupti laudantium
+        quidem officia accusantium.
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ex, quam aliquam hic totam consequuntur et
+        necessitatibus pariatur praesentium maiores perspiciatis sint minus quo a porro consequatur! Molestiae,
+        asperiores facilis!
+    </p>
+</body>
+
+</html>
