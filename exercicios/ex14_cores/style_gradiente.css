@@ -1,0 +1,13 @@
+/*configuracoes globais das CSS*/
+*{height:100%;}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(151, 151, 244);
+        background-image:linear-gradient(to bottom,hsl(211, 71%, 53%),#F2DC5D,#DB9065,#F2A359);
+ 
+}
+
+p {
+    text-align: justify;
+}
