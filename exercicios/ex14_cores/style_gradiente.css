@@ -3,8 +3,9 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color:rgb(151, 151, 244);
-        background-image:linear-gradient(to bottom,hsl(211, 71%, 53%),#F2DC5D,#DB9065,#F2A359);
+   /* background-color:rgb(151, 151, 244);*/
+        background-image:linear-gradient(to bottom,hsl(211, 58%, 73%) 40%,#F2DC5D 15%,#DB9065 15%,#F2A359);
+        background-attachment: fixed;
  
 }
 
