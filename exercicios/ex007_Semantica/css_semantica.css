@@ -1,30 +1,50 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /*'Bebas neue',sans-serif;*/
+}
+
+:root {
+    /*variavel global*/
+    --gradient: linear-gradient(to right, #FF740A, #D36582);
+
+}
+
 body {
+    background-image: linear-gradient(to right, #D36582, #253C78);
+    background-attachment: fixed;
+
+}
+
+main {
     background-color: rgb(255, 255, 255);
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px #14224365;
 
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 36px;
+    text-align: center;
+    background-image: var(--gradient);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /*para navegadores que nao suportam*/
+
 }
+h2{
+color:#2B59C3;
 
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
 }
-
-h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-
-
+h3{color:#D36582;}
 p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px
+    text-align: justify;
 }
 
-li {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-}
+.img_menu{text-align:center;}
+li {}
