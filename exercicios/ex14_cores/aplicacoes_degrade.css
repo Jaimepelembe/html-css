@@ -50,6 +50,7 @@ section::after {
     display: block;
     background-image: var(--bordercolor);
     border-radius: 0 0 15px 15px;
+    /*Animacao*/
     background-size: 500% 100%;
     animation: degrade-animado 5s infinite alternate;
 }
