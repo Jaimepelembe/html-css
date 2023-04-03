@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Bebas neue', sans-serif;
+}
+
+:root {
+    /*variaveis globais*/
+    --bodycolor: linear-gradient(to right, #177E89, #084C61);
+    --word: linear-gradient(to right, #FFC857, #DB3A34);
+    --bordercolor: linear-gradient(to right, #84ACCE, #06D6A0, #E0D3DE, #7A28CB);
+
+}
+
+body {
+
+    background-image: var(--bodycolor);
+    color: white;
+    display: grid;
+    place-content: center;
+
+}
+
+h1 {
+    font-size: 160px;
+    background-image: var(--word);
+    background-clip: text;
+    /*para navegadores que nao suportam*/
+    -webkit-background-clip: text;
+    color: transparent;
+  
+}
+
+section::after {
+    content: '';
+    height: 20px;
+    width: 100%;
+    display: block;
+    background-image: var(--bordercolor);
+    border-radius: 0 0 20px 20px;
+    /*animacao*/
+    background-size: 400% 100%;
+    animation: degrade-animado 5s infinite alternate;
+
+}
+
+@keyframes degrade-animado {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+
+}

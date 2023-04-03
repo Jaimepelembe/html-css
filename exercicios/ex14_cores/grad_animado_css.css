@@ -2,13 +2,13 @@
 
 * {
     font-family: 'Bebas neue', sans-serif;
-   
+
 }
 
 :root {
     /*variaveis globais*/
     --bodycolor: linear-gradient(to right, #9b5de5, #f15bb5);
-    --wordgradient: linear-gradient(to right, #fee440, #00bbf9,#00f5d4);
+    --wordgradient: linear-gradient(to right, #fee440, #00bbf9, #00f5d4);
     --bordercolor: linear-gradient(to right, #00f5d4, #00bbf9, #fee440);
 
 }
@@ -18,7 +18,6 @@ body {
     color: white;
     display: grid;
     place-content: center;
-   
 
 }
 
@@ -64,5 +63,3 @@ section::after {
         background-position-x: 100%;
     }
 }
-
-.degrade-animado {}
