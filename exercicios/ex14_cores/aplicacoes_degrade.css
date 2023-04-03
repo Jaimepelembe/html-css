@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Bebas neue', sans-serif;
+   
+}
+
+:root {
+    /*variaveis globais*/
+    --bodycolor: linear-gradient(to right, #9b5de5, #f15bb5);
+    --wordgradient: linear-gradient(to right, #fee440, #00bbf9,#00f5d4);
+    --bordercolor: linear-gradient(to right, #00f5d4, #00bbf9, #fee440);
+
+}
+
+body {
+    background-image: var(--bodycolor);
+    color: white;
+    display: grid;
+    place-content: center;
+   
+
+}
+
+
+h1 {
+    font-size: 150px;
+    background-image: var(--wordgradient);
+    background-clip: text;
+    /*para navegadores que nao suportam*/
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+/*
+section{
+padding:25px;
+border-bottom:8px solid white;
+Deve-se indicar os pedacos
+border-image:var(--bordercolor) 1;
+
+
+}*/
+
+section::after {
+    content: '';
+    height: 15px;
+    width: 100%;
+    display: block;
+    background-image: var(--bordercolor);
+    border-radius: 0 0 15px 15px;
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;
+}
+
+@keyframes degrade-animado {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+.degrade-animado {}
