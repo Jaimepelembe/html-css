@@ -2,36 +2,68 @@
 <html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <link rel="shortcut icon" href="../ex010_links/html_favicon.ico" type="image/x-icon">
-    <title>Gradiente</title>
+  <link rel="shortcut icon" href="../ex010_links/html_favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="Gradiente_style.css">
+  <!--Fontes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+
+
+  <title>Gradiente</title>
 </head>
 
 <body>
-<main>
+  <main>
     <h1>Gradiente</h2>
-    <p>É a área onde duas ou mais cores são sobrepostas. Para aplicar gradientes usa-se a tag
-        <strong>background-image:linear-gradient(direcção, cores área(percentagem))</strong>
-    </p>
-  <h2>Exemplos de aplicação</h2>
-  <ul><li>
-    <a href="gradientes_background.html">Background</a>
-  </li>
-<li><a href="exe_site_harmonico.html">Site hármonico</a></li>
-<li><a href="gradiente_animado_pelembe.html">Gradiente animado_Pelembe</a></li>
+      <p>É a área onde duas ou mais cores são sobrepostas.
+        O gradiente pode ser aplicado no background, na borda ou no texto;
+      </p>
+      <h2>Aplicação no background</h2>
+      Para aplicar gradiente no background usa-se a tag
+      <strong>background-image:</strong>linear-gradient(direcção, cores, área(percentagem))
+      <br>
+      <p><img src="imagens/aplicacao_gradientes/codigo_gradiente_background_400.jpg"
+          alt="Código de gradiente para background">
+        <br>
+        fig.1: Código de gradiente para background;
+      </p>
+      <h3>Exemplo</h3>
+      <ul>
+        <li> <a href="gradientes_background.html">Gradiente no background</a>
+        </li>
 
-<li><a href="gradiente_animado_css.html">Gradiente animado_Css</a></li>
+        <li><a href="exe_site_harmonico.html">Site hármonico</a></li>
+      </ul>
 
+      <h2>Aplicação no texto e na borda</h2>
+      Para usar o gradiente apenas no texto usa-se o comando <strong>background-clip:text</strong>, mas tem alguns
+      navegadores que podem não suportar o comando, para evitar isso usa-se o
+      <strong>-webkit-background-clip:text</strong>.
 
-</ul>
+      <p>
+        <img src="imagens/aplicacao_gradientes/codigo_gradiente_texto_400.jpg" alt="código de gradiente para texto">
+        <br>fig.2: código de gradiente para texto.
+        <br>
+        <img src="imagens/aplicacao_gradientes/codigo_gradiente_borda_400.jpg" alt="código de gradiente para borda">
+        <br>fig.3: código de gradiente para borda.
 
-<a href="cores.html" target="_self" rel="prev"><img src="../../pagina_inicial/btn-back.png"
-    alt="Simbolo de voltar"></a>
+      </p>
+      <h3>Exemplo</h3>
+      <ul>
+        <li><a href="gradiente_animado_pelembe.html">Gradiente animado_Pelembe</a></li>
 
-</main>
+        <li><a href="gradiente_animado_css.html">Gradiente animado_Css</a></li>
+      </ul>
+
+      <a href="cores.html" target="_self" rel="prev"><img src="../../pagina_inicial/btn-back.png"
+          alt="Simbolo de voltar"></a>
+
+  </main>
 </body>
 
 </html>

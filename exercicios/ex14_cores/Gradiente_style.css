@@ -1,0 +1,38 @@
+* {
+    font-family: 'Roboto',Arial, Helvetica, sans-serif;
+
+}
+
+:root {
+    --bodycolor: linear-gradient(to right, #8338ec, #ff006e);
+
+}
+
+body {
+    background-image: var(--bodycolor);
+    color: white;
+    display: grid;
+    place-content: center;
+
+}
+
+main {
+    color: black;
+    background-color: white;
+    width: 60vw;/*espaco da tela*/
+    padding: 15px;
+    margin: 40px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #ab024bad;
+
+}
+h1{
+color:#fb5607;
+text-align:center;
+
+}
+h2{color:#3a86ff;}
+h3{color:#ffbe0b;}
+p {
+    text-align: justify;
+}
