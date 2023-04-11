@@ -1,0 +1,58 @@
+/*importacao das fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+body {
+    background-image: linear-gradient(to right, #a8dadc, #457b9d);
+    text-align: justify;
+}
+
+main {
+    background-color: white;
+    width: auto;
+    padding: 10px;
+    margin: 35px;
+    border-radius: 25px;
+    box-shadow: 15px 15px 15px #38637e77;
+
+}
+
+h1 {
+    color: #3adb8a;
+    text-align: center;
+}
+
+.titulo {}
+
+h2 {
+    color: #0C6291;
+}
+
+h3 {
+    color: #9D69A3;
+}
+
+h4 {
+    color: #FFA630;
+}
+
+.sriracha {
+    font-family: 'Sriracha';
+}
+
+.work {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.fredericka {
+    font-family: 'Fredericka the Great', cursive;
+
+    font-weight: bold;
+}
+
+.tilt {
+    font-family: 'Tilt Prism', cursive;
+    font-weight: bold;
+}

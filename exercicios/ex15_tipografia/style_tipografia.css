@@ -1,5 +1,31 @@
 * {}
 
+body {
+    background-image: linear-gradient(to right, #a8dadc, #457b9d);
+}
+
+main {
+    background-color: white;
+    width: auto;
+    padding: 10px;
+    margin: 35px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px #38637e77;
+
+}
+
+h1 {
+    color: #e63946;
+}
+
+h2 {
+    color: #457b9d;
+}
+
+h3 {
+    color: #000000;
+}
+
 p {
     font-family: verdana;
 

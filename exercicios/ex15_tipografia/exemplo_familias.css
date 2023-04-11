@@ -1,4 +1,28 @@
-main{color:black;}
+body {
+    background-image: linear-gradient(to left, #FF7A48, #151F30);
+}
+
+
+main {
+    background-color: white;
+    width: auto;
+    padding: 10px;
+    margin: 35px;
+    border-radius: 25px;
+    box-shadow: 15px 15px 15px rgba(47, 83, 105, 0.249)
+}
+
+h1 {
+    color: #E3371E;
+}
+
+h2 {
+    color: #0593A2;
+}
+
+h3 {
+    color: #103778;
+}
 
 h1,
 h2 {
@@ -29,7 +53,14 @@ h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.garamond{font-family: Garamond;}
+.garamond {
+    font-family: Garamond;
+}
 
-.courier{font-family:'Courier New', Courier, monospace;}
-.brush{font-family:'Brush Script MT';}
+.courier {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.brush {
+    font-family: 'Brush Script MT';
+}
