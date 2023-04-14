@@ -1,18 +1,11 @@
 @charset "UTF-8";
 
-h1 {
-    color: #FF7A48;
-
-}
 
 h1#principal {
     color: #E3371E;
     text-align: center;
 }
 
-h2 {
-    color: #0593A2;
-}
 
 p#first {
     text-indent: 15px;

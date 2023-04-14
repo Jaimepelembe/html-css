@@ -15,6 +15,24 @@ main {
     box-shadow: 10px 10px 10px #232650a7;
 }
 
+h1 {
+    color: #FF7A48;
+
+}
+
+h2 {
+    color: #0593A2;
+}
+
+h3 {
+    color: #103778;
+}
+
+h4 {
+    color: #151F30;
+}
+
+
 .menu {
     text-align: center;
 }
