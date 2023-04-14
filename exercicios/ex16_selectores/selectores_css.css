@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to right, #0593A2, #103778);
+    font-family: verdana;
+    text-align: justify;
+}
+
+main {
+    background-color: white;
+    margin: 40px;
+    width: auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px #232650a7;
+}
+
+.menu {
+    text-align: center;
+}

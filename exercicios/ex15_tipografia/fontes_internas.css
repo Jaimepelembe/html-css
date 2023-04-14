@@ -1,0 +1,106 @@
+/*configuracao das fontes*/
+@font-face {
+    font-family: 'love';
+    /*nome da fonte*/
+    src: url('../ex15_tipografia/fontes_internas/bing_bam_boum/Bing Bam Boum.ttf') format('truetype');
+    /*Arquivo da fonte*/
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: insane_rodeo;
+    src: url('../ex15_tipografia/fontes_internas/ifc_insane_rodeo/IFC\ INSANE\ RODEO.ttf') format('truetype'), url('fontes_internas/ifc_insane_rodeo/IFC\ INSANE\ RODEO\ BOLD\ Bold.ttf')format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: tesla;
+    src: url('fontes_internas/tesla/TESLA.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'ways';
+    src: url('fontes_internas/48ways/48ways.TTF');
+
+}
+
+@font-face {
+    font-family: 'fight';
+    src: url('fontes_internas/super_street_fighter_hyper_fonting/Super\ Street\ Fighter.ttf');
+}
+
+
+body {
+    background-image: linear-gradient(to right, #a8dadc, #457b9d);
+    text-align: justify;
+}
+
+main {
+    background-color: white;
+    width: auto;
+    padding: 10px;
+    margin: 35px;
+    border-radius: 25px;
+    box-shadow: 15px 15px 15px #38637e77;
+
+}
+
+p {
+    text-align: justify;
+    text-indent:10px;
+}
+
+h1 {
+    color: #3adb8a;
+    font: normal normal 2em 'love', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+h2 {
+    color: #0C6291;
+}
+
+h3 {
+    color: #9D69A3;
+}
+
+h4 {
+    color: #FFA630;
+}
+
+.insane {
+    font-family: 'insane_rodeo', Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.love {
+    font-family: 'love', Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.tesla {
+    font-family: 'tesla', Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.ways {
+    font-family: 'ways', Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.fight {
+    font-family: 'fight', Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
