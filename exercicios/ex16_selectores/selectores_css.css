@@ -20,6 +20,10 @@ h1 {
 
 }
 
+.principal {
+    text-align: center;
+}
+
 h2 {
     color: #0593A2;
 }
@@ -32,7 +36,64 @@ h4 {
     color: #151F30;
 }
 
+.divcolor {
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    display: inline-block;
+
+}
+
+/*dives para os quadrados*/
+
+div#d1 {
+    background-color: #E3371E;
+
+}
+
+div#d2 {
+    background-color: #08B2E3;
+
+}
+
+div#d3 {
+    background-color: #3A3042;
+
+}
+
+/*div do quadrado com hover*/
+
+div:hover {
+    background-color: #EA9AB2;
+}
+
+/*div para o paragrafo*/
+div>p {
+    display: none;
+    /*oculta o paragrafo*/
+
+}
+
+div>img {
+    display: none;
+    /*oculta a imagem*/
+
+}
+
+div:hover>img {
+    display: block;
+}
+
+div:hover>p {
+    display: block;
+    color: #08B2E3;
+    background-color: white;
+}
 
 .menu {
+    border: 0px solid white;
     text-align: center;
+    background-color: white;
+    display: inline;
 }
