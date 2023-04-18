@@ -29,17 +29,23 @@
         </p>
 
         <h2>Pseudo-classe</h2>
-        <div id="d1" class="divcolor">01
-        </div>
-        <div id="d2" class="divcolor">02
-        </div>
-        <div id="d3" class="divcolor">03</div>
+        É um selector em CSS que permite selecionar elementos que não estão directamente presentes no código HTML, mas
+        sim em um estado ou em um contexto específico. <br> As pseudo-classes são usadas para aplicar estilos a
+        elementos HTML com base em acções do usuário, como <strong>hover</strong>, <strong>focus</strong> ou em seu
+        estado actual, como <strong>visited</strong> ou <strong>active</strong>.
+
 
         <h3>Hover</h3>
-
+        É usado para aplicar um estilo a um elemento quando o cursor do mouse é colocado sobre ele. <br>Para aplicar a
+        pseudo-classe hover em um elemento com determinado id ou classe, deve-se adicionar a pseudo-class
+        <strong>':hover'</strong> após o selector de id ou class.
         <h4>Exemplos</h4>
         <h4>1. Quadrado </h4>
-        <div id="hover" class="divcolor">Exemplo de hover</div>
+        <div id="quadrado1" class="quadrado">01
+        </div>
+        <div id="quadrado2" class="quadrado">02
+        </div>
+        <div id="quadrado3" class="quadrado">03</div>
 
         <br>
         <h4>2. Palavra</h4>
@@ -50,11 +56,36 @@
         <br>
         <h4>3. Imagem</h4>
         <div id="divimage">
-            
+
             passe o mouse aqui
-            <img src="../ex011_medias/imagens/modelos_848.jpg" alt="Modelos">
+            <img id="modelo" src="../ex011_medias/imagens/modelos_848.jpg" alt="Modelos">
 
         </div>
+
+
+        <h3>Visited</h3>
+        <p>É utilizada para aplicar um estilo a um link que já foi visitado pelo usuário.
+        <h4>Exemplo
+            <p><a href="https://cursoemvideo.com/" target="_blanket" rel="external" class="link">Curso em video</a> <br>
+                <a href="https://coolors.co/" target="_blanket" rel="external" class="link">Coolors</a>
+                <br>
+                <a href="https://color.adobe.com/pt" target="_blanket" rel="external" class="link">Color Adobe </a>
+                <br><a href="http://www.nike.com/" target="_blank" rel="external" class="link">Nike</a>
+            </p>
+
+        </h4>
+        </p>
+
+       <h2>Pseudo-elementos</h2>
+       <p>São usados para adicionar conteúdo adicinal a um elemento HTML ou para aplicar estilos a uma parte espcífica de um elemento.</p>
+
+       <h3>Before</h3>
+       <p>É utilizado para adicionar conteúdo antes de um elemento.</p>
+       <h4>Exemplo</h4>
+       <h4>Seta</h4>
+       <p id="seta">James</p>
+
+
         <div class="menu">
             <a href="../../index.html"><img src="../../pagina_inicial/pagina-inicial_32.png" alt="Página incial"></a>
 

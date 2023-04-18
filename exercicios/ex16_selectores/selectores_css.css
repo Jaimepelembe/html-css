@@ -2,7 +2,7 @@
 
 body {
     background-image: linear-gradient(to right, #0593A2, #103778);
-    font-family: verdana;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
 }
 
@@ -36,7 +36,7 @@ h4 {
     color: #151F30;
 }
 
-.divcolor {
+.quadrado {
     text-align: center;
     height: 200px;
     width: 200px;
@@ -46,49 +46,66 @@ h4 {
 }
 
 /*dives para os quadrados*/
-
-div#d1 {
+#quadrado1:hover {
     background-color: #E3371E;
 
 }
 
-div#d2 {
+#quadrado2:hover {
     background-color: #08B2E3;
 
 }
 
-div#d3 {
+#quadrado3:hover {
     background-color: #3A3042;
 
 }
 
-/*div do quadrado com hover*/
-
-div:hover {
-    background-color: #EA9AB2;
-}
 
 /*div para o paragrafo*/
-div>p {
-    display: none;
-    /*oculta o paragrafo*/
-
+#hidtext:hover {
+    color: #E3371E;
 }
 
-div>img {
+#hidtext>#ola {
+    display: none;
+    /*oculta o paragrafo*/
+}
+
+#hidtext:hover>#ola {
+    display: block;
+    background-color: white;
+    color: #08B2E3;
+}
+
+/*Div para Imagem*/
+#divimage>#modelo {
     display: none;
     /*oculta a imagem*/
 
 }
 
-div:hover>img {
+#divimage:hover>#modelo {
     display: block;
+   
+
 }
 
-div:hover>p {
-    display: block;
-    color: #08B2E3;
-    background-color: white;
+/*links*/
+.link{text-decoration:none;}
+.link:visited{
+ color:#F24333;   
+}
+
+.link:hover{color:#4F345A;
+text-decoration:underline;}
+.link:active{color:#F8BD7F;}
+
+/*pseudo classes*/
+#seta::before{
+
+    content:'\2666';
+    margin-right:4px;
 }
 
 .menu {
