@@ -102,11 +102,22 @@ text-decoration:underline;}
 .link:active{color:#F8BD7F;}
 
 /*pseudo classes*/
+.simbolo_esquerdo::before{
+  content:'';
+  margin-left:4px;}
+
 #seta::before{
 
     content:'\2666';
-    margin-right:4px;
 }
+
+#star::before{content:'\2605';}
+
+#phone::before{content:'\260E';}
+
+#espada::before{content:'\2660';}
+
+#heart::before{content:'\2665';}
 
 .menu {
     border: 0px solid white;
