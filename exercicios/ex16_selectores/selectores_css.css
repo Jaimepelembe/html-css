@@ -102,6 +102,8 @@ text-decoration:underline;}
 .link:active{color:#F8BD7F;}
 
 /*pseudo classes*/
+/*Before*/
+
 .simbolo_esquerdo::before{
   content:'';
   margin-left:4px;}
@@ -118,6 +120,16 @@ text-decoration:underline;}
 #espada::before{content:'\2660';}
 
 #heart::before{content:'\2665';}
+
+/*after*/
+.simbolo_direito::after{
+  content:'';
+  margin-left:4px;}
+
+#infinity::after{content:'\221E';}
+#integral::after{content:'\222D';}
+#right::after{content:'\2713';}
+#music::after{content:'\266A';}
 
 .menu {
     border: 0px solid white;
