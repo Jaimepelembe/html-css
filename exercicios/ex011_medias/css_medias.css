@@ -1,41 +1,42 @@
 body {
-    background-color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    background-image: linear-gradient(#06d6a0, #073b4c);
 
+
+}
+
+main {
+    background-color: white;
+    width: auto;
+    padding: 20px;
+    margin: auto;
+    border-radius: 30px;
+}
+
+#principal {
+    color: #ffd166;
+    text-align: center;
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 36px;
+    color: #ef476f;
 }
 
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
+    color: #06d6a0;
 }
 
 h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    color: #118ab2;
 }
 
 h4 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    color: #073b4c;
 }
 
-h5 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-}
+p {}
 
-
-
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px
-}
-
-li {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+#menu {
+    text-align: center;
 }

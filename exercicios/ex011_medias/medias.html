@@ -11,23 +11,205 @@
 <link rel="stylesheet" href="css_medias.css">
 
 <body>
-    <h1>Medias</h1>
-    <p>É muito importante possuir um site com responsividade pois isso melhora a experiência do usuario fazendo com que
-        ele fique mais tempo no site. <br>
-        para ver a responsividade desse site
-        acesse o em vários dispositivos de tamanho de tela diferentes ou se estiver usando um computador simplesmente
-        aumente e diminua o tamanho do seu
-        navegador.
-        <br> veja nos links abaixo as principais medias.
-    <ul>
-        <li><a href="imagens.html">Imagens</a></li>
-        <li><a href="audios.html">Audios</a></li>
-        <li><a href="videos.html">Videos</a></li>
-    </ul>
-    </p>
-    <br>
-    <a href="../../index.html"><img src="../../pagina_inicial/pagina-inicial_32.png"
-            alt="Simbolo de página inicial"></a>
+    <main>
+        <h1 id="principal">Mídias</h1>
+        <p>É muito importante possuir um site com responsividade pois isso melhora a experiência do usuario fazendo com
+            que
+            ele fique mais tempo no site. <br>
+            para ver a responsividade desse site
+            acesse o em vários dispositivos de tamanho de tela diferentes ou se estiver usando um computador
+            simplesmente
+            aumente e diminua o tamanho do seu
+            navegador.
+            <br> As principais medias trabalhadas na internet são a imagens, aúdio e video.
+
+        <h1 id="imagens">Imagens dinâmicas</h1>
+        <p>Uma imagem dinâmica é aquela que se ajusta ao tamanho da tela.
+            <br>
+            Para criar uma imagem dinâmica deve-se gerar tamanhos diferentes da mesma imagem e usar as tag
+            <strong>&lt;picture&gt;</strong> e <strong>&lt;source&gt;</strong> para fazer o navegador carregar a imagem
+            certa para cada dispositivo.
+            <br>
+            A tag <strong>picture</strong> é um contentor de sources que permite ao navegador carregar a imagem certa de
+            acordo com o tamanho da tela, densidade de pixels,etc; dentro da tag deve ter uma imagem padrão que deve ser
+            inserida usando a tag <strong>&lt;img&gt;</strong> essa imagem deve ser a maior de todas.
+            <br>
+            A tag <strong>&lt;source&gt;</strong> permite especificar múltiplas alternativas de médias; as imagens devem
+            ser
+            colocadas em ordem decrescente de tamanho a partir da imagem padrão; <br>
+        <h2>Os principais parâmetros dessa tag <mark>source</mark></h2>
+        <ul>
+            <li><strong>type</strong>: indica o tipo da média;
+            </li>
+            <li><strong>srcset</strong>: indica o caminho da imagem a ser carregada;</li>
+            <li><strong>media</strong>: indica o tamanho de tela máximo a ser considerado para carregar a imagem; <br> o
+                tamanho máximo=tamanho da foto maior + 50, para evitar a barra de rolagem.</li>
+        </ul>
+        </p>
+        <h3>Exemplo de sintaxe</h3>
+        <picture>
+            <source media="(max-width: 400px )" srcset="imagens/tag_picture_190.PNG" type="image/png">
+            <source media="(max-width: 815px)" srcset="imagens/tag_picture_380.PNG" type="image/png">
+
+            <img src="imagens/tag_picture.PNG" alt="Tag picture">
+        </picture>
+        <h2>Principais tamanhos de imagem</h2>
+        <p>Os principais tamanhos de imagens usados para web são:
+        <ul>
+            <li><strong>144p</strong>: 256x144</li>
+            <li><strong>240p</strong>: 320x240</li>
+            <li><strong>480p</strong>: 848x480</li>
+            <li><strong>HD</strong>: 1280x720</li>
+            <li><strong>Full HD</strong>: 1920x1080</li>
+            <li><strong>4K</strong>: 3840x2160</li>
+            <li><strong>8K</strong>: 7680x4320</li>
+        </ul>
+        </p>
+        <h2>Proporção de uma imagem</h2>
+        É a relação entre a largura e a altura da imagem;
+        <h3>Os principais tamanhos de Proporção são:</h3>
+        <ul>
+            <li><strong>1:1</strong> formato quadrado
+                <br>é usado em mídias sociais;
+            </li>
+            <li><strong>3:2</strong> formato rectângular
+                <br> é usado em filmagem e fotografia digital;
+            </li>
+            <li><strong>4:3</strong> é a proporção perfeita para conteúdos que vão preencher a tela;</li>
+            <li><strong>16:9</strong> essa proporção é mais comum em monitores e computadores;</li>
+        </ul>
+
+
+        <h4>Exemplos</h4>
+        <p> <strong>Paisagem</strong></p>
+
+        <picture>
+            <source media="(max-width: 898px)" srcset="imagens/paisagem_320.jpg" type="image/jpg">
+            <source media="(max-width: 1330px)" srcset="imagens/paisagem_848.jpg" type="image/jpg">
+            <img src="imagens/paisagem_1280.jpg" alt="Imagem grande">
+        </picture>
+
+        <p> <strong>Carro</strong></p>
+        <picture>
+            <source media="(max-width: 898px)" srcset="imagens/toyota_320.jpg" type="image/jpg">
+            <source media="(max-width: 1330px)" srcset="imagens/toyota_848.jpg" type="image/jpg">
+            <img src="imagens/toyota_1280.jpg" alt="Toyota">
+        </picture>
+
+        <p><strong>Modelos</strong></p>
+        <picture>
+            <source media="(max-width: 898px)" srcset="imagens/modelos_320.jpg" type="image/jpg">
+            <source media="(max-width: 1330px)" srcset="imagens/modelos_848.jpg" type="image/jpg">
+            <img src="imagens/modelos_1280.jpg" alt="Modelos">
+        </picture>
+        </p>
+
+        <h1>Áudio</h1>
+        <p>O áudio é um recurso muito importante para os sites pois ele pode ser usado para apresentar várias
+            informações ao
+            usuario como músicas, podcasts, hinos, etc. <br> O áudio utilizado para apresentação de um conteúdo no
+            site deve ser de baixa qualidade para evitar arquivos muito grandes.
+            <br>
+            Para inserir áudio usamos a tag <strong>&lt;audio&gt;</strong> que é um contetor de áudios;
+        </p>
+
+        <h2>Os principais parâmetros da tag <mark>audio</mark> são:</h2>
+        <ul>
+            <li><strong>Preload</strong>: indica se o áudio será pre-carregado ou não;
+                <br> os valores desse parâmetro são: <ul>
+                    <li><strong>metadata</strong> - carrega as informações do arquivo;</li>
+                    <li><strong>none</strong> - não carrega nenhuma informação do arquivo;</li>
+                    <li><strong>auto(padrão)</strong> - carrega todo o arquivo;</li>
+                </ul>
+            </li>
+            <li><strong>controls</strong>: apresenta o player na tela;</li>
+            <li><strong>autoplay</strong>: toca o áudio automaticamente logo que a página é carregada;</li>
+            <li><strong>loop</strong>: repete o áudio infinitamente;</li>
+        </ul>
+
+        <h2>Componente source:src</h2>
+        <p>Serve para colocar diferentes formatos do mesmo áudio dentro da tag <strong>audio</strong>; deve-se criar um
+            parágrafo dentro da tag <strong>audio</strong> para permitir o download do arquivo mp3 no caso do navegador
+            não
+            suportar nenhum dos formatos disponibilizados.
+        </p>
+
+        <h2>Os principais formatos de áudio são:</h2>
+        <ul>
+            <li><strong>mp3</strong>(mpeg): é o padrão</li>
+            <li><strong>ogg</strong></li>
+            <li><strong>wav</strong>: é muito pesado
+            </li>
+        </ul>
+
+        <h3>Exemplos</h3>
+        <h4>Sintaxe</h4>
+        <picture>
+            <source media="(max-width: 253px)" srcset="imagens/tag_audio_203.PNG" type="image/png">
+            <source media="(max-width: 457px)" srcset="imagens/tag_audio_407.PNG" type="image/png">
+            <img src="imagens/tag_audio.PNG" alt="Tag audio">
+        </picture>
+        <p>Naruto</p>
+        <audio preload="metadata" controls loop>
+            <source src="audios/naruto/Naruto_Shippuden_Opening7_Toumei_Datta_Sekai.mp3" type="audio/mpeg">
+            <source src="audios/naruto/Naruto_Shippuden_Opening7_Toumei_Datta_Sekai.ogg" type="audio/ogg">
+            <p>Infelizmente o seu navegador não consegue reproduzir áudio. <br>
+                <a href="audios/naruto/Naruto_Shippuden_Opening7_Toumei_Datta_Sekai.mp3">clique aqui para baixar o
+                    arquivo
+                    mp3</a>
+            </p>
+        </audio>
+
+        <p>Box cat games</p>
+        <audio preload="metadata" controls loop>
+            <source src="audios/boxcat/boxcatgames.mp3" type="audio/mpeg">
+            <source src="audios/boxcat/boxcatgames.ogg" type="audio/ogg">
+            <p>Infelizmente o seu navegador não consegue reproduzir áudio. <br>
+                <a href="audios/boxcat/boxcatgames.mp3">clique aqui para baixar o arquivo mp3</a>
+            </p>
+        </audio>
+        <br>
+
+        <p>Air nail wood</p>
+        <audio preload="metadata" controls loop>
+            <source src="audios/airnailerwood/airnailerwood.mp3" type="audio/mpeg">
+            <source src="audios/airnailerwood/airnailerwood.ogg" type="audio/ogg">
+            <source src="audios/airnailerwood/airnailerwood.wav" type="audio/wav">
+            <p>Infelizmente o seu navegador não consegue reproduzir áudio.
+                <br>
+                <a href="audios/airnailerwood/airnailerwood.mp3">clique aqui para baixar o arquivo mp3</a>
+            </p>
+        </audio>
+        <br>
+        <p>Low motorcycle</p>
+        <audio preload="metadata" controls loop>
+            <source src="audios/low_motorcycle/low_motorcycle.mp3" type="audio/mpeg">
+            <source src="audios/low_motorcycle/low_motorcycle.ogg" type="audio/ogg">
+            <p>Infelizmente o seu navegador não consegue reproduzir áudio.
+                <br>
+                <a href="audios/low_motorcycle/low_motorcycle.mp3">clique aqui para baixar o arquivo mp3</a>
+            </p>
+        </audio>
+        <br>
+        <p>Songs of birds</p>
+        <audio preload="metadata" controls loop>
+            <source src="audios/songbirds/songbirds.mp3" type="audio/mpeg">
+            <source src="audios/songbirds/songbirds.ogg" type="audio/ogg">
+            <source src="audios/songbirds/songbirds.wav" type="audio/wav">
+            <p>Infelizmente o seu navegador não consegue reproduzir áudio.
+                <br>
+                <a href="audios/songbirds/songbirds.mp3">clique aqui para baixar o arquivo mp3</a>
+            </p>
+        </audio>
+        <br>
+        <a href="medias.html"><img src="../../pagina_inicial/btn-back.png" alt="voltar"></a>
+
+
+
+        <div id="menu"> <a href="../../index.html"><img src="../../pagina_inicial/pagina-inicial_32.png"
+                    alt="Simbolo de página inicial"></a></div>
+
+    </main>
 </body>
 
 </html>

@@ -114,7 +114,6 @@ text-decoration:underline;}
 }
 
 #star::before{content:'\2605';}
-
 #phone::before{content:'\260E';}
 
 #espada::before{content:'\2660';}
@@ -135,5 +134,5 @@ text-decoration:underline;}
     border: 0px solid white;
     text-align: center;
     background-color: white;
-    display: inline;
+    display: block;
 }
