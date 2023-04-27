@@ -13,26 +13,359 @@
 
 <body>
     <main>
-        <h1>Tipografia</h1>
+        <h1 id="h1_principal">Tipografia</h1>
         <p>É uma arte que transmite sentimentos e emoções, ela surgiu da necessidade de ter letras mais faceis de ler e
             que aproveitassem melhor o espaço da página.
 
         </p>
-        <h2>Principais topicos</h2>
+        
+         <h2>Índice</h2>
+         <ul>
+           <li><a href="#pri_conceitos">Principais conceitos</a></li>
+           <li><a href="#tamanho_fonte">Tamanho das fontes</a></li>
+        
+           <li><a href="#peso_estilo">Peso e estilo</a>
+           </li>
+        
+           <li>
+             <a href="#tipos_fontes">Tipos fontes</a>
+           </li>
+        
+           <li><a href="#alinhamento">Alinhamento de textos</a></li>
+         </ul>
+        
+          <h1 id="pri_conceitos">Principais conceitos</h1>
+        <p>Os principais conceitos de tipografia são glifo, fonte, familia de fonte, e categorias de fonte.</p>
+
+        <h2>Glifo</h2>
+        <p>É uma letra de determinada fonte.
+
+        </p>
+
+        <h2>Fonte</h2>
+        <p>É o conjunto de todos os glifos de uma familia.
+            A fonte padrão nos navegadores é a Times New Roman.
+        </p>
+        <p>As fontes mais usadas na Web são:
         <ul>
-            <li><a href="principais_conceitos.html">Principais conceitos</a></li>
-            <li><a href="tamanho.html">Tamanho das fontes</a></li>
-
-            <li><a href="peso_estilo.html">Peso e estilo</a>
+            <li> <strong>Arial (sans-serif)</strong>
+                <br>
+                <p>É amplamente utilizada na Web e na impressão de medias; ela está disponível para a maioria dos
+                    sistemas operacionais.</p>
             </li>
 
-            <li>
-                <a href="fontes_externas.html">Fontes externas</a>
+            <li><strong>Verdana (sans-serif)</strong>
+                <p>É uma fonte muito popular, por ser de facíl leitura mesmo em tamanhos de fonte menores.</p>
             </li>
-            <li><a href="fontes_internas.html">Fontes internas</a></li>
 
-            <li><a href="alinhamento_textos.html">Alinhamento de textos</a></li>
+            <li><strong>Tahoma (sans-serif)</strong>
+                <p>Ela tém pouco espaço entre os caracteres.</p>
+            </li>
+            <li><strong>Trebuchet MS (sans-serif)</strong>
+                <p>Essa fonte deve ser utilizada cuidadosamente porque não é suportada por todos os sistemas
+                    operacionais moveis.</p>
+            </li>
+
+            <li><strong>Times New Roman (serif)</strong>
+                <p>É uma das fontes mais utilizadas no mundo, ela tem uma aparência profissional e é utilizada em muitos
+                    jornais e websites.</p>
+            </li>
+
+            <li><strong>Georgia (serif)</strong>
+                <p>
+                    Essa fonte tem uma legibilidade muito boa em diferentes tamanhos de fontes,
+                    sendo uma boa opção para o design responsivo em telemóveis.
+                </p>
+            </li>
+
+            <li><strong>Garamond (serif)</strong>
+                <p>É uma fonte classica utilizada em muitos livros impressos, ela tem uma aparência antiga e boa
+                    legibilidade.
+                </p>
+            </li>
+
+            <li><strong>Courier New (monospace)</strong>
+                <p>É a fonte monoespaçada(serif) mais utilizada, sendo aplicada em muitos provedores de email, telas de
+                    cinema,etc.</p>
+            </li>
+
+            <li><strong>Brush Script MT (cursive)</strong>
+                <p>É uma fonte com escrita engraçada, ela é elegante e sofisticada, mas pode ser de dificil leitura; por
+                    isso deve ser usada com cautela.</p>
+
+            </li>
+
         </ul>
+
+        <a href="exemplo_familias_fonte.html">Exemplo de aplicação</a>
+        </p>
+        <h2>Família</h2>
+        <p>São as várias formas de representar um glifo(normal, negrito,italico,etc).</p>
+        <h2>Categorias</h2>
+        <h3>Serifadas</h3>
+        <p>São fontes que possuem serifas, elas servem para criar uma linha imaginária que nosso cerébro percebe para
+            facilitar a leitura.</p>
+
+        <h3>Sans-Serif</h3>
+        <p>São fontes sem serifas, elas são ideias para textos muitos longos em telas.</p>
+
+        <h3>Monoespaçadas</h3>
+        <p>São fontes que possuem o mesmo espaçamento lateral, elas podem ter ou não serifas.</p>
+        <h3>Handwring</h3>
+        <p>São fontes que simulam a escrita humana.</p>
+
+        <h3>Display</h3>
+        <p>São fontes que transmitem o sentimento de diversão e comemoração.</p>
+        
+         <h1 id="tamanho_fonte">Tamanho das fontes</h1>
+        <p>As fontes podem ser medidas usando medidas absolutas ou medidas relaticas.
+            As medidas padrão que devem ser usadas são <strong>pixel</strong> e <strong>em</strong>.
+        </p>
+        <h2> Medidas absolutas</h2>
+        <ul>
+            <li>cm</li>
+            <li>mm</li>
+            <li>in</li>
+            <li><strong>px</strong></li>
+                    <li>pt(pontos)</li>
+                    <li>pc</li>
+            </li>
+
+        </ul>
+        <p>Essas medidas podem apresentar a informação de formas diferentes, dependendo do tamanho da tela.</p>
+
+        <h2>Medidas relativas</h2>
+        <ul>
+            <li><strong>em</strong> (tamanho letra M)</li>
+            <li>ex (..letra X)</li>
+            <li>rem</li>
+            <li>vw (tamanho da tela)</li>
+            <li>vh (altura da tela)</li>
+
+        </ul>
+        <p>O tamanho padrão da fonte no navegador é 16px. Geralmente <strong>16px=1em</strong>.</p>
+
+
+  <h1 id="peso_estilo">Peso e estilo</h1>
+        <h2>Peso</h2>
+        <p>Para usar a propriedade peso usamos a tag <strong>font-weight</strong>, que recebe como parâmetro um número
+            entre <strong>100</strong> e <strong>900</strong> ou uma das palavras a seguir <strong>lighter</strong>,
+            <strong>normal</strong>, <strong>bold</strong> ou <strong>bolder</strong>.
+        </p>
+        <h3>Exemplo de aplicação</h3>
+        <div class="peso">
+            <h4>Peso leve (ligher)</h4>
+            <p class="lighter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quia sed, cupiditate
+                alias ipsa eum impedit minima aperiam eligendi. Laborum, quod similique. Ratione architecto iste rem?
+                Totam ullam fuga quidem. <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima optio quos asperiores voluptas quod?
+                Iure doloremque saepe sunt commodi molestias! Voluptatibus debitis ipsam tempora possimus iusto
+                repellendus esse? Laborum, quod.</p>
+
+
+            <h4>Peso normal</h4>
+            <p class="normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore doloremque repudiandae
+                maiores reiciendis! Facere blanditiis temporibus vel nemo incidunt quis iure, similique obcaecati libero
+                hic voluptate dolorum cum, dicta quae. <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores itaque facilis illo, doloribus
+                tenetur, quidem sit labore nesciunt possimus, ad repudiandae dolores atque sint natus quo animi est!
+                Aliquid, ut.</p>
+
+            <h4>Peso negrito (bold)</h4>
+            <p class="bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum earum sunt facere. Aperiam,
+                doloremque maiores delectus, repellendus eaque ipsa modi earum dolor optio iure facere culpa ad error
+                impedit illum? <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum perferendis aut dolorem nulla error
+                vitae saepe maxime aliquid, est earum, necessitatibus unde dolor quam molestiae! Et explicabo unde
+                aliquid consectetur.</p>
+
+            <h4>Peso extra negrito (bolder)</h4>
+            <p class="bolder">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, facere incidunt voluptate
+                modi sed dolorem animi id harum officiis, aliquid repellendus et eligendi quidem cumque dolore! Mollitia
+                repudiandae perspiciatis pariatur.
+                <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam atque laboriosam officiis deleniti
+                fugit reprehenderit tempora ipsum repudiandae illo! Quos fugiat sapiente qui adipisci velit illo harum
+                unde placeat error!
+            </p>
+        </div>
+
+        <h2>Estilo</h2>
+        <p>Para aplicar o estilo usamos a tag <strong>font-style</strong> que recebe como parâmetro o
+            <strong>normal</strong> ou <strong>italic</strong>.
+        </p>
+        <h3>Exemplo de aplicação</h3>
+        <div class="estilo">
+            <h4>Normal</h4>
+            <p class="normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est officia culpa sunt. Aperiam
+                at minus perferendis accusamus corrupti itaque deserunt, voluptatem earum iure quam ullam? Nihil eaque
+                laudantium commodi quam!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio dolore eos fugiat velit odio saepe
+                vitae ducimus autem quisquam facere aperiam, perferendis similique quibusdam placeat cupiditate eaque
+                corrupti a architecto?
+            </p>
+
+            <h4>Italic</h4>
+            <p class="italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, distinctio molestias?
+                Harum, obcaecati error sapiente maiores nesciunt ipsa doloremque neque earum voluptatem sed. Ducimus,
+                adipisci minima blanditiis laudantium aliquid sint. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. A ipsum unde, deserunt fugit tempore animi officia. Nisi officiis quis temporibus ducimus cumque
+                dolore nulla, incidunt itaque, et alias sit cum.
+
+            </p>
+
+
+        </div>
+
+        <h2 class="sublinhado">Sublinhado</h2>
+        <div>
+            <p>Para aplicar o sublinhado em um texto usamos a tag <strong>text-decoration:underline</strong>;</p>
+            <h3>Exemplo de aplicação</h3>
+            <p class="sublinhado">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem molestias, doloremque error velit
+                eveniet veniam quis beatae vitae voluptatem porro est mollitia perspiciatis eligendi ut quo at iusto
+                saepe quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat iste odio iure quas in
+                deleniti repudiandae vitae sequi sint similique assumenda quidem dicta cum deserunt nobis debitis, sit,
+                aperiam incidunt.</p>
+        </div>
+
+        <h2>Shorthand</h2>
+        <div class="shorthand">
+            <p>Um shorthand é uma simplificação de vários comandos em um único, para simplificar a sua declaração. <br>
+                Para as fonte temos o shorthand <strong>font</strong> que tem a seguinte sintaxe: <strong>font:</strong>
+                <strong> font-style</strong> -> <strong>font-weight</strong> -> <strong>font-size</strong> -> <strong>
+                    font-family</strong> .
+            </p>
+            <h3>Exemplo de aplicação</h3>
+            <p><strong>font:</strong> italic bolder 3em Verdana, 'sans-serif';</p>
+            
+            <h1 id="tipos_fontes">Tipos de fontes</h1>
+            
+             <h1 id="fonte_externa">Fontes externas</h1>
+        <p class="titulo">Podemos usar fontes externas atráves do google fontes ou baixando às para o nosso PC.</p>
+        <h2>Google fontes</h2>
+        <p>Para aplicar fontes externas usando google fontes devemos importar as fontes que queremos para o nosso
+            ficheiro CSS usando a tag <strong>@import url()</strong>.</p>
+        <h3>Exemplo de aplicação</h3>
+
+        <h4>Fonte Sriracha</h4>
+        <div class="sriracha">
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea in veniam blanditiis aperiam! Amet
+                beatae voluptate quod inventore unde fugit harum numquam, deserunt ratione? Incidunt commodi consectetur
+                alias dolor quo.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, possimus. Harum veniam odio
+                necessitatibus, debitis natus suscipit quam, excepturi mollitia deserunt ratione corrupti amet tempore
+                aliquid. Quibusdam ipsam architecto dolores.
+            </p>
+        </div>
+
+        <h4>Fonte Work Sans</h4>
+        <div class="work">
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet mollitia fugiat a quo vitae est ea id
+                reiciendis et. Soluta tempora impedit quibusdam ut, asperiores vero nihil animi quos. Itaque.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta aliquid rerum dolores officia ea, iure
+                sunt optio rem nesciunt voluptatem, aperiam numquam velit voluptates totam laborum ex provident?
+                Eligendi, id!
+
+
+            </p>
+        </div>
+
+        <h4>Fonte Fredericka</h4>
+        <div class="fredericka">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus dolor aspernatur obcaecati
+                quia velit excepturi, doloribus incidunt. Necessitatibus provident autem maiores eius consectetur
+                molestias deserunt aliquam perspiciatis libero quae! Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Omnis, expedita? Et architecto praesentium, odit atque aliquid facere deserunt at quidem veniam
+                nostrum omnis pariatur soluta harum, inventore ut magni? Odit.
+
+            </p>
+        </div>
+
+        <h4>Fonte Tilt Prism</h4>
+        <div class="tilt">
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dicta doloremque placeat facere ea quo
+                corporis necessitatibus ut ipsum officiis quod ipsam iusto reprehenderit, accusamus sit quas facilis
+                aperiam error?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum accusantium inventore dolorum error,
+                facilis ab! Aspernatur libero et natus accusamus cum labore eaque, repellendus fuga quae officia ipsum
+                voluptatem ducimus!
+            </p>
+            
+                    <h1>Fontes internas</h1>
+        <p>Podemos adicionar fontes ao nosso site, baixando as para o nosso computador. Para adicionar essas fontes ao
+            nosso computador usamos a tag <strong>font-face</strong> que tem como parâmetros a família, a url da fonte e
+            o formato do arquivo. <br> os formatos das fontes são opentype(otf), truetype(ttf), embedded-opentype,
+            truetype-aat(Apple Advanced Typography) e svg.
+
+        </p>
+        <h2>Exemplo de fontes internas</h2>
+
+        <h3 class="love">Fonte bing_bam_boum
+        </h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, autem iste nemo est laudantium
+            necessitatibus porro animi labore obcaecati vero eum possimus beatae omnis quasi inventore cum maxime
+            voluptate optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dignissimos similique eum
+            ipsa magni rem itaque dolorem repellendus quisquam, dolore, quis consectetur dolores vel quo magnam
+            perspiciatis. Voluptatem, deserunt quos.</p>
+
+        <h3 class="insane">Fonte insane_rodeo</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In suscipit, similique inventore beatae aliquam ad
+            soluta facilis unde vitae, dicta maiores dolorem, rerum sunt a optio eos nobis nihil voluptates. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Aliquid, expedita omnis! Placeat molestias, debitis natus vitae
+            sunt officiis eaque sequi animi iure dolorum iusto consequatur? Distinctio quae ea provident voluptas?</p>
+
+        <h3 class="tesla">Fonte tesla</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eius quaerat placeat eveniet, explicabo
+            inventore iusto quia vel repudiandae beatae facilis labore officia doloribus veritatis assumenda quisquam
+            neque, mollitia eos.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti expedita eum excepturi cumque amet
+            labore ut molestiae officia, inventore tempore dolores pariatur maiores iusto animi consequuntur? Error,
+            blanditiis aperiam!
+        </p>
+
+        <h3>Fonte Street Fight</h3>
+        <h3 class="fight">Fight</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis minus obcaecati ex ea odio delectus
+            amet ut deleniti dolores distinctio commodi blanditiis cumque, expedita nulla aspernatur velit soluta
+            labore. Ut.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores commodi eius doloribus, cupiditate iste
+            voluptatibus, voluptatem nihil dicta vero, qui alias fugit pariatur minus quo at! Eligendi qui nostrum
+            obcaecati.
+        </p>
+
+        <h3>Fonte maiores de idade</h3>
+        <h3 class="ways">Fonte 48ways</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus sapiente pariatur repellat possimus
+            modi vel non veniam voluptas, quibusdam magnam eveniet maxime ab, doloribus fuga laboriosam rem. Debitis,
+            eligendi ullam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores sapiente minima, quo
+            consectetur aperiam qui, delectus modi mollitia voluptate ab consequatur odit cumque laudantium corrupti
+            tempore nam porro blanditiis! Ipsum.</p>
+
+        <h2>Captura de fontes</h2>
+        <p>As fontes podem ser capturadas em páginas Web ou em imagens.</p>
+        <h3>Fontes de páginas Web</h3>
+        <p>Para capturar determinada fonte de uma página usamos a extensão do chrome <a
+                href="https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh?hl=pt-PT"><strong>fonts
+                    ninja</strong></a>.</p>
+        <h3>Fontes de imagem</h3>
+        <p>Para capturar as fontes em imagens usamos os sites <a href="https://www.whatfontis.com/ ">whatfontis</a>, <a
+                href="https://www.fontsquirrel.com/matcherator">fontsquirrel</a>, <a
+                href="https://www.myfonts.com/">myfonts</a></p>
+    
+       <h1 id="alinhamento">Alinhamento de textos</h1>
+        <p>O alinhamento do conteúdo da página é um aspecto importante para a legibilidade e aparência geral de uma
+            página da web. Em CSS podemos definir o alinhamento vertical e horizontal por meio de propriedades como
+            text-align, display e flexbox.</p>
+        <h2>Tex-align</h2>
+        <p>Essa tag permite alinhar o nosso texto para a esquerda, direita, para o meio(center). Podemos ainda aplicar o
+            text Indent que dá uma identação ao texto. </p>
+
+        
+        
+       
         <div class="menu">
             <a href="../../index.html"><img src="../../pagina_inicial/pagina-inicial_32.png" alt="Página incial"></a>
 
