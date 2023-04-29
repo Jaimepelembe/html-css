@@ -11,10 +11,447 @@
  <main>
     <div>
   <p>
+   <h1>Cores</h1> 
+    
 As cores são um elemento importante na nossa vida pois elas nos ajudam a compreender o mundo que nos rodeia, e são capazes de alterar os nossos comportamentos e sentimentos. Elas também são importantes para determinar a quantidade de tempo que um visitante vai ficar no nosso site e actuam como um poderoso
 critério de decisão. <br>
 Abaixo está uma lista de todos os tópicos a cerca de cores, clique neles para saber mais.
-<ol>
+
+indice
+<ul>
+  <li><a href="#representacao">Representação de cores</a></li>
+  <li><a href="#ciclo">O ciclo cromático</a></li>
+  <li><a href="#paleta">Paleta de cores</a></li>
+  <li><a href="#gradiente">Gradiente</a></li>
+  
+</ul>
+    <h1 id="representacao">Representação de cores</h1>
+    <p>Em CSS as cores podem ser representadas usando quatro padrões que são o Nome, HEX, RGB e HSL, continue a leitura
+        para saber
+        mais sobre esses padrões.</p>
+    <!--Representação por nomes-->
+    <h2 style="background-color:green; color:white">Representação pelo nome</h2>
+    <p>Usa-se o nome da cor para a representar, essa representação é limitada porque possui poucas opções de cores
+        disponiveis.</p>
+    <p><img src="imagens/representacao_cores/cor_nome.png" alt="Exemplo de cor pelo nome"> <br>
+        Fig 1: Cor representada pelo nome;
+
+    </p>
+
+    <p color: green>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis temporibus, ducimus sunt tempore
+        officia dolorem
+        reprehenderit ratione nobis nihil repudiandae cupiditate id fugit optio eveniet enim at perspiciatis iusto
+        dignissimos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut consequuntur consectetur voluptate magni porro
+        nihil dicta perferendis numquam optio ab doloribus eveniet nisi dolorum, excepturi laboriosam ex ipsum eius
+        aspernatur.
+    </p>
+    <!--Representação por códigos hexadecimal-->
+    <h2 style="background-color: #0000ff; color:#ffffff;">Representação hexadecimal</h2>
+    <p>Usa-se números hexadecimais com 6 digitos precedidos de <strong>#</strong> para representar a cor, os primeiros
+        dois digitos representam a cor
+        vermelha, os dois seguintes o verde e os ultimos dois o azul.
+        Podemos ainda adicionar a transparência na cor ficando assim com mais dois digitos, totalizando 8 digitos.
+        <br>Os valores hexadecimais variam de 00(mais escuro) até FF(mais claro);
+    </p>
+
+    <p><img src="imagens/representacao_cores/cor_hexadecimal.png" alt="Representação de cor pelo código hexadecimal sem transparência">
+        <br>Fig 2: Cor hexadecimal sem transparência;
+    </p>
+    <p><img src="imagens/representacao_cores/cor_hexadecimal_transparencia.png"
+            alt="Representação de cor pelo código hexadecimal com transparência">
+        <br>Fig 3:Cor hexadecimal com transparência;
+    </p>
+
+    <p style="color:purple
+    ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolorum ducimus obcaecati error aperiam quaerat
+        accusantium deserunt cupiditate, rem voluptas minus optio minima voluptatibus placeat pariatur! Perspiciatis
+        expedita sapiente sit? </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum labore corrupti perferendis hic quae vero
+        maxime tempore architecto recusandae deleniti culpa consequatur aperiam molestias voluptas veniam, autem iusto
+        magni illum?</p>
+
+
+    <!--Representação RGB-->
+    <h2 style="background-color: rgb(255, 85, 0); color:rgb(250, 250, 250)">Representação RGB</h2>
+    <p>
+        Esse padrão é baseado nas cores da luz, e é utilizado em todos os dispositivos electrónicos que tem uma tela
+        colorida, As cores primarias da representação são Vermelho(<strong>R</strong>ed),
+        verde(<strong>G</strong>een) e azul
+        (<strong>B</strong>lue). Os seus valores variam de 0 até 255.
+    </p>
+
+    <p><img src="imagens/representacao_cores/cor_rgb.png" alt="Representação de cores em rgb sem transparência"> <br>Fig 4: Cor RGB sem
+        transparência;</p>
+    <p><img src="imagens/representacao_cores/cor_rgb_transparencia.png" alt="Representação de cores em rgb com transparência"> <br>Fig 5:
+        Cor
+        RGB com
+        transparência;</p>
+
+    <p style="color:rgb(255,0,169)">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus neque, et
+        assumenda, omnis cupiditate porro
+        sint soluta ea ipsum molestiae fugit quos voluptatum minus, molestias at harum doloremque perspiciatis velit?
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem doloribus nesciunt excepturi,
+        consectetur iste eveniet odio quae, veritatis, nostrum molestiae totam minima? Doloribus cum accusamus commodi
+        in, quia harum similique.
+    </p>
+    <!--Representação HSL-->
+    <h2 style="background-color: hsl(200, 100%, 50%);color:hsl(0, 0%, 100%)">
+
+        Representação HSL
+    </h2>
+    <p>O padrão HSL é representado por Hue(tom), Saturation(saturação) e Lightness(luminosidade). O valor do tom é
+        medido em ângulos e expresso em graus, a saturação e a luminosidade são medidas em porcentagem. Esse padrão
+        é de facíl legibilidade para humanos.</p>
+    <p>
+        <img src="imagens/representacao_cores/cor_hsl.png" alt="Representação de cores em hsl">
+        <br>Fig 6: Cor
+        HSL sem
+        transparência
+    </p>
+    <p>
+        <img src="imagens/representacao_cores/cor_hsl_transparencia.png" alt="Representação de cores em hsl com transparência">
+        <br>
+        Fig 6: Cor
+        HSL com
+        transparência
+    </p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam molestiae exercitationem minima aperiam mollitia
+        nisi dolorum dolor maxime tenetur dolorem vitae consectetur, ullam eveniet, reprehenderit corrupti laudantium
+        quidem officia accusantium.
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ex, quam aliquam hic totam consequuntur et
+        necessitatibus pariatur praesentium maiores perspiciatis sint minus quo a porro consequatur! Molestiae,
+        asperiores facilis!
+    </p>
+    <h2>Exemplos de representação</h2>
+    <h3>Padrão HEX</h3>
+
+    <article style="background-color:#000000">
+        <p style="color:#FFB119">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, excepturi reiciendis
+            molestiae, labore assumenda
+            fuga dolor officia necessitatibus itaque eius quis deserunt nisi fugit maiores dicta. Omnis, ut
+            perspiciatis?
+        </p>
+        <p style="color:#AA00FF">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga necessitatibus, sequi
+            iusto
+            quas illo laudantium
+            esse iure incidunt optio veniam nihil neque odio enim illum perferendis iste alias! Ipsa, ut.
+        </p>
+        <p style="color:#FF00AA">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet magnam quis excepturi
+            sed,
+            nesciunt nostrum illum
+            esse possimus ab saepe facere? Perferendis repellat iure sequi, odio dolore voluptatem eius in.</p>
+        <p style="color:#c4c4c4;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, architecto illo
+            optio quisquam quae iure maxime incidunt est aperiam adipisci vitae quaerat neque tempore, omnis rem nemo
+            reprehenderit ut labore!</p>
+
+    </article>
+
+    <h3>Padrão RGB</h3>
+    <article style="background-color:#000000">
+        <p style="color:#00ff77;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, enim autem. In
+            earum
+            corrupti, nemo odio
+            maxime, ipsum praesentium quidem assumenda esse unde, delectus consectetur beatae iusto deleniti sed dolore!
+        </p>
+        <p style="color:#00ddff;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi inventore molestias
+            laudantium illum
+            blanditiis. Iusto ipsam distinctio blanditiis nostrum molestias, maxime nobis illum reiciendis placeat,
+            doloremque mollitia possimus, error non.</p>
+        <p style="color:#aa19ff;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat tempore natus
+            perferendis harum officiis. Veniam laborum, quo minima natus iusto repudiandae ad distinctio maxime, nisi
+            minus optio voluptatem saepe itaque?</p>
+        <p style="color:#ffae19;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia aspernatur iste
+            harum eius porro corrupti ea officiis labore sunt quod, iusto laboriosam ratione, minus nisi saepe eos fugit
+            eaque expedita.</p>
+    </article>
+
+    <h3>Padrão HSL</h3>
+    <article style="background-color:hsl(0, 0%, 0%);">
+        <p style="color:#fff700;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in
+            deserunt
+            similique quae tenetur unde
+            enim? Est laboriosam exercitationem repellendus molestias rem, adipisci ut labore, similique quo sint
+            veritatis aut?</p>
+
+        <p style="color:#72FF0D;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum deserunt,
+            dolore quae
+            accusamus qui a
+            aliquid velit libero vitae accusantium delectus eveniet officia ullam cupiditate. Velit sed ut fugit
+            exercitationem.</p>
+
+        <p style="color:hsl(200, 100%, 55%)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis aperiam,
+            illo ipsum
+            pariatur minus, sint enim labore ipsam, ratione provident dolore accusantium. Repellendus expedita amet
+            beatae rem similique? A, consequuntur?</p>
+
+
+        <p style="color:#F319FF;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolor illo
+            possimus
+            consectetur tempora
+            nesciunt, aperiam culpa recusandae labore repellendus praesentium expedita numquam adipisci, natus alias
+            deserunt commodi delectus nam!</p>
+        <fieldset></fieldset>
+    </article>
+
+  <h1 id="ciclo">O Ciclo cromático</h1>
+        <article>
+            <p>O ciclo cromático é uma representação visual de todas as cores existente. Toda a cor representada nele
+                possui
+                uma <strong>matiz</strong>, <strong>saturação</strong> e <strong>brilho</strong>; A matiz é a
+                representação
+                básica de determinada cor, saturação é a intensidade da cor e o brilho é a tonalidade dela.
+                <br>O objectivo do ciclo cromático é harmonizar as cores.
+            </p>
+        </article>
+        <h2>Classifição das cores</h2>
+        <p>O ciclo cromático básico possui 12 cores que são classificadas em primárias, secundárias e tercearias. </p>
+        <h3>Cores primárias</h3>
+        <p>São as cores básicas do ciclo, e são formadas pelo o amarelo, vermelho e azul; elas formam um triângulo
+            equilatero entre si.</p>
+        <p>
+            <picture>
+                <source media="(max-width: 570px)" srcset="imagens/cores_harmonia/primarias/cores_primarias_240.jpg"
+                    alt="Cores primarias" type="image/jpg">
+                <img src="imagens/cores_harmonia/primarias/cores_primarias_480.jpg" alt="Cores primarias">
+            </picture>
+
+        </p>
+
+        <h3>Cores secundárias</h3>
+        <p>São geradas pela junção das cores primárias; elas são o laranja,verde e violeta.</p>
+        <p>
+            <picture>
+                <source media="(max-width: 570px)" srcset="imagens/cores_harmonia/secundarias/cores_secundarias_240.jpg"
+                    type="image/jpg">
+                <img src="imagens/cores_harmonia/secundarias/cores_secundarias_480.jpg" alt="Cores secundárias">
+            </picture>
+        </p>
+        <h3>Cores tercearias</h3>
+        <p>
+            Surgem da junção das cores primárias com as secundárias; toda cor tercearia está entre uma cor primária e
+            uma
+            secundária. <br>A sua nomeação é feita pela junção do nome da cor primária com a secundária; essas cores
+            são o amarelo-alaranjado, vermelho-alaranjado, vermelho-arroxeado, azul-arroxeado, azul-esverdeado,
+            amarelo-esverdeado.
+        </p>
+        <p>
+            <picture>
+                <source media="(max-width: 570px)" srcset="imagens/cores_harmonia/tercearias/cores_tercearias_240.jpg"
+                    type="image/jpg">
+                <img src="imagens/cores_harmonia/tercearias/cores_tercearias_480.jpg" alt="Cores tercearias">
+            </picture>
+        </p>
+
+        <h2>Temperatura de cores</h2>
+        <p>O ciclo cromatico divide as cores pela temperatura em dois grupos que são frias e quentes, as cores frias são
+            ideias para representar contextos
+            de frio como o inverno, o natal, etc; enquanto que as cores quentes são mais usadas para representar
+            contextos
+            mais quentes como o verão, a praia, etc.</p>
+        <p>
+            <picture>
+                <source media="(max-width: 570px)" srcset="imagens/cores_harmonia/temperatura/temperatura_cores_240.jpg"
+                    type="image/jpg">
+                <img src="imagens/cores_harmonia/temperatura/temperatura_cores_480.jpg" alt="Temperatura de cores">
+            </picture>
+        </p>
+
+        <h2>Harmônia de cores</h2>
+        <p>Cores harmônicas são aquelas que combinam entre si, gerando um conforto visual.</p>
+        <h3>Classifição da harmônia</h3>
+        <h4>Cores complementares</h4>
+        <p> São aquelas que estão opostas entre si no ciclo cromático, e apresentam maior contranste; são usadas para
+            chamar
+            a
+            atenção.</p>
+        <p>
+            <picture>
+                <source media="(max-width: 570px)"
+                    srcset="imagens/cores_harmonia/complementares/cores_complementares_240.jpg" type="image/jpg">
+                <img src="imagens/cores_harmonia/complementares/cores_complementares_480.jpg"
+                    alt="Cores complementares">
+            </picture>
+        </p>
+
+        <h4>Cores análogas</h4>
+        <p>São aquelas que apresentam muita semelhança entre si, dando a sensação de que são a continuidade uma da
+            outra;
+            elas são vizinhas no ciclo.
+        </p>
+        <h5>Cores análogas e uma complementar</h5>
+        <p>
+            Nessa tecnica escolhe-se uma cor principal e seleciona-se a sua complementar e a sua análoga; essa
+            combinação
+            cria um
+            constraste grande.
+        </p>
+        <h5>Cores análogas relacionadas</h5>
+        <p>Nessa tecnica esolhe-se uma das cores vizinhas e depois salta-se uma cor para selecionar a seguinte; essa
+            combinação cria um
+            contraste menor.</p>
+
+        <p>
+            <picture>
+                <source media="(max-width: 570px)"
+                    srcset="imagens/cores_harmonia/analogas/cores_analogas_relacionadas_240.jpg" type="image/jpg">
+                <img src="imagens/cores_harmonia/analogas/cores_analogas_relacionadas_480.jpg" alt="Cores análogas">
+            </picture>
+        </p>
+        <h4>Cores intercaladas</h4>
+        <p>
+            Para criar esse tipo de combinação, escolhe-se a cor principal e salta-se uma, duas ou mais cores para
+            escolher
+            a
+            outra; os principais tipos de cores intercaladas são as triadicas, quadraticas e tetrádicas; </p>
+        <h5>Cores triadicas</h5>
+        <p> Escolhe-se a cor principal e salta-se de 3 em 3 cores para escolher a outra.</p>
+        <p>
+            <picture>
+                <source media="(max-width: 570px)" srcset="imagens/cores_harmonia/intercaladas/cores_triadicas_240.jpg"
+                    type="image/jpg">
+                <img src="imagens/cores_harmonia/intercaladas/cores_triadicas_480.jpg" alt="Cores triadicas">
+            </picture>
+        </p>
+
+
+        <h5>Cores quadraticas</h5>
+        <p> Escolhe-se a cor principal e salta-se de 2 em 2 cores para escolher a outra.</p>
+        <p>
+            <picture>
+                <source media="(max-width: 570px)"
+                    srcset="imagens/cores_harmonia/intercaladas/cores_intercaladas_240.jpg" type="image/jpg">
+                <img src="imagens/cores_harmonia/intercaladas/cores_intercaladas_480.jpg" alt="Cores triadicas">
+            </picture>
+        </p>
+
+        <h5>Cores tetrádicas</h5>
+        <p>
+            Escolhe-se a cor principal e a sua complemtar, depois escolhe-se outra cor e a sua complementar, as cores
+            escolhidas devem
+            formar uma rectângulo entre si.
+        </p>
+
+        <p>
+            <picture>
+                <source media="(max-width: 570px )"
+                    srcset="imagens/cores_harmonia/intercaladas/cores_tetradicas_240.jpg" type="image/jpg">
+                <img src="imagens/cores_harmonia/intercaladas/cores_tetradicas_480.jpg" alt="Cores tetrádicas">
+            </picture>
+        </p>
+        <h4>Cores monocromáticas</h4>
+        <p>Escolhe-se a cor principal e altera-se a sua saturação e luminosidade para gerar outras cores.
+        </p>
+
+        <p>
+            <picture>
+                <source media="(max-width: 570px)"
+                    srcset="imagens/cores_harmonia/monocromaticas/cores_monocromaticas_240.jpg" type="image/jpg">
+                <img src="imagens/cores_harmonia/monocromaticas/cores_monocromaticas_480.jpg"
+                    alt="Cores monocromáticas">
+            </picture>
+
+        </p>
+    
+        <h1 id="paleta">Paleta de cores</h1>
+        <p>É um conjunto de cores pré-selecionadas utilizadas de forma harmônica; ela vai ter de 3 a 5 cores,sem contar com
+            o preto e o branco.</p>
+        <h3>1. Passos para a criação</h3>
+        <ol type="I">
+            <li>Contexto
+                <p>As cores escolhidas devem transmitir a mensagem certa para isso deve-se fazer as seguintes perguntas:<br>
+                    Qual é a mensagem que quero passar?
+                    <br>
+                    Que cor passa melhor essa mensagem?
+                    <br>
+                    A cor principal pode ser escolhida através do conteúdo a ser criado ou da logo marca do cliente; ao
+                    selecionar a
+                    primeira opção deve se escolher o tom da cor que melhor combine com o conteúdo do site, pois esse deve
+                    ser lido com fundo branco e letra preta.
+                </p>
+    
+            </li>
+            <li>Combinação
+                <p>Neste passo deve-se escolher cores que combinem com a cor principal. Depois de ter todas as cores,
+                    selecione uma para ser a cor <strong>dominante(principal)</strong>, outra para ser a
+                    <strong>secundária</strong>
+                    e outra para ser de <strong>assento</strong>; a cor secundária e de assento devem constratar com a
+                    dominante.
+                    <b></b>
+                </p>
+            </li>
+            <li>Contribuição
+                <p>Cada cor escolhida deve desempenhar uma função no site, para garantir isso usamos a regra do design
+                    60-30-10
+                    que diz que uma cor deve ser utilizada para fundo(60%), outra para titulos,textos e elementos(30%) e a
+                    ultima para botões e chamadas de acção(10%).</p>
+    
+            </li>
+        </ol>
+    
+        <h3>2. Ferramentas para criação</h3>
+        <ul>
+            <li><a href="https://coolors.co/?home">Coolors</a></li>
+            <li><a href="https://color.adobe.com/pt/create">Adobe color</a></li>
+            <li><a href="http://www.colorexplorer.com/colormatch.aspx">Color explorer</a></li>
+            <li> <a href="https://maketintsandshades.com/">Tint and shades generator</a>
+            </li>
+            <li><a href="https://paletton.com">Paletton</a></li>
+    
+        </ul>
+    
+        <h2>Captura de cores na tela</h2>
+        <p>Para capturar determinada cor que aparece na nossa tela podemos utilizar duas tecnicas, a primeira é fazer um
+            print da tela e passar a imagem para o photoshop e a segunda e a melhor é utilizar a extensão do google chrome,
+            o <a href="https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp">Colorzila</a>
+        </p>
+<ol
+  
+      <h1 id="gradiente">Gradiente</h1>
+      <p>É a área onde duas ou mais cores são sobrepostas.
+        O gradiente pode ser aplicado no background, na borda ou no texto;
+      </p>
+      <h2>Aplicação no background</h2>
+      Para aplicar gradiente no background usa-se a tag
+      <strong>background-image:</strong>linear-gradient(direcção, cores, área(percentagem))
+      <br>
+      <p><img src="imagens/aplicacao_gradientes/codigo_gradiente_background_400.jpg"
+          alt="Código de gradiente para background">
+        <br>
+        fig.1: Código de gradiente para background;
+      </p>
+      <h3>Exemplo</h3>
+      <ul>
+        <li> <a href="gradientes_background.html">Gradiente no background</a>
+        </li>
+
+        <li><a href="exe_site_harmonico.html">Site hármonico</a></li>
+      </ul>
+
+      <h2>Aplicação no texto e na borda</h2>
+      Para usar o gradiente apenas no texto usa-se o comando <strong>background-clip:text</strong>, mas tem alguns
+      navegadores que podem não suportar o comando, para evitar isso usa-se o
+      <strong>-webkit-background-clip:text</strong>.
+
+      <p>
+        <img src="imagens/aplicacao_gradientes/codigo_gradiente_texto_400.jpg" alt="código de gradiente para texto">
+        <br>fig.2: código de gradiente para texto.
+        <br>
+        <img src="imagens/aplicacao_gradientes/codigo_gradiente_borda_400.jpg" alt="código de gradiente para borda">
+        <br>fig.3: código de gradiente para borda.
+
+      </p>
+      <h3>Exemplo</h3>
+      <ul>
+        <li><a href="gradiente_animado_pelembe.html">Gradiente animado_Pelembe</a></li>
+
+        <li><a href="gradiente_animado_css.html">Gradiente animado_Css</a></li>
+      </ul>
+  
+  
 <li><a href="">Psicologia das cores</a></li>
 
 <li>
@@ -28,6 +465,8 @@ Abaixo está uma lista de todos os tópicos a cerca de cores, clique neles para 
 </ol>
 
     </p></div>
+    
+    
 
     <a href="../../index.html"><img src="../../pagina_inicial/pagina-inicial_32.png" alt="página inicial"></a>
 
