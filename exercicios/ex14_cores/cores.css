@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+* {
+    /*height: 100%;*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-image: linear-gradient(to right, #9EF8EE, #22BABB);
+    background-attachment: fixed;
+}
+
+main {
+    background-color: white;
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px #3b999986;
+
+}
+
+
+.azul {
+    background-image: linear-gradient(180deg, #219EBC, #8ECAE6);
+width: auto;
+height:480px;
+}
+
+.cinza {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(180deg, #FB8500, #DF3B57);
+    width:auto;
+    height: 480px;
+    
+}
