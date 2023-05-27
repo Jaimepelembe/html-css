@@ -15,6 +15,25 @@ header {
 
 }
 
+nav {}
+
+nav>a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #E84653;
+    margin-right: 10px;
+}
+
+nav>p {
+    margin-bottom: 8px;
+
+}
+
+nav>a:hover {
+    text-decoration: underline;
+
+}
+
 main {
     background-color: white;
     margin: 20px;
@@ -55,15 +74,4 @@ h2 {
 
 h3 {
     color: #457B9D;
-}
-
-nav>a {
-    text-decoration: none;
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-nav>p {
-    margin-bottom: 8px;
-
 }
