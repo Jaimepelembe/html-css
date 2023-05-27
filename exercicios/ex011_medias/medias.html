@@ -180,13 +180,114 @@
                 <a href="audios/songbirds/songbirds.mp3">clique aqui para baixar o arquivo mp3</a>
             </p>
         </audio>
-        <br>
-        <a href="medias.html"><img src="../../pagina_inicial/btn-back.png" alt="voltar"></a>
+
+    <h1 >Vídeos</h1>
+    <p>Os videos são um recurso muito importante na internet pois conseguem estimular vários sentidos e captar a atenção
+        do usuario por muito tempo.
+        <br>Para inserir videos internos usamos a tag <strong>&lt;video&gt;</strong>;
+    </p>
+    <h2>Os principais parâmetros da tag video:</h2>
+    <p>
+    <ul>
+        <li><strong>width</strong>: indica o comprimento da janela do video;</li>
+        <li><strong>height</strong>: indica a altura da janela do video;</li>
+        <li><strong>poster</strong>: coloca uma imagem como a capa do video;</li>
+        <li><strong>controls</strong>: exibe o player do video;</li>
+        <li><strong>autoplay</strong>: reproduz o video automaticamente logo que a página é carregada;</li>
+    </ul>
+    </p>
+    <h2>Principais formatos de video:</h2>
+    <p>Os principais formatos de videos suportados pelos navegadores são:
+    <ul>
+        <li><strong>mp4</strong> e <strong>mp4v</strong></li>
+        <li><strong>webm</strong></li>
+        <li><strong>ogv (ogg)</strong></li>
+    </ul>
+    </p>
+    <h2>Hospedagem de videos</h2>
+    <p>Os videos podem ser hospedados internamente ou externamente.</p>
+
+    <h3>Hospedagem interna</h3>
+    <p>Os videos são mantidos no nosso servidor. <br> Esse tipo de hospedagem traz alguns problemas como muito consumo
+        de banda larga a carretando em custos adicinais, torna o site lento e pode ocorrer incompatibilidade com alguns
+        navegadores por causa do formato do video; para evitar problemas de incompatibilidade deve-se gerar vários
+        formatos do mesmo video.</p>
+    <h4>Exemplos</h4>
+
+    <p>Naruto</p>
+    <video controls preload="metadata" width="476" poster="videos/naruto/Poster de Naruto.jpg">
+        <source src="videos/naruto/Naruto_Boys.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo. <br><a
+                href="videos/naruto/Naruto_Boys.mp4">clique
+                aqui para baixar o vídeo.</a></p>
+    </video>
+    <br>
+
+    </video>
+    <br>
+    <p>Beautifull girl</p>
+    <video preload="metadata" controls width="476" height="400" poster="imagens/modelos_1280.jpg">
+        <source src="videos/beautifull_girl/Beautifull Girl mp4v.mp4" type="video/mp4">
+        <source src="videos/beautifull_girl/Beautifull Girl.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo. <br><a
+                href="videos/beautifull_girl/beautifull girl.mp4">clique aqui para baixar o vídeo.</a></p>
+    </video>
+    <br>
+    <p>Sports</p>
+    <video controls preload="metadata" width="476" poster="videos/sports/poster sports.jpg">
+        <source src="videos/sports/Sports mp4v.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo. <br><a href="videos/sports/sports.mp4">clique
+                aqui para baixar o vídeo.</a></p>
+    </video>
+
+    <h3>Hospedagem externa</h3>
+    <p>Os videos são mantidos em servidores externos. <br>
+        Esse tipo de hospedagem não consome a minha banda, os principais serviços de são o YouTube e
+        o vimeo</p>
+    <h4> hospedagem no YouTube:</h4>
+    <p>
+        Vantagens
+    <ul>
+        <li>Hospedagem grátis;</li>
+        <li>Servidores ultra rápidos;</li>
+    </ul>
+    Desvantagens
+    <ul>
+        <li>Todos podem ter acesso ao video</li>
+        <li>Os videos relacionados que são apresentados podem ser de um concorrente;</li>
+    </ul>
+    </p>
+
+    <h5>Exemplos</h5>
+    <p>Urbance</p>
+    <iframe width="476" height="315" src="https://www.youtube.com/embed/nrLdXY_lsy8" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    <br>
+
+    <h4>Hospedagem no Vimeo:</h4>
+    <p>Vantagens
+    <ul>
+        <li>Limita o acesso aos videos;</li>
+        <li>Os videos tem maior qualidade;</li>
+    </ul>
+    Desvantagens
+    <ul>
+        <li>É pago anualmente;</li>
+        <li>Os algoritmos não são muito eficientes;</li>
+    </ul>
+    </p>
+    <h5>Exemplos</h5>
+    <p>Wargroove cinematic</p>
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/312931432?h=2235780c4c" width="476" height="315"
+        frameborder="0" allowfullscreen></iframe>
 
 
 
         <div id="menu"> <a href="../../index.html"><img src="../../pagina_inicial/pagina-inicial_32.png"
                     alt="Simbolo de página inicial"></a></div>
+                  
 
     </main>
 </body>

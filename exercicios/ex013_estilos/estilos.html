@@ -6,14 +6,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../ex003/favicons/html_favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&display=swap');
+
+#p_interno{font-family:'Merienda';}
+
+</style>
+    
+    
     <title>Estilos</title>
 
 </head>
 
 <body>
-    <h1>Estilos</h1>
+    <main>
+     <h1 id="h1_principal">Estilos</h1>
     <p>CSS (Folha de Estilo em Cascata) é o código que você usa para dar estilo à sua página Web.Existem três tecnicas
-        para dar estilos a uma página web, elas são estilos inline, internal e external./p>
+        para dar estilos a uma página web, elas são estilos inline, internal e external./p> 
+      
+       <h1 style="color:#17BEBB;
+;" >Estilos inline</h1>
+    <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;text-align:justify;">São aqueles usados dentro de uma tag
+        <strong>html</strong>; <br>esse estilo não é muito usado porque polui o código e não permite fazer alterações simultânias em tags iguais;
+    </p>
+
+    <h2>Exemplo:</h2>
+   <h3>Aplicação</h3>
+    <p style="font-family: Bruno Ace SC, monospace; ">Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit.
+        Cumque voluptates quos quia, nam eum voluptatum
+        reprehenderit consectetur perspiciatis! Debitis quia itaque quos nostrum provident hic, tenetur blanditiis
+        deleniti aperiam vitae.
+        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem a molestias cumque doloremque alias fuga,
+        et voluptatem ipsam, aliquid amet, optio sint eos! Aliquid magni velit provident saepe odio illo.
+    </p>
+    
+    <h3>Sintaxe usada</h3>
+      
+        <h1 id="h1_interno">Estilos internos</h1>
+    <p>São aqueles usados fora das tags html; são aplicados atraves da tag <strong>&lt;styles&gt;</strong> que deve
+        estar localizada dentro do <strong>header</strong>;
+    </p>
+       <h2>Exemplo:</h2>
+   <h3>Aplicação</h3>
+    <p id="p_interno" >Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit.
+        Cumque voluptates quos quia, nam eum voluptatum
+        reprehenderit consectetur perspiciatis! Debitis quia itaque quos nostrum provident hic, tenetur blanditiis
+        deleniti aperiam vitae.
+        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem a molestias cumque doloremque alias fuga,
+        et voluptatem ipsam, aliquid amet, optio sint eos! Aliquid magni velit provident saepe odio illo.
+    </p>
+    
+    <h3>Sintaxe usada</h3>
+    
+     <h1 id="h1_externo">Estilos externos</h1>
+    <p>São aqueles usados fora do documento html, eles ficam em um arquivo css. Devem ser lincados a página para que possam ser usados.
+    </p>
+      
+            <h2>Exemplo:</h2>
+   <h3>Aplicação</h3>
+    <p id="p_externo">Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit.
+        Cumque voluptates quos quia, nam eum voluptatum
+        reprehenderit consectetur perspiciatis! Debitis quia itaque quos nostrum provident hic, tenetur blanditiis
+        deleniti aperiam vitae.
+        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem a molestias cumque doloremque alias fuga,
+        et voluptatem ipsam, aliquid amet, optio sint eos! Aliquid magni velit provident saepe odio illo.
+    </p>
+    
+     <div id="menu"> <a href="../../index.html"><img src="../../pagina_inicial/pagina-inicial_32.png"
+                    alt="Simbolo de página inicial"></a></div>
+                  
+      
+    </main>
+    
 </body>
 
 </html>
