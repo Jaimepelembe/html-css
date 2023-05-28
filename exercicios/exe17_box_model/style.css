@@ -13,6 +13,7 @@ header {
     width: auto;
     border-radius: 15px;
     margin-bottom: -45px;
+    text-align: center;
 
 }
 
@@ -107,4 +108,8 @@ li {
     margin-top: 10px;
     margin-bottom: 10px;
 
+}
+
+#menu {
+    text-align: center;
 }
