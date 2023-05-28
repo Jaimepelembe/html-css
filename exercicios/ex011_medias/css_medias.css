@@ -35,7 +35,18 @@ h4 {
     color: #073b4c;
 }
 
-p {}
+picture>img{
+    max-width: 100%;
+    height: auto;
+
+
+}
+picture>source {
+    max-width: 100%;
+    height: auto;
+
+}
+
 
 #menu {
     text-align: center;

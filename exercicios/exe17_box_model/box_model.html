@@ -22,8 +22,6 @@
     </header>
 
     <main>
-
-        <p></p>
         <h2 id="propriedades_caixas">Propriedades das caixas</h2>
         <p>Usando short hands, as propriedades devem ser aplicadas no sentido horario começando de
             cima(top->right->bottom->left).</p>
@@ -42,6 +40,7 @@
         <h3>Outline</h3>
         <p>Tracejado que fica fora do conteúdo</p>
 
+        <article></article>
         <h2 id="tipos_caixas">Tipos de caixas</h2>
         <h3>Box level</h3>
         <p>Inicia em uma nova linha e ocupa todo o espaço horizontal; o conteúdo que vem depois continua numa nova
@@ -49,9 +48,81 @@
         <h3>Inline level</h3>
         <p>Se inicia na mesma linha, só ocupa o espaço necessário para o conteúdo.</p>
 
-        <h2 id="agrupamento_tags">Agrupamento das tags</h2>
-        <p>Em html5 podemos agrupar as tags no header(cabeçalho), no main(conteúdo principal), no footer(rodapé),
-            nav(barras de navegação), section(secção), article(artigo), aside</p>
+        <article>
+            <h2 id="agrupamento_tags">Agrupamento das tags</h2>
+            <p>Em html5 podemos agrupar as tags no header(cabeçalho), no main(conteúdo principal), no footer(rodapé),
+                nav(barras de navegação), section(secção), article(artigo), aside</p>
+            <h3>Cabeçalho</h3>
+            <p>Normalmente uma grande faixa na parte superior com um grande título e/ou logotipo. É aí onde as
+                principais informações comuns sobre um site geramlente ficam.</p>
+            <br>
+            <h4>Exemplos</h4>
+            <ul>
+                <li>Amazon</li>
+                <picture>
+                    <source media="(max-width: 375px)" srcset="imagens/cabecalho/amazon_325.jpg" type="image/jpg">
+                    <source media="(max-width: 680px)" srcset="imagens/cabecalho/amazon_630.jpg" type="image/jpg">
+                    <img src="imagens/cabecalho/amazon_1260.jpg" alt="Amazon">
+                </picture>
+
+                <li>Disney</li>
+                <picture>
+                    <source media="(max-width: 375px)" srcset="imagens/cabecalho/disney_325.jpg" type="image/jpg">
+                    <source media="(max-width: 680px)" srcset="imagens/cabecalho/disney_630.jpg" type="image/jpg">
+                    <img src="imagens/cabecalho/disney_1260.jpg" alt="Disney">
+                </picture>
+
+                <li>Hostnet</li>
+                <picture>
+                    <source media="(max-width: 375px)" srcset="imagens/cabecalho/hostnet_325.jpg" type="image/jpg">
+                    <source media="(max-width: 680px)" srcset="imagens/cabecalho/hostnet_630.jpg" type="image/jpg">
+
+                    <img src="imagens/cabecalho/hostnet_1260.jpg" alt="Hostnet">
+                </picture>
+
+                <li>Hotmart</li>
+                <picture>
+                    <source media="(max-width: 375px)" srcset="imagens/cabecalho/hotmart_325.jpg" type="image/jpg">
+                    <source media="(max-width: 680px)" srcset="imagens/cabecalho/hotmart_630.jpg" type="image/jpg">
+                    <img src="imagens/cabecalho/hotmart_1260.jpg" alt="Hotmart">
+                </picture>
+
+            </ul>
+
+
+            <h3>Barra de navegação</h3>
+            <p>Possui links para as principais seções do site; geralmente representado por botões de menu, links ou
+                guias. <br>
+                Existem dois tipos de barras de navegação, as horizontais e as verticais.
+            </p>
+            <h4>Exemplos</h4>
+            <ul>
+                <li>Barra horizontal</li>
+                <picture>
+                    <source media="(max-width: 375px)" srcset="imagens/barra_navegacao/hotmart_325.jpg"
+                        type="image/jpg">
+                    <source media="(max-width: 680px)" srcset="imagens/barra_navegacao/hotmart_630.jpg"
+                        type="image/jpg">
+                    <img src="imagens/barra_navegacao/hotmart_1260.jpg" alt="Navegação do Hotmart">
+
+                </picture>
+
+                <li>Barra vertical</li>
+                <picture>
+                    <source media="(max-width: 115px)" srcset="imagens/barra_navegacao/barra_vertical_65.jpg"
+                        type="image/jpg">
+                    <source media="(max-width: 180px)" srcset="imagens/barra_navegacao/barra_vertical_130.jpg"
+                        type="image/jpg">
+                    <img src="imagens/barra_navegacao/barra_vertical_260.jpg" alt="Barra de navegação vertical">
+                </picture>
+
+            </ul>
+
+        </article>
+
+
+
+
     </main>
 
     <footer>
