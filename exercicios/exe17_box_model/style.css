@@ -7,13 +7,14 @@ body {
 }
 
 header {
-    background-color: white;
+    background-color: #326273;
     padding: 10px;
     margin: 20px;
     width: auto;
     border-radius: 15px;
-    margin-bottom: -45px;
+    margin-bottom: 0px;
     text-align: center;
+    box-shadow: 1px 1px 3px #234551;
 
 }
 
@@ -22,14 +23,11 @@ nav {}
 nav>a {
     text-decoration: none;
     font-weight: bold;
-    color: #E84653;
+    color: #D4B483;
     margin-right: 10px;
-}
-
-nav>p {
-    margin-bottom: 8px;
 
 }
+
 
 nav>a:hover {
     text-decoration: underline;
@@ -42,9 +40,6 @@ main {
     width: auto;
     padding: 20px 10px 10px 10px;
     border-radius: 15px;
-    box-shadow: 10px #345f79af;
-
-
 }
 
 footer {
@@ -52,11 +47,16 @@ footer {
     font-weight: lighter;
 
     background-color: #A8DADC;
-    margin: 20px;
-    padding: 10px;
+    margin: 1px;
+    padding: 5px;
     width: auto;
 
     border-radius: 25px;
+
+}
+
+footer>p {
+    margin: 0px;
 
 }
 
