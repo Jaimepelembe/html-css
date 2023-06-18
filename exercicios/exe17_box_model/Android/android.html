@@ -12,9 +12,7 @@
   <body>
     <header>
       <h1 id="h1_header">Curiosidades de Tecnologia</h1>
-      <p>
-       Venha explorar esse mundo incrível
-      </p>
+      <p>Venha explorar esse mundo incrível</p>
 
       <nav>
         <a href="">Home</a>
@@ -46,10 +44,16 @@
 
           <picture>
             <source
+              media="(max-width: 480px)"
+              srcset="imagens/dan-droids-ppq.png"
+              type="image/png"
+            />
+            <source
               media="(max-width: 880px)"
               srcset="imagens/dan-droids-pq.png"
               type="image/png"
             />
+
             <img src="imagens/dan-droids.png" alt="Logo do dan-droid" />
           </picture>
           <br />
@@ -65,6 +69,10 @@
           <br />
           <picture>
             <source
+              media="(max-width: 480px)"
+              srcset="imagens/irina-blok-ppq.jpg"
+              type="image/jpg" />
+            <source
               media="(max-width: 880px)"
               srcset="imagens/irina-blok-pq.jpg"
               type="image/jpg" />
@@ -78,7 +86,7 @@
           mascote do Android.
           <br />
           <picture
-            ><img src="imagens/bugdroid.png" alt="Mascote Bugdroid"
+            ><img src="imagens/bugdroid.png" alt="Mascote Bugdroid" id="img-pequena"
           /></picture>
           <br />
           A principal inspiração para os traços do novo Bugdroid veio daqueles
@@ -86,7 +94,7 @@
           cada porta. Conta a lenda que a artista estava criando em sua mesa no
           escritório do Google e olhou para o lado dos banheiros e a
           identificação foi imediata: simples, limpo, objetivo.
-  
+
           <!--Video da evolucao do android-->
           <iframe
             width="560"
@@ -96,23 +104,49 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
-           id="video_android"></iframe>
+            id="video_android"
+          ></iframe>
           <br />
         </p>
 
         <aside>
-          [EXTRA] Quer aprender mais? Outro assunto curioso em relação ao
-          Android é que cada versão sempre foi nomeada em homenagem a um doce,
-          em ordem alfabética a partir da versão 1.5 até a 9.0. 1.5 - Cupcake
-          1.6 - Donut 3.0 - Eclair 2.2 - Froyo 2.3 - Gingerbread 3.0 - Honeycomb
-          4.0 - Ice Cream Sandwich 4.1 - Jelly Bean 4.4 - KitKat 5.0 - Lolipop
-          6.0 - Marshmallow 7.0 - Nougat 8.0 - Oreo 9.0 - Pie Infelizmente, o
-          Android Q não existiu, pois o Google resolveu pôr fim a essa divertida
-          prática e começou a usar numerações, o que deu origem ao Android 10.
-          Acesse aqui o site Android History para conhecer a sequência das
-          versões "adocicadas" e o que cada uma trouxe para o sistema Android.
-          [/EXTRA] Então é isso! Espero que você tenha gostado do nosso artigo
-          com essa curiosidade sobre o sistema Android e seu simpático mascote.
+          [EXTRA]
+          <h1>Quer aprender mais?</h1>
+          <p>
+            Outro assunto curioso em relação ao Android é que cada versão sempre
+            foi nomeada em homenagem a um doce, em ordem alfabética a partir da
+            versão 1.5 até a 9.0.
+          </p>
+          <ul>
+            <li>1.5 - Cupcake</li>
+            <li>1.6 - Donut</li>
+            <li>2.0 - Eclair</li>
+            <li>2.2 - Froyo</li>
+            <li>2.3 - Gingerbread</li>
+
+            <li>3.0 - Honeycomb</li>
+            <li>4.0 - Ice Cream Sandwich</li>
+            <li>4.1 - Jelly Bean</li>
+            <li>4.4 - KitKat</li>
+            <li>5.0 - Lolipop</li>
+            <li>6.0 - Marshmallow</li>
+            <li>7.0 - Nougat</li>
+            <li>8.0 - Oreo</li>
+            <li>9.0 - Pie</li>
+          </ul>
+          Infelizmente, o<strong> Android Q</strong> não existiu, pois o Google
+          resolveu pôr fim a essa divertida prática e começou a usar numerações,
+          o que deu origem ao <strong>Android 10</strong>. <br />
+          Acesse aqui o site
+          <a
+            href="https://www.android.com/intl/pt-BR_br/what-is-android/"
+            target="_blank"
+            >Android</a
+          >
+          para conhecer a sequência das versões "adocicadas" e o que cada uma
+          trouxe para o sistema Android. [/EXTRA] Então é isso! Espero que você
+          tenha gostado do nosso artigo com essa curiosidade sobre o sistema
+          <strong>Android</strong> e seu simpático mascote.
         </aside>
       </article>
     </main>

@@ -5,21 +5,25 @@
 @font-face {
   font-family: "Android";
   src: url("fontes/idroid.otf") format("opentype");
-  font-weight: normal;
+  font-weight: normal; /*Peso da fonte*/
 }
+
 /*Configuracoes globais*/
 * {
   margin: 0px;
   padding: 0px;
 }
+
 :root {
   /*Declaracao de variaveis*/
+
   /*Cores*/
   --verde: #3ddc84; /*Principal*/
   --azul-escuro: #0b132b; /*Secundaria*/
-  --azul-claro: #a4bef3; /*Assento*/
+  --azul-claro: #a4bef368; /*Assento*/
   --azul-palido: #e3f2fd; /*Fundo*/
   --cinza: #686963; /*fundo*/
+  --red-imperial: #f71735;
 
   /*Fontes*/
   --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
@@ -28,23 +32,21 @@
 }
 
 body {
-  background-color: white;
+  background-color: var(--azul-claro);
   font-family: var(--font-padrao);
 }
 
 header {
+  color: white;
   background-color: var(--verde);
+  text-align: center;
 }
 
 header > h1 {
-  color: white;
   font-family: var(--fonte-destaque);
-  text-align: center;
 }
 
 header > p {
-  color: white;
-  text-align: center;
 }
 
 nav > a {
@@ -52,21 +54,27 @@ nav > a {
   text-decoration: none;
 }
 nav > a:hover {
-  color: var(--azul-escuro);
+  color: var(--red-imperial);
+  /*var(--azul-escuro);*/
   text-decoration: underline;
 }
 
 main {
-  background-color: white;
   text-align: justify;
-  margin: 0px auto;
-  padding: 0px 10px;
+  padding: 0px 20px;
+  min-width: 280px; /*Largura minima para telefones pequenos*/
+  max-width: 800px; /*Largura maxima para todos dispositivos*/
+  margin: auto;/*Centraliza conteudo*/
+  box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.11);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-bottom: 25px;
 }
 
 main h1,
 h2 {
   font-family: var(--fonte-android);
-  color: #3ddc85;
+  color: var(--verde);
   padding-top: 10px;
   padding-bottom: 5px;
 }
@@ -74,8 +82,19 @@ h2 {
 img {
   padding-top: 10px;
   padding-bottom: 5px;
+  display: block; /*Torna a imagem um bloco para poder centralizar*/
+  margin: auto;
+}
+
+#img-pequena {
+  width: 50%;
 }
 
 #video_android {
   padding-top: 15px;
+}
+
+aside > h1 {
+  font-family: var(--font-padrao);
+  color: black;
 }
