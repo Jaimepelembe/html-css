@@ -19,11 +19,13 @@
 
   /*Cores*/
   --verde: #3ddc84; /*Principal*/
+  --verde-escuro-20: #31b06a;
   --azul-escuro: #0b132b; /*Secundaria*/
   --azul-claro: #a4bef368; /*Assento*/
   --azul-palido: #e3f2fd; /*Fundo*/
   --cinza: #686963; /*fundo*/
   --red-imperial: #f71735;
+  --roxo: #2f2963;
 
   /*Fontes*/
   --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
@@ -40,32 +42,54 @@ header {
   color: white;
   background-color: var(--verde);
   text-align: center;
+  min-width: 150px;
+  padding-top: 30px;
 }
 
 header > h1 {
   font-family: var(--fonte-destaque);
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.218);
 }
 
 header > p {
+  font-family: var(--font-padrao);
+  font-size: 1.2em;
+  padding: 0px 10px 10px 5px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+  max-width: 430px; /*O paragrafo vira um bloco*/
+  margin: auto;
 }
 
+nav {
+  background-color: var(--verde-escuro-20);
+  height: 25px;
+  text-align: center;
+  padding-top: 5px;
+  box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.1);
+}
 nav > a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
+  padding-right: 10px;
 }
 nav > a:hover {
-  color: var(--red-imperial);
+  color: var(--roxo);
   /*var(--azul-escuro);*/
   text-decoration: underline;
+  transition: 0.5s;
 }
 
 main {
+  background-color: white;
   text-align: justify;
   padding: 0px 20px;
   min-width: 280px; /*Largura minima para telefones pequenos*/
   max-width: 800px; /*Largura maxima para todos dispositivos*/
-  margin: auto;/*Centraliza conteudo*/
-  box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.11);
+  margin: auto; /*Centraliza conteudo*/
+  box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.15);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   margin-bottom: 25px;
@@ -76,7 +100,28 @@ h2 {
   font-family: var(--fonte-android);
   color: var(--verde);
   padding-top: 10px;
-  padding-bottom: 5px;
+
+}
+
+main p {
+  margin: 15px 0px;
+  text-align: justify;
+  text-indent: 30px;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+main strong{
+color:var(--azul-escuro);
+}
+main a{
+text-decoration:none;
+}
+
+main a:hover{
+color:var(--verde);
+text-decoration:underline;
+
 }
 
 img {
@@ -87,7 +132,7 @@ img {
 }
 
 #img-pequena {
-  width: 50%;
+  max-width: 300px; /*Tamanho maximo da imagem;*/
 }
 
 #video_android {
@@ -98,3 +143,25 @@ aside > h1 {
   font-family: var(--font-padrao);
   color: black;
 }
+
+footer{
+  display:flex;
+  flex-direction: row;
+align-items: center;
+text-align:center;
+padding:0 10%;
+gap:10px;
+background-color:var(--roxo);
+margin:auto;
+}
+
+footer p {
+ color:white;
+ padding-top:10px;
+ font-weight:bold;
+
+}
+footer img{
+  max-width:19px;
+  background-color: var(--roxo);
+padding:auto;}
