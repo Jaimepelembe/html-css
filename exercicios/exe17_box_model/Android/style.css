@@ -18,15 +18,16 @@
   /*Declaracao de variaveis*/
 
   /*Cores*/
-  --verde: #3ddc84; /*Principal*/
-  --verde-escuro-20: #31b06a;
-  --azul-escuro: #0b132b;
-  --azul-claro: #a4bef368;
-  --azul-palido: #e3f2fd;
-  --cinza: #686963;
-  --cinza-escuro-30: #494a45;
-  --cinza-claro-80: #e1e1e0;
-  --red-imperial: #f71735;
+  --color-white: #fff;
+  --color-verde: #3ddc84; /*Principal*/
+  --color-verde-escuro-20: #31b06a;
+  --color-azul-escuro: #0b132b;
+  --color-azul-claro: #a4bef368;
+  --color-azul-palido: #e3f2fd;
+  --color-cinza: #686963;
+  --color-cinza-escuro-30: #494a45;
+  --color-cinza-claro-80: #e1e1e0;
+  --color-orange: #f98561;
 
   /*Fontes*/
   --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
@@ -35,21 +36,28 @@
 }
 
 body {
-  background-color: var(--azul-claro);
+  background-color: var(--color-azul-claro);
   font-family: var(--font-padrao);
 }
 
-header {
-  color: white;
-  background-color: var(--verde);
-  text-align: center;
-  min-width: 150px;
-  padding-top: 30px;
+header,
+nav {
+  display: flex;
 }
 
-header > h1 {
-  font-family: var(--fonte-destaque);
-  font-size: 3em;
+#header {
+  flex-direction: column;
+  color: var(--color-white);
+  background-color: var(--color-verde);
+  text-align: center;
+  min-width: 300px;
+  max-height: 220px;
+  padding-top: 20px;
+}
+
+#h1_header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 36px;
   margin-bottom: 10px;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.218);
 }
@@ -63,31 +71,69 @@ header > p {
   margin: auto;
 }
 
-nav {
-  background-color: var(--verde-escuro-20);
-  height: 25px;
+#navigation_header {
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  background-color: var(--color-verde-escuro-20);
   text-align: center;
-  padding-top: 5px;
+  padding-left: 20px;
   box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.1);
+  z-index:2;
 }
 nav > a {
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
   font-weight: bold;
-  padding-right: 10px;
 }
 nav > a:hover {
-  /*color: var(--red-imperial);
-  /*var(--azul-escuro);*/
   text-decoration: underline;
   transition: 0.5s;
-  padding:5px;
-  background-color: #f98561;
-  border-radius:6px;
+  padding: 5px;
+  background-color: var(--color-orange);
+  border-radius: 6px;
 }
 
+.btn-icon-header {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  border: none;
+  color: var(--color-azul-escuro);
+  cursor: pointer;
+  display: none;
+}
+
+/*Verifica o tamanho da tela para activar o sidebar*/
+@media screen and (max-width: 750px) {
+  .btn-icon-header {
+    display: block;
+  }
+  #navigation_header {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    height: 100%;
+    width: 160px;
+    padding: 16px;
+    animation-duration: 1s;
+    margin-left: -100vw; /*O culta o side bar*/
+  }
+}
+
+/*Movimenta o sidebar*/
+@keyframes showSidebar {
+  from {
+    margin-left: -100vw; /*Sidebar oculto*/
+  }
+  to {
+    margin-left: -1vw; /*Sidebar visivel*/
+  }
+}
+
+
 main {
-  background-color: white;
+  background-color: var(--color-white);
   text-align: justify;
   padding: 0px 20px;
   min-width: 280px; /*Largura minima para telefones pequenos*/
@@ -102,7 +148,7 @@ main {
 main h1,
 h2 {
   font-family: var(--fonte-android);
-  color: var(--verde);
+  color: var(--color-verde);
   padding-top: 10px;
 }
 
@@ -115,17 +161,15 @@ main p {
 }
 
 main strong {
-  color: var(--azul-escuro);
+  color: var(--color-azul-escuro);
 }
 main a {
   text-decoration: none;
 }
 
 main a:hover {
-  color: var(--verde);
+  color: var(--color-verde);
   text-decoration: underline;
-
-
 }
 
 img {
@@ -152,16 +196,16 @@ aside {
 }
 
 #article-aside {
-  background-color: var(--cinza-claro-80);
+  background-color: var(--color-cinza-claro-80);
   padding: 10px;
   border-radius: 10px;
 }
 
 #article-aside > h1 {
   font-family: var(--font-padrao);
-  color: white;
+  color: var(--color-white);
   padding: 10px;
-  background-color: var(--cinza-escuro-30);
+  background-color: var(--color-cinza-escuro-30);
   margin: -10px -10px 0px -10px;
 }
 
@@ -174,12 +218,12 @@ aside {
 footer {
   text-align: center;
   padding: 0 10%;
-  background-color: var(--verde-escuro-20);
+  background-color: var(--color-verde-escuro-20);
   margin: auto;
 }
 
 footer p {
-  color: white;
+  color: var(--color-white);
   padding-bottom: 20px;
   font-weight: bold;
 }

@@ -10,23 +10,53 @@
   </head>
 
   <body>
-    <header>
+    <header id="header">
+      <button class="btn-icon-header" class="sidebar" onclick="toggleSidebar()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </button>
       <h1 id="h1_header">Curiosidades de Tecnologia</h1>
       <p>
         Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único
         lugar
       </p>
 
-      <nav>
-        <a href="">Home</a>
-        <a href="">Notícias</a>
-        <a href="">Curiosidades</a>
-        <a href="">Conctato</a>
+      <nav id="navigation_header">
+        <button class="btn-icon-header" onclick="toggleSidebar()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            fill="currentColor"
+            class="bi bi-x"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </button>
+  
+        <a href="#">Home</a>
+        <a href="#">Notícias</a>
+        <a href="#">Curiosidades</a>
+        <a href="#">Conctato</a>
       </nav>
     </header>
 
     <main>
-      <article>
+      <article id="article_main" tabeindex="0" onclick="closeSidebar()">
         <h1>História do Mascote do Android</h1>
         <p>
           Provavelmente você sabe que o sistema operacional
@@ -118,7 +148,7 @@
       </article>
 
         <aside>
-          <article id="article-aside">
+          <article id="article-aside" class="content">
             <h1>Quer aprender mais?</h1>
             <p>
               Outro assunto curioso em relação ao Android é que cada versão sempre
@@ -163,7 +193,7 @@
    
     </main>
 
-    <footer>
+    <footer class="content">
       <div id="image-container">
         <a href="https://github.com/Jaimepelembe"
            target="_blank"><img src="imagens/github.png" alt="Github" class="zoomable-image"
@@ -185,4 +215,5 @@
       <p>Site desenvolvido por Pelembe, Jaime Fernando</p>
     </footer>
   </body>
+  <script src="javascript.js"></script>
 </html>

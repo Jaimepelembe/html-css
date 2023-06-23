@@ -45,20 +45,18 @@ nav {
 nav a {
   text-decoration: none;
   color: var(--color-purple);
- 
   font-weight: bold;
 }
 
-nav a:hover{
-background-color:var(--color-dark3);
-padding:8px;
-border-radius:10px;
-transition:0.4s;
-
-
+nav a:hover {
+  background-color: var(--color-dark3);
+  padding: 8px;
+  border-radius: 10px;
+  transition: 0.4s;
 }
 
 .btn-icon-header {
+
   background-color: transparent;
   border: none;
   color: var(--color-white);
@@ -103,10 +101,7 @@ article h1 {
   color: var(--color-white);
 }
 
-footer p{
- color:white;
-background-color:var(--color-dark2);
-
-
-
+footer p {
+  color: white;
+  background-color: var(--color-dark2);
 }
