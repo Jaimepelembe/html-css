@@ -72,6 +72,17 @@ picture > source {
   height: auto;
 }
 
+.video{
+display:block;
+margin: 1em auto;
+width:100%;
+height:cal(1.7822*100vw);
+max-width:202px;
+max-height:360px;
+
+}
+
+
 footer > p {
   text-align: center;
   font-weight: lighter;

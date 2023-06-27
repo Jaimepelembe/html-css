@@ -71,15 +71,18 @@ header > p {
   margin: auto;
 }
 
+/*Configuracoes gerais e para PC*/
 #navigation_header {
+  gap: 50px; /*Distancia entre os links do nav*/
+  font-size: 20px;
+  color: var(--color-white);
+  background-color: var(--color-verde-escuro-20);
   flex-direction: row;
   align-items: center;
-  gap: 50px;
-  background-color: var(--color-verde-escuro-20);
   text-align: center;
   padding-left: 20px;
   box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.1);
-  z-index:2;
+  z-index: 2;
 }
 nav > a {
   color: var(--color-white);
@@ -88,7 +91,7 @@ nav > a {
 }
 nav > a:hover {
   text-decoration: underline;
-  transition: 0.5s;
+  transition: 0.1s;
   padding: 5px;
   background-color: var(--color-orange);
   border-radius: 6px;
@@ -105,19 +108,22 @@ nav > a:hover {
 }
 
 /*Verifica o tamanho da tela para activar o sidebar*/
+/*Configurações do header para mobile*/
 @media screen and (max-width: 750px) {
   .btn-icon-header {
     display: block;
   }
   #navigation_header {
+    gap: 20px; /*Distancia entre os links do nav*/
+    font-size: 18px;
     position: absolute;
     flex-direction: column;
     top: 0;
     height: 100%;
     width: 160px;
     padding: 16px;
-    animation-duration: 1s;
-    margin-left: -100vw; /*O culta o side bar*/
+    animation-duration: 0.6s;
+    margin-left: -100vw; /*Oculta o side bar*/
   }
 }
 
@@ -130,7 +136,6 @@ nav > a:hover {
     margin-left: -1vw; /*Sidebar visivel*/
   }
 }
-
 
 main {
   background-color: var(--color-white);
@@ -150,6 +155,7 @@ h2 {
   font-family: var(--fonte-android);
   color: var(--color-verde);
   padding-top: 10px;
+  font-weight: normal;
 }
 
 main p {
@@ -182,9 +188,30 @@ img {
 #img-pequena {
   max-width: 300px; /*Tamanho maximo da imagem;*/
 }
+/*
+.video {
+  background-color: var(--color-orange);
+  margin: 0px -20px 30px;
+  padding: 20px;
+  padding-bottom: 60%;
+  position: relative;
+}*/
 
-#video_android {
-  padding-top: 15px;
+.video > iframe {
+  /*position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;*/
+  display: block;
+  margin: 1em auto;
+  width: 100%;
+  /*Use 0.5625 para videos de 16:9 e  0.75 para ecras 4:3. para econtrar essas fracoes divida altura pelo comprimento do video*/
+  height: calc(0.5625 * 100vw);
+  min-width: 256px;
+  min-height: 144px;
+  max-width: 1290px;
+  max-height: 1080px;
 }
 
 a.externo::after {
