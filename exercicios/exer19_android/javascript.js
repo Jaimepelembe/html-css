@@ -4,7 +4,7 @@ var content = document.getElementById("article_main");
 var showSidebar = false;
 
 function toggleSidebar() {
-  showSidebar = !showSidebar; /*Change the value of showSidevar*/
+  showSidebar = !showSidebar; /*Change the value of showSidebar*/
   if (showSidebar) {
     navigation_header.style.marginLeft = "-1vw"; /*Show the sidebar*/
     navigation_header.style.animationName = "showSidebar";

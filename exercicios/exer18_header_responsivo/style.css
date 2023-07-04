@@ -56,7 +56,6 @@ nav a:hover {
 }
 
 .btn-icon-header {
-
   background-color: transparent;
   border: none;
   color: var(--color-white);
@@ -75,11 +74,13 @@ nav a:hover {
     top: 0;
     background-color: var(--color-dark5);
     height: 100%;
-    width: 160px; /*estava em 35vw*/
+    width: 160px;
     padding: 16px;
     animation-duration: 1s;
     margin-left: -100vw;
   }
+
+  
 }
 /*Movimenta o sidebar*/
 @keyframes showSidebar {

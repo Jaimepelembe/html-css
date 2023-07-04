@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/*Fontes externas*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Makasar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  /*Variaveis*/
+  /*Fontes*/
+  --fonte-titulo: "Bebas Neue", sans-serif;
+  --fonte-conteudo: Verdana, Geneva, Tahoma, sans-serif;
+  --fonte-header: "Noto Serif Makasar", "Times New Roman", sans-serif;
+
+  /*Cores*/
+  --color-white: #fff;
+
+  --cor-laranja: #ec660d;
+  --cor-laranja-escuro-20: #bd520a;
+  --cor-laranja-escuro-30: #a54709;
+  --cor-laranja-escuro-50: #763307;
+  --cor-laranja-claro-20: #f0853d;
+  --cor-laranja-claro-30: #f29456;
+  --cor-laranja-claro-50: #f6b386;
+
+  --cor-preto-raisin: #272727;
+  --cor-preto-raisin-escuro-20: #1f1f1f;
+  --cor-preto-raisin-escuro-30: #1b1b1b;
+  --cor-preto-raisin-escuro-50: #141414;
+  --cor-preto-raisin-claro-20: #525252;
+  --cor-preto-raisin-claro-30: #686868;
+  --cor-preto-raisin-claro-50: #939393;
+
+  --cor-verde-toal: #36827f;
+  --cor-verde-toal-escuro-20: #2b6866;
+  --cor-verde-toal-escuro-30: #2b6866;
+  --cor-verde-toal-escuro-50: #1b4140;
+  --cor-verde-toal-claro-20: #5e9b99;
+  --cor-verde-toal-claro-30: #72a8a5;
+  --cor-verde-toal-claro-50: #9bc1bf;
+}
+
+body {
+  font-family: var(--fonte-conteudo);
+}
+
+header,
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#header {
+  justify-content: space-between;
+  min-height: 80px;
+  background-color: var(--cor-verde-toal);
+}
+
+#span_titulo_header {
+  font-family: var(--fonte-titulo);
+  font-size: 48px;
+  color: var(--cor-laranja-claro-20);
+  margin-left: 5%;
+  min-width: 140px;
+}
+
+#navigation_header {
+  gap: 32px; /*espaco entre os links*/
+  margin-right: 5%;
+  z-index: 2; /*Indica o nivel da camada do header*/
+}
+
+#navigation_header > a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+.link_nav:hover {
+  padding: 10px;
+  background-color: var(--cor-verde-toal-claro-30);
+  border-radius: 25px;
+  transition: 0.7s;
+}
+
+.btn_icon_header {
+  background-color: transparent;
+  border: none;
+  color: var(--cor-preto-raisin-escuro-50);
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  /*Mostrar os icones do Menu*/
+  .btn_icon_header {
+    display: block;
+  }
+
+  #navigation_header {
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    height: 100%;
+    width: 180px;
+    background-color: var(--cor-verde-toal-escuro-30);
+    animation-duration: 1s;
+    margin-left: -100vw;
+  }
+
+  /*Movimenta o sidebar*/
+  @keyframes showSidebar {
+    from {
+      margin-left: -100vw; /*Oculta o sidebar*/
+    }
+    to {
+      margin-left: 0vw;/*Mostra o sidebar*/
+    }
+  }
+
+  #span_titulo_header {
+    margin: auto;
+  }
+}
+
+main {
+  max-width: 800px;
+}
+
+#logo_saara {
+}
+
+.titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 32px;
+}
+
+main p {
+  margin: 15px 0px;
+  text-align: justify;
+  text-indent: 30px;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+/**/
+.imagem{display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+#div_img_passeio_camelo{
+  margin:20%;
+}

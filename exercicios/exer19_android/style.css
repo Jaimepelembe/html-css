@@ -47,9 +47,9 @@ nav {
 
 #header {
   flex-direction: column;
+  text-align: center;
   color: var(--color-white);
   background-color: var(--color-verde);
-  text-align: center;
   min-width: 300px;
   max-height: 220px;
   padding-top: 20px;

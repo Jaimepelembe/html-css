@@ -1,0 +1,30 @@
+.col {
+  flex-basis: 50%;
+}
+
+.card {
+  width: 40vw;
+  height: 45vw;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 15px 25px;
+  cursor: pointer;
+  margin-left: 5%;
+  margin: 0 1%;
+  background-repeat: no-repeat;
+}
+
+.card1 {
+  background-image: url(../exer20_deserto_saara/imagens/viagem_camelo/viagem_camelo2_mobile_450.jpg);
+}
+.card2 {
+  background-image: url(../exer20_deserto_saara/imagens/viagem_camelo/viagem_camelo3_mobile_424.jpg);
+}
+
+.card3 {
+  background-image:url(../exer20_deserto_saara/imagens/cidades/marrakech2_mobile_450.jpg);
+}
+.card4 {
+  background-image: url(../exer20_deserto_saara/imagens/cidades/ouargla_mobile_450.jpg);
+}

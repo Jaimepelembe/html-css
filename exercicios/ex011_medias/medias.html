@@ -6,29 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../ex003/favicons/html_favicon.ico" type="image/x-icon">
-    <title>Medias</title>
+    <title>Mídias</title>
+    <link rel="stylesheet" href="css_medias.css">
 </head>
-<link rel="stylesheet" href="css_medias.css">
 
 <body>
 <header id="header">
     <nav> <a href="#main" class="nav_link"><img src="imagens/play_32.png" alt="Icone home"></a> <a href="#imagem" class="nav_link">Imagens</a> <a href="#audio" class="nav_link">Áudio</a> <a href="#video" class="nav_link">Vídeo</a> </nav>
 </header>
 
-<main id="main">
-    <h1 id="principal">Mídias</h1>
-    <p>É muito importante possuir um site com responsividade pois isso melhora a experiência do usuario fazendo com
-        que
-        ele fique mais tempo no site. <br>
-        para ver a responsividade desse site
-        acesse o em vários dispositivos de tamanho de tela diferentes ou se estiver usando um computador
-        simplesmente
-        aumente e diminua o tamanho do seu
-        navegador.
-        <br> As principais medias trabalhadas na internet são a imagens, aúdio e video.
+<main>
+    <article id="article_introducao">
+        <h1 id="principal">Mídias</h1>
+        <p>É muito importante possuir um site com responsividade pois isso melhora a experiência do usuario fazendo com
+            que
+            ele fique mais tempo no site. <br>
+            para ver a responsividade desse site
+            acesse o em vários dispositivos de tamanho de tela diferentes ou se estiver usando um computador
+            simplesmente
+            aumente e diminua o tamanho do seu
+            navegador.
+            <br> As principais medias trabalhadas na internet são a imagens, aúdio e video.
+    </article>
 
-    <section id="imagem">
-   </article>
+    <article id="article_imagens">
         <h1>Imagens dinâmicas</h1>
     <p>Uma imagem dinâmica é aquela que se ajusta ao tamanho da tela.
         <br>
@@ -109,9 +110,9 @@
         <img src="imagens/modelos_1280.jpg" alt="Modelos">
     </picture>
     </p>
-</section>
+</article>
 
-    <section id="audio"><h1>Áudio</h1>
+    <article id="article_audio"><h1>Áudio</h1>
         <p>O áudio é um recurso muito importante para os sites pois ele pode ser usado para apresentar várias
             informações ao
             usuario como músicas, podcasts, hinos, etc. <br> O áudio utilizado para apresentação de um conteúdo no
@@ -186,10 +187,10 @@
                 <br>
                 <a href="audios/songbirds/songbirds.mp3">clique aqui para baixar o arquivo mp3</a>
             </p>
-        </audio> </section>
+        </audio> </article>
 
 
-<section id="video"><h1 >Vídeos</h1>
+<article id="article_video"><h1 >Vídeos</h1>
     <p>Os videos são um recurso muito importante na internet pois conseguem estimular vários sentidos e captar a atenção
         do usuario por muito tempo.
         <br>Para inserir videos internos usamos a tag <strong>&lt;video&gt;</strong>;
@@ -290,12 +291,7 @@
     <p>Wargroove cinematic</p>
     <iframe title="vimeo-player" src="https://player.vimeo.com/video/312931432?h=2235780c4c" width="476" height="315"
         frameborder="0" allowfullscreen></iframe>
-</section>
-
-
-    
-              
-
+</article>             
 </main>
 
 <footer>
@@ -305,6 +301,7 @@
     <p>Site desenvolvido por Pelembe, Jaime Fernando</p>
   
 </footer>
+
 </body>
 
 </html>
