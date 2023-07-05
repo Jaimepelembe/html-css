@@ -1,3 +1,76 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  max-width: 800px;
+  min-width: 280px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.674);
+}
+
+section {
+  margin: 10px 0px;
+}
+
+ul {
+  max-width: 800px;
+  margin: auto;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(242, 217, 185, 0.674);
+}
+li {
+  cursor: pointer;
+  padding: 10px 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.5s;
+}
+
+.imagem {
+  max-width: 128px;
+  max-height: 128px;
+}
+.li_personagens {
+  border: 2px solid black; /*Coloca uma borda nos li da classe li_personagem*/
+  border-radius: 15px;
+}
+
+.li_personagens:hover {
+  transform: translateY(-10px);
+}
+
+p {
+  margin: 15px 10px;
+}
+.li_paragrafo {
+  max-width: 128px;
+  margin: 0px 5px;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  ul {
+    flex-direction: column;
+  }
+  li {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
 .col {
   flex-basis: 50%;
 }
@@ -23,7 +96,7 @@
 }
 
 .card3 {
-  background-image:url(../exer20_deserto_saara/imagens/cidades/marrakech2_mobile_450.jpg);
+  background-image: url(../exer20_deserto_saara/imagens/cidades/marrakech2_mobile_450.jpg);
 }
 .card4 {
   background-image: url(../exer20_deserto_saara/imagens/cidades/ouargla_mobile_450.jpg);

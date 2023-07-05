@@ -63,9 +63,12 @@ nav {
 #span_titulo_header {
   font-family: var(--fonte-titulo);
   font-size: 48px;
-  color: var(--cor-laranja-claro-20);
   margin-left: 5%;
   min-width: 140px;
+}
+#a_header {
+  color: var(--color-white);
+  text-decoration: none;
 }
 
 #navigation_header {
@@ -112,48 +115,78 @@ nav {
     margin-left: -100vw;
   }
 
-  /*Movimenta o sidebar*/
-  @keyframes showSidebar {
-    from {
-      margin-left: -100vw; /*Oculta o sidebar*/
-    }
-    to {
-      margin-left: 0vw;/*Mostra o sidebar*/
-    }
-  }
-
   #span_titulo_header {
     margin: auto;
+  }
+
+  #a_header {
+    color: var(--color-white);
+    text-decoration: none;
+  }
+
+  .ul_imagens {
+    flex-direction: column;
+  }
+
+  .li_imagens {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/*Movimenta o sidebar*/
+@keyframes showSidebar {
+  from {
+    margin-left: -100vw; /*Oculta o sidebar*/
+  }
+  to {
+    margin-left: 0vw; /*Mostra o sidebar*/
   }
 }
 
 main {
   max-width: 800px;
-}
-
-#logo_saara {
-}
-
-.titulo {
-  font-family: var(--fonte-titulo);
-  font-size: 32px;
+  min-width: 260px;
+  margin: auto;
+  /*background-color: var(--cor-verde-toal-claro-50);*/
 }
 
 main p {
-  margin: 15px 0px;
-  text-align: justify;
-  text-indent: 30px;
+  margin: 10px 10px;
   font-size: 1em;
   line-height: 1.4em;
+  text-align: justify;
 }
 
-/**/
-.imagem{display:flex;
-align-items:center;
-justify-content:center;
-
+h1,
+h2,
+h3 {
+  margin: 10px 0px 10px 10px;
 }
 
-#div_img_passeio_camelo{
-  margin:20%;
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li {
+  max-width: 350px;
+  height: auto;
+}
+
+#img_tenda {
+  margin: auto;
+}
+.p_cidade,
+.p_prato {
+  text-align: center;
+  font-weight: bold;
 }

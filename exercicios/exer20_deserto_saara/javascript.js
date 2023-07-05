@@ -33,3 +33,4 @@ function fechar_sidebar_redimensionartela() {
 window.addEventListener("resize", function (event) {
  fechar_sidebar_redimensionartela();
  });
+

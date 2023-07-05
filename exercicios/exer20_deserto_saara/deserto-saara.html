@@ -28,7 +28,7 @@
           />
         </svg>
       </button>
-      <span id="span_titulo_header">O Saara</span>
+      <span id="span_titulo_header" ><a href="#" id="a_header">O Saara</a></span>
 
       <nav id="navigation_header">
         <button class="btn_icon_header" onclick="mudar_estado_sidebar()">
@@ -50,37 +50,169 @@
         <a href="#" class="link_nav">Sobre nós</a>
       </nav>
     </header>
+
     <main id="main" tabindex="0" onclick="fecharSidebar()">
-      <div id="div_logo_saara">
-        <img src="imagens/saara/saara3_background.jpg" alt="Deserto do Saara" />
-      </div>
-      <article>
-        <h1 class="h1_titulo">O Deserto do Saara</h1>
-        <p>
-          O Deserto do Saara é o deserto quente mais extenso do mundo,
-          localizado no norte da África. Ele oferece uma grande variedade de
-          actividades e serviços turísticos.
-        </p>
-<section id="section_actividades_servicos">
-<h2>Actividades e serviços</h2>
-<h3>Passeio de camelo</h3>
-<div id="div_img_passeio_camelo" class="imagem">
-  <picture>
-  <source media="(max-width: 820px)" srcset="imagens/viagem_camelo/viagem_camelo3_mobile_424.jpg" type="image/jpg">
-    <img src="imagens/viagem_camelo/viagem_camelo3_pc_800.jpg" alt="Passeio de camelo 1">
-  </picture>
+      <article id="article_principal">
+        <section id="section_apresentacao_saara">
+          <h1 class="h1_titulo">O Deserto do Saara</h1>
+          <p>
+            É o deserto quente mais extenso do mundo, localizado no norte da
+            África. Ele oferece uma grande variedade de actividades e serviços
+            turísticos.
+          </p>
+          <img
+            src="imagens/saara/saara3_background.jpg"
+            alt="Deserto do Saara"
+            id="img_logo_saara"
+          />
+        </section>
 
-<picture>
-<source media="(max-width: 820px)" srcset="imagens/viagem_camelo/viagem_camelo2_mobile_450.jpg" type="image/jpg">
-<img src="imagens/viagem_camelo/viagem_camelo2_pc_800.jpg" alt="Passeio de camelo 2">
+        <section id="section_actividades_servicos">
+          <h2>Actividades e serviços</h2>
+          <section id="section_passeio_camelo">
+            <h3>Passeio de camelo</h3>
+            <ul class="ul_imagens">
+              <li class="li_imagens">
+                <img
+                  src="imagens/viagem_camelo/viagem_camelo3_pc_800.jpg"
+                  alt="Passeio de camelo 2"
+                  class="img_passeio_camelo"
+                />
+              </li>
+              <li class="li_imagens">
+                <img
+                  src="imagens/viagem_camelo/viagem_camelo2_pc_800.jpg"
+                  alt="
+              Passeio de camelo 1"
+                  class="img_passeio_camelo"
+                />
+              </li>
+            </ul>
+            <p>
+              Venha desfrutar de uma aventura pelo deserto, enquanto admira as
+              paisagens espectaculares e testemunha o nascer e o pôr-do-sol.
+            </p>
+          </section>
 
-</picture>
+          <section id="section_Acampamento_tendas">
+            <h3>Acampamento em tendas berberes</h3>
+            <div id="img_tenda">
+              <img src="imagens/tenda/tenda2_pc_800.jpg" alt="Tenda Berbere" />
+            </div>
+            <p>
+              Desfrute de uma experiência autêntica em tendas tradicionais
+              berberes que possuem acomodações confortáveis, refeições
+              tradicionais, apresentações musicais e oportunidade de observar o
+              céu estrelado do deserto.
+            </p>
+          </section>
 
-</div>
+          <section id="section_oasis">
+            <h3>Oásis</h3>
+            <div id="img_oasis">
+              <img src="imagens/oasis/oasis3_pc_800.jpg" alt="Oasis" />
+            </div>
+            <p>
+              Venha conhecer os vários oásis do deserto, que são verdadeiros
+              refúgios e oferecem uma atmosfera mais verde, com palmeiras,
+              vegetação exuberante e fontes de água doce.
+            </p>
+          </section>
 
-</section>
+          <section id="section_dunas_areia">
+            <h3>Dunas de areia</h3>
+            <div id="img_dunas_areia">
+              <img src="imagens/saara/saara2_pc.jpg" alt="Dunas de areia" />
+            </div>
+            <p>
+              Venha ver de perto as imensas dunas de areia do deserto, que
+              proporcionam paisagens de tirar o fôlego, você poderá caminhar
+              pelas dunas, praticar sandboard (surfe na areia) ou simplesmente
+              apreciar a beleza do local.
+            </p>
+          </section>
+
+          <section id="cidades_historicas">
+            <h3>Cidades históricas</h3>
+            <p>Venha conhecer as cidades históricas do deserto.</p>
+            <ul class="ul_imagens">
+              <li class="li_imagens">
+                <p class="p_cidade">Marrakech</p>
+                <img
+                  src="imagens/cidades/marrakech2_pc_800.jpg"
+                  alt="Cidade de Marrakech"
+                />
+                <p class="p_descricao">
+                  Localizada no Marrocos, é uma cidade vibrante e colorida,
+                  conhecida por sua medina histórica, seus mercados movimentados
+                  e seus palácios encantadores.
+                </p>
+              </li>
+
+              <li class="li_imagens">
+                <p class="p_cidade">Ouargla</p>
+                <img
+                  src="imagens/cidades/ouargla_pc_800.jpg"
+                  alt="Cidade de Ourgla"
+                />
+                <p class="p_descricao">
+                  Localizada na Argélia, é uma cidade fascinante, com uma
+                  arquitectura tradicional e fortalezas (casbahs).
+                </p>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section id="section_cultura_população">
+          <h2>Cultura e população</h2>
+          <p>
+            A cultura e a população do Deserto do Saara são diversificadas e
+            enriquecedoras.
+          </p>
+
+          <section id="section_povos_nomades">
+            <h3>Povos nômades</h3>
+            <img
+              src="imagens/povo_cultura/nomade_pc_450.jpg"
+              alt="Povos nômades"
+            />
+            <p>
+              O Saara abriga várias populações nômades que têm uma profunda
+              conexão com o deserto. Os principais povos são Beabish, Maure,
+              Nefua, Bedúinos, Tuargues e Dierma.
+            </p>
+          </section>
+
+          <section id="sectin_culinaria">
+            <h3>Culinária</h3>
+            <p>
+              A culinária do deserto do Saara é influenciada pelas tradições e
+              recursos disponíveis na região, que é conhecida por seu clima
+              árido e escasso em alimentos frescos. Os pratos típicos reflectem
+              a adaptabilidade das comunidades que vivem nessas áreas remotas.
+              Alguns dos pratos mais conhecidos são:
+            </p>
+
+            <ul class="ul_imagens">
+              <li class="li_imagens">
+                <p class="p_prato">Harira</p>
+                <img src="imagens/povo_cultura/harira.jpg" alt="Harira" />
+              </li>
+              <li class="li_imagens">
+                <p class="p_prato">Tajine</p>
+                <img src="imagens/povo_cultura/tajine.jpg" alt="Tajine" />
+              </li>
+            </ul>
+          </section>
+
+          <section id="section_musica_danca">
+            <h3>Música e dança</h3>
+            <p>A música e a dança são elementos importantes da cultura do Saara. Os ritmos e melodias tradicionais refletem a vida no deserto, contando histórias de amor, heroísmo e vida nômade. Os tambores, instrumentos de cordas e flautas são comumente usados nas apresentações musicais, acompanhados de danças tradicionais que celebram a alegria e a comunidade.</p>
+          </section>
 
 
+        </section>
       </article>
     </main>
   </body>
