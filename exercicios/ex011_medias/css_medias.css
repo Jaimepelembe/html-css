@@ -66,6 +66,7 @@ h4 {
 picture > img {
   max-width: 100%;
   height: auto;
+  margin:auto;
 }
 picture > source {
   max-width: 100%;

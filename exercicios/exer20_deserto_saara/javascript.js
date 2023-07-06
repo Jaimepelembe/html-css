@@ -7,9 +7,13 @@ var mostrarSidebar = false;
 function mudar_estado_sidebar() {
   mostrarSidebar = !mostrarSidebar;
   if (mostrarSidebar) {
+    /*header.style.position="fixed";*/
+    navigation_header.style.position = "fixed";
+
     navigation_header.style.marginLeft = "0vw";
     navigation_header.style.animationName = "showSidebar";
     conteudo.style.filter = "blur(2px)"; /*Desfoca o conteudo principal*/
+    /*Tornar o menu lateral estatico */
   } else {
     navigation_header.style.marginLeft = "-100vw";
     navigation_header.style.animationName = "";
@@ -26,11 +30,15 @@ function fecharSidebar() {
 
 function fechar_sidebar_redimensionartela() {
   if (window.innerWidth > 750) {
+    navigation_header.style.position =
+      "relative"; /*o nav volta acupar a sua posicao original na tela*/
     fecharSidebar();
-  } 
+  } else {
+    navigation_header.style.position =
+      "fixed"; /*O nav ocupa um espaco fixo na tela */
+  }
 }
 
 window.addEventListener("resize", function (event) {
- fechar_sidebar_redimensionartela();
- });
-
+  fechar_sidebar_redimensionartela();
+});

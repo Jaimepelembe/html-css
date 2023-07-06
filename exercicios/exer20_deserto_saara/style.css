@@ -57,6 +57,12 @@ nav {
 #header {
   justify-content: space-between;
   min-height: 80px;
+
+  /*Fixar o header na página*/
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
   background-color: var(--cor-verde-toal);
 }
 
@@ -149,7 +155,6 @@ main {
   max-width: 800px;
   min-width: 260px;
   margin: auto;
-  /*background-color: var(--cor-verde-toal-claro-50);*/
 }
 
 main p {
@@ -159,10 +164,25 @@ main p {
   text-align: justify;
 }
 
+#section_actividades_servicos,
+#section_cultura_populacao {
+  padding-top: 100px;
+}
+
 h1,
 h2,
 h3 {
   margin: 10px 0px 10px 10px;
+}
+
+.h_titulo {
+  color: var(--cor-laranja);
+}
+#h1_saara {
+  margin-top: 140px;
+}
+h3 {
+  color: var(--cor-verde-toal);
 }
 
 img {
@@ -182,11 +202,55 @@ li {
   height: auto;
 }
 
-#img_tenda {
-  margin: auto;
-}
 .p_cidade,
 .p_prato {
   text-align: center;
   font-weight: bold;
+}
+
+footer {
+  min-height: 80px;
+  text-align: center;
+  padding: 0 10%;
+  padding-top: 20px;
+  background-color: var(--cor-verde-toal);
+}
+
+#ul_footer {
+  max-width: 300px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.footer_svg {
+  color: black;
+}
+
+.footer_svg:hover {
+  background-color: var(--cor-white);
+  color: var(--cor-laranja);
+  /*border-radius: 50%;
+  overflow: hidden; /*Garante que o svg seja cortado pelo raio do canto*/
+}
+
+footer p {
+  color: var(--color-white);
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+#a_github {
+  text-decoration: none;
+  color: var(--cor-laranja);
+}
+#a_github:hover {
+  text-decoration: underline;
+  color: var(--cor-preto-raisin-escuro-30);
+}
+
+.zoomable_svg {
+  transition: transform 0.3s ease; /*Adiciona transicao suave*/
+}
+.zoomable_svg:hover {
+  transform: scale(1.3); /*Aumenta o tamanho do svg*/
 }
