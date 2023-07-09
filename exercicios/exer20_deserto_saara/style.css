@@ -17,7 +17,7 @@
 
   /*Cores*/
   --color-white: #fff;
-
+  --color-white-flash: #eaebed;
   --cor-laranja: #ec660d;
   --cor-laranja-escuro-20: #bd520a;
   --cor-laranja-escuro-30: #a54709;
@@ -208,6 +208,26 @@ li {
   font-weight: bold;
 }
 
+#article_sobre_nos {
+  margin-top: 100px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  background-color: var(--color-white-flash);
+}
+
+#section_sobre_nos {
+  max-width: 800px;
+  margin: auto;
+  padding: 0px 10px;
+}
+
+.ul_valores_cultura {
+  min-width: 250px;
+  flex-direction: column;
+}
+.ul_valores_cultura li {
+  padding-left: 30px;
+}
 footer {
   min-height: 80px;
   text-align: center;
