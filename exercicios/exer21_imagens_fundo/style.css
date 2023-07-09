@@ -1,0 +1,42 @@
+.quadrado {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: rgba(128, 128, 128, 0.416);
+  margin: 0px 10px 10px 10px;
+  /* background-image:no-repeat;*/
+}
+
+#quadrado1 {
+  background-color: skyblue;
+}
+
+#quadrado2 {
+  background-image: linear-gradient(to right, yellow, red);
+}
+
+#quadrado3 {
+  background-image: url(imagens/pattern003.png);
+}
+
+#quadrado4 {
+  background-image: url(imagens/pattern001.png);
+}
+
+#quadrado5 {
+  background-image: url(imagens/pattern002.png);
+}
+
+#quadrado6 {
+  background-image: url(imagens/pattern004.png);
+}
+
+#div_imagem_fundo {
+  width: 100%;
+  height: 500px;
+  background-image: url("imagens/wallpaper002.jpg");
+  margin: auto;
+  margin: 0px 10px 50px 10px;
+}
