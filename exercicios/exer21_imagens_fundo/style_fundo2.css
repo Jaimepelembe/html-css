@@ -1,0 +1,24 @@
+body {
+  height:100vh;
+  background-color: cadetblue;
+  background-image: url("imagens/saara2_pc.jpg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  background-color: white;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+#article_principal {
+  padding: 10px;
+}
+
+#article_principal p {
+  padding: 10px;
+}
