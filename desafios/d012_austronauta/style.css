@@ -1,0 +1,35 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  position: relative;/*Posicionamento padrao*/
+  width: 100%;
+  height: 100vh;
+  background-image: url(imagens/espaco.jpg);
+  background-size: cover;
+  background-position:center center;
+  background-repeat: no-repeat;
+
+}
+
+article {
+  position: absolute;
+  background-image: url(imagens/astronauta.png);
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and ( max-width:750px) {
+  article {
+    width: 250px;
+    height: 250px;
+  }
+}

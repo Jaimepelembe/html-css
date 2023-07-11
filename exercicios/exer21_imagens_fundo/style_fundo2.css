@@ -1,24 +1,105 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --cor-azul: #219ebc;
+  --cor-laranja-claro-80: #fee7cc;
+  --cor-laranja: #fb8500;
+}
+
 body {
-  height:100vh;
-  background-color: cadetblue;
-  background-image: url("imagens/saara2_pc.jpg");
+  height: 100vh;
+  background-color: white;
+
   background-position: left top;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: scroll;
 }
 
 main {
   background-color: white;
-  max-width: 800px;
+
   margin: auto;
   margin-top: 20px;
   border-radius: 15px;
 }
 
 #article_principal {
-  padding: 10px;
 }
 
 #article_principal p {
   padding: 10px;
+}
+
+h1,
+h2 {
+  padding: 10px 0px;
+}
+.fundo {
+  padding: 20px;
+}
+
+#div_fundo1 {
+  margin: auto;
+  background-image: url(imagens/saara2_pc.jpg);
+  background-attachment: Fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#div_fundo2 {
+  /*Shorthand
+  color > image > position > repeat > [size] > attachment 
+  background: url(imagens/wallpaper001.jpg) center center no-repeat fixed;*/
+  background-image: url(imagens/wallpaper001.jpg);
+  background-attachment: fixed;
+  background-size: auto;
+}
+
+.section_geral {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#section1 {
+}
+
+#section2 {
+}
+
+.div_espacamento {
+  background-color: var(--cor-laranja-claro-80);
+  min-height: 200px;
+}
+
+/*Alinhamento vertical de caixas*/
+
+#container {
+  position: relative;
+  height: 400px;
+  padding-top: 40px;
+  background-image: url(imagens/target001.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: var(--cor-azul);
+}
+
+#conteudo {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%,-50%);
+  background-image: url(imagens/target001.png);
+  background-size: 100% 100%;
+  background-color: var(--cor-laranja);
 }
