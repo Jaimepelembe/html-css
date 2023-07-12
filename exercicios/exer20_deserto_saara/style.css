@@ -57,13 +57,13 @@ nav {
 #header {
   justify-content: space-between;
   min-height: 80px;
+  background-color: var(--cor-verde-toal);
 
   /*Fixar o header na página*/
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 1;
-  background-color: var(--cor-verde-toal);
 }
 
 #span_titulo_header {

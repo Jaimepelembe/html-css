@@ -1,6 +1,10 @@
+O CORDEL
+É uma literatura, onde pequenos folhetos com poemas são impresos e ficam presos em cordas para exibição.
+[Foto-cordel]
+Essa ideia surgiu em Portugal, mas também é muito utilizada no Brasil. Outra característica dos folhetos é ter escritas em formas de versos que geralmente são recitados de forma melodiosa, candenciada e acompanhados de uma música.
+
+
 Cordel Moderno
-Por Milton Duarte
-[SITE: https://www.recantodasletras.com.br/poesias/3186743]
 
 Estou ficando cansado
 Da tal tecnologia
@@ -11,7 +15,6 @@ Antes que eu caduque
 Vou dizer tudo em poesia.
 
 //---
-
 Não é mais como era antes
 É tudo abreviado
 "Você" só tem duas letras
@@ -19,7 +22,7 @@ O "O" e o "E" foi riscado
 Para declarar o amor
 Basta botar uma flor
 E um coração desenhado.
-
+[Foto_background_joaninha]
 //---
 
 Arroba agora não pesa
@@ -47,6 +50,7 @@ Só chegava no Verão
 Mas matava a saudade
 Era texto de verdade
 Nas linhas do coração.
+[Foto_background_carta]
 
 //---
 
@@ -65,3 +69,32 @@ Se quiser, faça esse teste
 Dois pontos são dois joelhos
 Seus lábios são aparelhos
 Deixe que Deus interprete.
+
+Por Milton Duarte
+Link:[ https://www.recantodasletras.com.br/poesias/3186743]
+
+
+Cordel Nunca foi sorte
+
+Não é sobre sorte...
+Quando tudo que era para dar errado, dá certo...
+Quando o que parecia estar tão longe, está bem perto...
+Quando o caminho, até então fechado, agora está aberto.
+
+//--
+Não é sobre sorte...
+Se chegamos até onde o sonho nos traz...
+Se as lágrimas já não existem mais...
+Se o que era desespero, agora é só paz.
+[Foto_background_crianca_sorrindo]
+//--
+
+//--
+Não!
+Nunca foi sorte!
+Sempre...foi...Deus!
+[Foto_background_crianca_agradecendo]
+//--
+
+por Milton Duarte.
+link:[https://www.recantodasletras.com.br/oracoes/7436421] 
