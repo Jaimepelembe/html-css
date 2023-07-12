@@ -135,6 +135,7 @@ nav {
 }
 
 #main {
+  margin: auto;
   margin-top: 100px;
   margin-bottom: 20px;
 }
@@ -142,7 +143,6 @@ h1,
 h2,
 h3 {
   padding: 10px;
-  max-width: 800px;
   font-family: var(--fonte-titulo);
 }
 h1 {
@@ -154,20 +154,64 @@ p {
   text-align: justify;
 }
 
-#section_introducao {
+#article_introducao {
+  max-width: 800px;
   padding-top: 90px;
 }
+
 .p_introducao {
-  max-width: 100vw;
+  font-family: var(--fonte-texto-inicial);
 }
+.p_cordel {
+  font-family: var(--fonte-conteudo);
+  font-size: 2.5vw;
+  padding: 10px;
+}
+.p_imagem_fundo {
+}
+
+article {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.div_cordel {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.imagem_fundo {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+#imagem_fundo_joaninha {
+  background-image: url(imagens/background0001.jpg);
+  background-attachment: fixed;
+}
+
+#estrofe2_cordel_moderno {
+  max-width: 400px;
+  max-height: 400px;
+  margin-left: 20px;
+  margin-top: 300px;
+  background-color: rgba(0, 0, 0, 0.401);
+  color: var(--cor-branco);
+}
+#estrofe2_cordel_moderno > p {
+}
+
 img {
-  max-width: 100vw;
+  max-width: 100%;
   height: auto;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+/*
 #img_cordel {
-}
+ 
+}*/
 
 footer {
   max-width: 100vw;
