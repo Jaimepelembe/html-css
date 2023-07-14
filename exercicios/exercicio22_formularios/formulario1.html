@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link
+      rel="shortcut icon"
+      href="../ex003/favicons/html_favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Meu primeiro formulário</h1>
+      <!--Formulario basico-->
+      <form method="post" autocomplete="off">
+        <p id="paragrafo_nome" class="paragrafo">
+          <label for="idnome">Nome:</label>
+          <input
+            type="text"
+            name="nome"
+            id="idnome"
+            class="entrada_dados paragrafo"
+            required
+            minlength="3"
+            maxlength="16"
+            size="16"
+            placeholder="Nome do BI"
+            autocomplete="username"
+          />
+        </p>
+        <p id="paragrafo_Sobrenome" class="paragrafo">
+          <label for="idsobrenome">Sobrenome:</label>
+          <input
+            type="text"
+            name="sobrenome"
+            id="idsobrenome"
+            class="entrada_dados"
+            required
+            minlength="4"
+            maxlength="10"
+            size="10"
+            autocomplete="family-name"
+          />
+        </p>
+        <p id="idade" class="paragrafo">
+          <label for="ididade">Idade:</label>
+          <input
+            type="text"
+            name="idade"
+            id="ididade"
+            class="entrada_dados"
+            required
+            minlength="1"
+            maxlength="3"
+            autocomplete="bday"
+          />
+        </p>
+        <p id="paragrafo_senha" class="paragrafo">
+          <label for="idsenha">Senha:</label>
+          <input
+            type="password"
+            name="Senha"
+            id="idsenha"
+            required
+            minlength="3"
+            maxlength="10"
+            size="10
+          "
+            class="entrada_dados"
+            placeholder="senha forte"
+            autocomplete="current-password"
+          />
+        </p>
+        <p id="submit" class="paragrafo">
+          <input
+            type="submit"
+            value="Enviar"
+            class="entrada_dados botao"
+            id="botao_envio"
+          />
+          <input
+            type="reset"
+            value="Limpar"
+            id="botao_limpar"
+            class="botao saida_dados"
+          />
+        </p>
+      </form>
+    </main>
+  </body>
+</html>

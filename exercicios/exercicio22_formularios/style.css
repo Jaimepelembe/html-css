@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+.paragrafo {
+  padding: 10px;
+}
+.entrada_dados,.saida_dados {
+  font-weight: normal;
+  padding: 4px;
+}
+
+.botao {
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#botao_envio {
+  background-color: rgba(0, 255, 255, 0.644);
+  margin-right:15px;
+}
+
+#botao_limpar {
+  background-color:rgba(255, 0, 0, 0.5);
+}
