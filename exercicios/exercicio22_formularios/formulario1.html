@@ -13,10 +13,10 @@
   </head>
   <body>
     <main>
-      <h1>Meu primeiro formulário</h1>
+      <h3>Dados pessoais</h3>
       <!--Formulario basico-->
-      <form method="post" autocomplete="off">
-        <p id="paragrafo_nome" class="paragrafo">
+      <form method="post" autocomplete="on">
+        <div id="nome" class="paragrafo">
           <label for="idnome">Nome:</label>
           <input
             type="text"
@@ -30,8 +30,9 @@
             placeholder="Nome do BI"
             autocomplete="username"
           />
-        </p>
-        <p id="paragrafo_Sobrenome" class="paragrafo">
+        </div>
+
+        <div id="Sobrenome" class="paragrafo">
           <label for="idsobrenome">Sobrenome:</label>
           <input
             type="text"
@@ -44,11 +45,12 @@
             size="10"
             autocomplete="family-name"
           />
-        </p>
-        <p id="idade" class="paragrafo">
+        </div>
+
+        <div id="idade" class="paragrafo">
           <label for="ididade">Idade:</label>
           <input
-            type="text"
+            type="number"
             name="idade"
             id="ididade"
             class="entrada_dados"
@@ -57,24 +59,76 @@
             maxlength="3"
             autocomplete="bday"
           />
-        </p>
-        <p id="paragrafo_senha" class="paragrafo">
+        </div>
+
+        <div id="peso" class="paragrafo">
+          <label for="idpeso">Peso:</label>
+          <input
+            type="number"
+            name="peso"
+            id="idpeso"
+            class="entrada_dados"
+            size="3"
+            min="20"
+            max="150"
+            step="0.01"
+            required
+          />
+        </div>
+
+        <div id="senha" class="paragrafo">
           <label for="idsenha">Senha:</label>
           <input
             type="password"
             name="Senha"
             id="idsenha"
-            required
             minlength="3"
             maxlength="10"
             size="10
           "
+            required
             class="entrada_dados"
             placeholder="senha forte"
             autocomplete="current-password"
           />
-        </p>
-        <p id="submit" class="paragrafo">
+        </div>
+
+        <div id="periodo_inscricao" class="paragrafo">
+          <label for="idinscricao">Periodo de inscrição:</label>
+          <input
+            type="month"
+            name="inscricao"
+            id="idinscricao"
+            class="entrada_dados"
+            value="2023-07"
+            required
+          />
+        </div>
+        <h3>Informações da prova</h3>
+        <div id="data_prova" class="paragrafo">
+          <label for="iddata">Data:</label
+          ><input
+            type="date"
+            name="data"
+            id="iddata"
+            required
+            value="2023-07-14"
+            class="entrada_dados"
+          />
+        </div>
+
+        <div id="hora_prova" class="paragrafo">
+          <label for="idhora">Hora:</label
+          ><input
+            type="time"
+            name="hora"
+            id="idhora"
+            class="entrada_dados"
+            required
+          />
+        </div>
+
+        <div id="saidas" class="paragrafo">
           <input
             type="submit"
             value="Enviar"
@@ -87,7 +141,7 @@
             id="botao_limpar"
             class="botao saida_dados"
           />
-        </p>
+        </div>
       </form>
     </main>
   </body>
