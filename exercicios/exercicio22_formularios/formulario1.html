@@ -13,120 +13,151 @@
   </head>
   <body>
     <main>
-      <h3>Dados pessoais</h3>
+      
       <!--Formulario basico-->
       <form method="post" autocomplete="on">
-        <div id="nome" class="paragrafo">
-          <label for="idnome">Nome:</label>
-          <input
-            type="text"
-            name="nome"
-            id="idnome"
-            class="entrada_dados paragrafo"
-            required
-            minlength="3"
-            maxlength="16"
-            size="16"
-            placeholder="Nome do BI"
-            autocomplete="username"
-          />
-        </div>
+        <fieldset>
+          <legend><h3>Dados pessoais</h3></legend>
+          <div id="nome" class="paragrafo">
+            <label for="idnome">Nome:</label>
+            <input
+              type="text"
+              name="nome"
+              id="idnome"
+              class="entrada_dados paragrafo"
+              required
+              minlength="3"
+              maxlength="16"
+              size="16"
+              placeholder="Nome do BI"
+              autocomplete="username"
+            />
+          </div>
+          <div id="Sobrenome" class="paragrafo">
+            <label for="idsobrenome">Sobrenome:</label>
+            <input
+              type="text"
+              name="sobrenome"
+              id="idsobrenome"
+              class="entrada_dados"
+              required
+              minlength="4"
+              maxlength="10"
+              size="10"
+              autocomplete="family-name"
+            />
+          </div>
+          <div id="telefone" class="paragrafo">
+            <label for="idtelefone">Telefone:</label>
+            <input
+              type="tel"
+              name="telefone"
+              id="idtelefone"
+              class="entrada_dados"
+              required
+              maxlength="9"
+              autocomplete="tel"
+              placeholder="8xxxxxxx"
+              pattern="^8\d{8}$"
+            />
+          </div>
+          <div id="email" class="paragrafo">
+            <label for="idemail">E-mail:</label
+            ><input
+              type="email"
+              name="email"
+              id="idemail"
+              class="entrada_dados"
+              required
+              autocomplete="email"
+              placeholder="...@gmail.com"
+            />
+          </div>
+          <div id="idade" class="paragrafo">
+            <label for="ididade">Idade:</label>
+            <input
+              type="number"
+              name="idade"
+              id="ididade"
+              class="entrada_dados"
+              required
+              min="16"
+              max="100"
+              size="3"
+              autocomplete="bday"
+            />
+          </div>
+          <div id="peso" class="paragrafo">
+            <label for="idpeso">Peso:</label>
+            <input
+              type="number"
+              name="peso"
+              id="idpeso"
+              class="entrada_dados"
+              size="3"
+              min="20"
+              max="150"
+              step="0.01"
+              required
+            />
+          </div>
+          <div id="senha" class="paragrafo">
+            <label for="idsenha">Senha:</label>
+            <input
+              type="password"
+              name="Senha"
+              id="idsenha"
+              minlength="3"
+              maxlength="10"
+              size="10
+            "
+              required
+              class="entrada_dados"
+              placeholder="senha forte"
+              autocomplete="current-password"
+            />
+          </div>
+        </fieldset>
 
-        <div id="Sobrenome" class="paragrafo">
-          <label for="idsobrenome">Sobrenome:</label>
-          <input
-            type="text"
-            name="sobrenome"
-            id="idsobrenome"
-            class="entrada_dados"
-            required
-            minlength="4"
-            maxlength="10"
-            size="10"
-            autocomplete="family-name"
-          />
-        </div>
 
-        <div id="idade" class="paragrafo">
-          <label for="ididade">Idade:</label>
-          <input
-            type="number"
-            name="idade"
-            id="ididade"
-            class="entrada_dados"
-            required
-            minlength="1"
-            maxlength="3"
-            autocomplete="bday"
-          />
-        </div>
+        <fieldset>
 
-        <div id="peso" class="paragrafo">
-          <label for="idpeso">Peso:</label>
-          <input
-            type="number"
-            name="peso"
-            id="idpeso"
-            class="entrada_dados"
-            size="3"
-            min="20"
-            max="150"
-            step="0.01"
-            required
-          />
-        </div>
-
-        <div id="senha" class="paragrafo">
-          <label for="idsenha">Senha:</label>
-          <input
-            type="password"
-            name="Senha"
-            id="idsenha"
-            minlength="3"
-            maxlength="10"
-            size="10
-          "
-            required
-            class="entrada_dados"
-            placeholder="senha forte"
-            autocomplete="current-password"
-          />
-        </div>
-
-        <div id="periodo_inscricao" class="paragrafo">
-          <label for="idinscricao">Periodo de inscrição:</label>
-          <input
-            type="month"
-            name="inscricao"
-            id="idinscricao"
-            class="entrada_dados"
-            value="2023-07"
-            required
-          />
-        </div>
-        <h3>Informações da prova</h3>
-        <div id="data_prova" class="paragrafo">
-          <label for="iddata">Data:</label
-          ><input
-            type="date"
-            name="data"
-            id="iddata"
-            required
-            value="2023-07-14"
-            class="entrada_dados"
-          />
-        </div>
-
-        <div id="hora_prova" class="paragrafo">
-          <label for="idhora">Hora:</label
-          ><input
-            type="time"
-            name="hora"
-            id="idhora"
-            class="entrada_dados"
-            required
-          />
-        </div>
+          <legend>
+            <h3>Informações da prova</h3>
+          </legend>
+          <div id="periodo_inscricao" class="paragrafo">
+            <label for="idinscricao">Periodo de inscrição:</label>
+            <input
+              type="month"
+              name="inscricao"
+              id="idinscricao"
+              class="entrada_dados"
+              value="2023-07"
+              required
+            />
+          </div>
+          <div id="data_prova" class="paragrafo">
+            <label for="iddata">Data:</label
+            ><input
+              type="date"
+              name="data"
+              id="iddata"
+              required
+              value="2023-07-14"
+              class="entrada_dados"
+            />
+          </div>
+          <div id="hora_prova" class="paragrafo">
+            <label for="idhora">Hora:</label
+            ><input
+              type="time"
+              name="hora"
+              id="idhora"
+              class="entrada_dados"
+              required
+            />
+          </div>
+        </fieldset>
 
         <div id="saidas" class="paragrafo">
           <input
