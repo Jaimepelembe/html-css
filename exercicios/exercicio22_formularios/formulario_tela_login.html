@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="style_tela_login.css" />
+  </head>
+  <body>
+    <div id="box_tela_login">
+      <form action="" autocomplete="on" id="formulario_login">
+        <h2 class="titulo">Login</h2>
+        <div id="div_nome" class="div_input">
+          <label for="idnome" class="label">Nome</label>
+          <input
+            type="text"
+            name="nome"
+            id="idnome"
+            class="input"
+            required
+            autocomplete="name"
+          />
+        </div>
+
+        <div id="div_senha" class="div_input">
+          <label for="idsenha" class="label">Senha</label>
+          <input
+            type="password"
+            name="senha"
+            id="idsenha"
+            class="input"
+            required
+          />
+        </div>
+        <div id="div_output">
+          <input
+            type="submit"
+            value="Enviar"
+            id="output_enviar"
+            class="output"
+          />
+
+          <input
+            type="reset"
+            value="Limpar"
+            id="output_limpar"
+            class="output"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="javascript.js"></script>
+</html>

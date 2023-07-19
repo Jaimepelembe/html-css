@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário 2</title>
+    <link
+      rel="shortcut icon"
+      href="../ex003/favicons/html_favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="box_formulario">
+      <form action="" method="post">
+        <div id="div_cor">
+          <label for="idcor">Cor</label>
+          <input
+            type="color"
+            name="cor"
+            id="idcor"
+            value="#00ff00"
+            oninput="idsaidacor.innerHTML=idcor.value"
+          />
+          <output name="saidacor" id="idsaidacor">#00fff00</output>
+        </div>
+        <div id="div_range">
+          <label for="idnivel_satisfacao">Nivel de satisfação</label>
+          <input
+            type="range"
+            name="nivel_satisfacao"
+            id="idnivel_satisfacao"
+            min="1"
+            max="10"
+            value="5"
+            oninput="idvalor.innerHTML=Number(idnivel_satisfacao.value)"
+          />
+          <output name="valor" id="idvalor">5</output>
+        </div>
+
+        <div id="div_file">
+          <label for="idficheiro">Ficheiro</label
+          ><input type="file" name="ficheiro" id="idficheiro" />
+        </div>
+
+        <div id="saidas" class="paragrafo">
+          <input
+            type="submit"
+            value="Enviar"
+            class="entrada_dados botao"
+            id="botao_envio"
+          />
+          <input
+            type="reset"
+            value="Limpar"
+            id="botao_limpar"
+            class="botao saida_dados"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

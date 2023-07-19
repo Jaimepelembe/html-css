@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de inscrição</title>
+    <link
+      rel="shortcut icon"
+      href="../../exercicios/ex003/favicons/html_favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <form action="" autocomplete="on" id="formulario">
+        <h2 id="h2_signin">Sign in</h2>
+
+        <div id="div_username" class="inputBox">
+          <input
+            type="text"
+            name="username"
+            id="idusername"
+            class="input"
+            required
+            autocomplete="name"
+          />
+          <label for="idusername" id="label_username" class="label">Username</label>
+        </div>
+
+        <div id="div_password" class="inpu tBox">
+          <input
+            type="password"
+            name="password"
+            id="idpassword"
+            class="input"
+            required
+            autocomplete="current-password"
+          />
+          <label for="idpassword" id="label_password" class="label" >Password</label>
+        </div>
+
+        <div class="links">
+          <a href="#">Forgot Password</a>
+          <a href="#">Signup</a>
+        </div>
+
+        <input type="submit" value="Login" id="input_submit" />
+      </form>
+    </div>
+  </body>
+</html>

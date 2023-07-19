@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário 3</title>
+    <link rel="stylesheet" href="style_tela_login.css">
+  </head>
+  <body>
+    <div id="box_tela_login">
+      <form action="" method="get">
+        <div id="div_select">
+          <label for="idselect">Estado</label
+          ><select name="provincia" id="idprovincia">
+            <optgroup label="Sul">
+              <option value="MP">Maputo</option>
+              <option value="IN">Inhambane</option>
+              <option value="GZ">Gaza</option>
+            </optgroup>
+            <optgroup label="Centro">
+             
+              <option value="BR">Beira</option>
+              <option value="SF">Sofala</option>
+<option value="T">Tete</option>
+
+<optgroup label="Norte">
+<option value="NP" selected>Nampula</option>
+<option value="NS">Niassa</option>
+<option value="CD">Cabo Delgado</option>
+</optgroup>
+
+</optgroup>
+          </select>
+        </div>
+
+        <div id="div_data_list"><label for="idprofissao">Profissão
+        </label><input type="text" name="profissao" id="idprofissao" list="lista_profissao">
+<datalist id="lista_profissao"><option >Administrador</option>
+<option >Contabilista</option>
+<option >Desenvolvedor</option>
+<option >Professor</option>
+</datalist>
+        </div>
+
+        <div id="div_tex_area"><label for="idmensagem">Mensagem</label> <br> <textarea name="mensagem" id="idmensagem" cols="30" rows="10"></textarea></div>
+
+        <div id="saidas" class="paragrafo">
+          <input
+            type="submit"
+            value="Enviar"
+            class="entrada_dados botao"
+            id="botao_envio"
+          />
+          <input
+            type="reset"
+            value="Limpar"
+            id="botao_limpar"
+            class="botao saida_dados"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

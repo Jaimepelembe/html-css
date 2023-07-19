@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/*Configuracoes gerais*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
