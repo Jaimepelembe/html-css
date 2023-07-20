@@ -7,29 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../ex003/favicons/html_favicon.ico" type="image/x-icon">
     <title>Mídias</title>
-    <link rel="stylesheet" href="css_medias.css">
+
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/tela.css" media="screen">
+<link rel="stylesheet" href="estilos/impresora.css" media="print">
+
 </head>
 
 <body>
 <header id="header">
-    <nav> <a href="#main" class="nav_link"><img src="imagens/play_32.png" alt="Icone home"></a> <a href="#imagem" class="nav_link">Imagens</a> <a href="#audio" class="nav_link">Áudio</a> <a href="#video" class="nav_link">Vídeo</a> </nav>
+    <nav> <ul id="ul_nav">
+        <li class="li_nav"><a href="#main" class="link_nav"><img src="imagens/play_32.png" alt="Icone home"></a></li>
+    
+         <li class="li_nav"><a href="#article_imagem" class="link_nav">Imagem</a></li> 
+          <li class="li_nav"><a href="#article_audio" class="link_nav">Áudio</a></li>
+         <li class="li_nav"><a href="#article_video" class="link_nav">Vídeo</a></li>
+    </ul> </nav>
 </header>
 
-<main>
+<main id="main">
     <article id="article_introducao">
         <h1 id="principal">Mídias</h1>
         <p>É muito importante possuir um site com responsividade pois isso melhora a experiência do usuario fazendo com
             que
             ele fique mais tempo no site. <br>
-            para ver a responsividade desse site
+            Para ver a responsividade desse site
             acesse o em vários dispositivos de tamanho de tela diferentes ou se estiver usando um computador
             simplesmente
             aumente e diminua o tamanho do seu
             navegador.
-            <br> As principais medias trabalhadas na internet são a imagens, aúdio e video.
+            <br> As principais medias trabalhadas na internet são imagens, aúdio e video.
     </article>
 
-    <article id="article_imagens">
+    <article id="article_imagem">
         <h1>Imagens dinâmicas</h1>
     <p>Uma imagem dinâmica é aquela que se ajusta ao tamanho da tela.
         <br>
@@ -54,12 +64,7 @@
     </ul>
 
     <h3>Exemplo de sintaxe</h3>
-    <picture>
-        <source media="(max-width: 400px )" srcset="imagens/tag_picture_190.PNG" type="image/png">
-        <source media="(max-width: 815px)" srcset="imagens/tag_picture_380.PNG" type="image/png">
-
         <img src="imagens/tag_picture.PNG" alt="Tag picture">
-    </picture>
     <h2>Principais tamanhos de imagem</h2>
     <p>Os principais tamanhos de imagens usados para web são:
     <ul>
@@ -91,22 +96,19 @@
     <p> <strong>Paisagem</strong></p>
 
     <picture>
-        <source media="(max-width: 898px)" srcset="imagens/paisagem_458x915.jpg" type="image/jpg">
-        <source media="(max-width: 1330px)" srcset="imagens/paisagem_848.jpg" type="image/jpg">
+        <source media="(max-width: 898px)" srcset="imagens/paisagem_720.jpg" type="image/jpg">
         <img src="imagens/paisagem_1280.jpg" alt="Imagem grande">
     </picture>
 
     <p> <strong>Carro</strong></p>
     <picture>
-        <source media="(max-width: 898px)" srcset="imagens/toyota_400x720.jpg" type="image/jpg">
-        <source media="(max-width: 1330px)" srcset="imagens/toyota_848.jpg" type="image/jpg">
+        <source media="(max-width: 898px)" srcset="imagens/toyota_720.jpg" type="image/jpg">
         <img src="imagens/toyota_1280.jpg" alt="Toyota">
     </picture>
 
     <p><strong>Modelos</strong></p>
     <picture>
-        <source media="(max-width: 898px)" srcset="imagens/modelos_915.jpg" type="image/jpg">
-        <source media="(max-width: 1330px)" srcset="imagens/modelos_848.jpg" type="image/jpg">
+        <source media="(max-width: 898px)" srcset="imagens/modelos_720.jpg" type="image/jpg">
         <img src="imagens/modelos_1280.jpg" alt="Modelos">
     </picture>
     </p>

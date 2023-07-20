@@ -1,0 +1,35 @@
+:root {
+  --cor-background-header: #f0426b;
+  --cor-titulo: #fde74c;
+  --cor-branco: #fff;
+}
+header {
+  margin: auto;
+  padding-top: 15px;
+  /*Fixar header na página*/
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  background-color: var(--cor-background-header);
+}
+
+#ul_nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.li_nav {
+  padding: 20px;
+}
+
+.link_nav {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--cor-branco);
+}
+
+.link_nav:hover {
+  text-decoration: underline;
+  color: var(--cor-titulo);
+}

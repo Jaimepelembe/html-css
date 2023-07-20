@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/*Configuracoes gerais*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  padding-top: 100px;
+  background-color: #f8f7f9;
+}
+
+
+section {
+  padding-top: 45px;
+}
+#principal {
+  
+  color: #ff9505;
+  text-align: center;
+}
+h1,h2,h3,h4{padding:10px 0px;
+
+}
+
+h1 {
+  color: #ef476f;
+}
+
+h2 {
+  color: #06d6a0;
+}
+
+h3 {
+  color: #118ab2;
+}
+
+h4 {
+  color: #073b4c;
+}
+
+picture > img {
+  max-width: 100%;
+  height: auto;
+  margin:auto;
+  padding:20px;
+}
+picture > source {
+  max-width: 100%;
+  height: auto;
+}

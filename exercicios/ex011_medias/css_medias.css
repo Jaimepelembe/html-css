@@ -1,77 +1,9 @@
-header {
-  background-color: #f0426b;
-  margin: auto;
-  padding-top: 10px;
-  text-align: center;
-  /*Fixar header na página*/
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-}
 
-nav {
-  height: 45px;
-  width: auto;
-}
-nav > a {
-  margin-right: 30px;
-  text-decoration: none;
-  color: white;
-  font-style: bold;
-}
-/*Nav da classe link*/
-.nav_link:hover {
-  text-decoration: underline;
-  color: #fde74c;
-}
 
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: justify;
-  background-color: #f8f7f9;
-  /*background-image: linear-gradient(#06d6a0, #073b4c);*/
-}
 
-main {
-  background-color: #f8f7f9;
-  width: auto;
-  padding-top: 60px;
-  margin: auto;
-}
-section {
-  padding-top: 45px;
-}
-#principal {
-  color: #ff9505;
-  text-align: center;
-}
 
-h1 {
-  color: #ef476f;
-}
 
-h2 {
-  color: #06d6a0;
-}
 
-h3 {
-  color: #118ab2;
-}
-
-h4 {
-  color: #073b4c;
-}
-
-picture > img {
-  max-width: 100%;
-  height: auto;
-  margin:auto;
-}
-picture > source {
-  max-width: 100%;
-  height: auto;
-}
 
 .video{
 display:block;
