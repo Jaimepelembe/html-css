@@ -9,16 +9,47 @@
     <title>Mídias</title>
 
     <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/tela.css" media="screen">
 <link rel="stylesheet" href="estilos/impresora.css" media="print">
 
 </head>
 
 <body>
 <header id="header">
-    <nav> <ul id="ul_nav">
-        <li class="li_nav"><a href="#main" class="link_nav"><img src="imagens/play_32.png" alt="Icone home"></a></li>
-    
+
+    <button class="btn_icon_header" class="sidebar" onclick="toggleSidebar()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </button>
+
+    <a href="#main" id="link_home" class="link_nav"><img src="imagens/play_32.png" alt="Icone home"></a>
+    <nav> 
+        <button class="btn_icon_header" onclick="mudar_estado_sidebar()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="35"
+              fill="currentColor"
+              class="bi bi-x"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+        
+        <ul id="ul_nav">  
          <li class="li_nav"><a href="#article_imagem" class="link_nav">Imagem</a></li> 
           <li class="li_nav"><a href="#article_audio" class="link_nav">Áudio</a></li>
          <li class="li_nav"><a href="#article_video" class="link_nav">Vídeo</a></li>
@@ -27,16 +58,10 @@
 
 <main id="main">
     <article id="article_introducao">
-        <h1 id="principal">Mídias</h1>
+        <h1 id="titulo_principal">Mídias</h1>
         <p>É muito importante possuir um site com responsividade pois isso melhora a experiência do usuario fazendo com
             que
-            ele fique mais tempo no site. <br>
-            Para ver a responsividade desse site
-            acesse o em vários dispositivos de tamanho de tela diferentes ou se estiver usando um computador
-            simplesmente
-            aumente e diminua o tamanho do seu
-            navegador.
-            <br> As principais medias trabalhadas na internet são imagens, aúdio e video.
+            ele fique mais tempo no site. As principais mídias trabalhadas na internet são imagens, aúdio e video.</p>
     </article>
 
     <article id="article_imagem">
@@ -115,10 +140,9 @@
 </article>
 
     <article id="article_audio"><h1>Áudio</h1>
-        <p>O áudio é um recurso muito importante para os sites pois ele pode ser usado para apresentar várias
+        <p>O áudio é um recurso muito importante pois pode ser usado para apresentar várias
             informações ao
-            usuario como músicas, podcasts, hinos, etc. <br> O áudio utilizado para apresentação de um conteúdo no
-            site deve ser de baixa qualidade para evitar arquivos muito grandes.
+            usuario como músicas, podcasts, hinos, etc. <br> O áudio utilizado para apresentação de conteúdo deve ser de baixa qualidade para evitar arquivos muito grandes.
             <br>
             Para inserir áudio usamos a tag <strong>&lt;audio&gt;</strong> que é um contetor de áudios;
         </p>
@@ -126,12 +150,13 @@
         <h2>Os principais parâmetros da tag <mark>audio</mark> são:</h2>
         <ul>
             <li><strong>Preload</strong>: indica se o áudio será pre-carregado ou não;
-                <br> os valores desse parâmetro são: <ul>
+                 os valores desse parâmetro são: 
+            </li>
+                <ul>
                     <li><strong>metadata</strong> - carrega as informações do arquivo;</li>
                     <li><strong>none</strong> - não carrega nenhuma informação do arquivo;</li>
                     <li><strong>auto(padrão)</strong> - carrega todo o arquivo;</li>
                 </ul>
-            </li>
             <li><strong>controls</strong>: apresenta o player na tela;</li>
             <li><strong>autoplay</strong>: toca o áudio automaticamente logo que a página é carregada;</li>
             <li><strong>loop</strong>: repete o áudio infinitamente;</li>
@@ -154,16 +179,13 @@
     
         <h3>Exemplos</h3>
         <h4>Sintaxe</h4>
-        <picture>
-            <source media="(max-width: 253px)" srcset="imagens/tag_audio_203.PNG" type="image/png">
-            <source media="(max-width: 457px)" srcset="imagens/tag_audio_407.PNG" type="image/png">
             <img src="imagens/tag_audio.PNG" alt="Tag audio">
-        </picture>
+
         <p>Naruto</p>
         <audio preload="metadata" controls loop>
             <source src="audios/naruto/Naruto_Shippuden_Opening7_Toumei_Datta_Sekai.mp3" type="audio/mpeg">
             <source src="audios/naruto/Naruto_Shippuden_Opening7_Toumei_Datta_Sekai.ogg" type="audio/ogg">
-            <p>Infelizmente o seu navegador não consegue reproduzir áudio. <br>
+            <p>Infelizmente o seu navegador não consegue reproduzir o áudio. <br>
                 <a href="audios/naruto/Naruto_Shippuden_Opening7_Toumei_Datta_Sekai.mp3">clique aqui para baixar o
                     arquivo
                     mp3</a>
@@ -174,7 +196,7 @@
         <audio preload="metadata" controls loop>
             <source src="audios/boxcat/boxcatgames.mp3" type="audio/mpeg">
             <source src="audios/boxcat/boxcatgames.ogg" type="audio/ogg">
-            <p>Infelizmente o seu navegador não consegue reproduzir áudio. <br>
+            <p>Infelizmente o seu navegador não consegue reproduzir o áudio. <br>
                 <a href="audios/boxcat/boxcatgames.mp3">clique aqui para baixar o arquivo mp3</a>
             </p>
         </audio>
@@ -185,7 +207,7 @@
             <source src="audios/songbirds/songbirds.mp3" type="audio/mpeg">
             <source src="audios/songbirds/songbirds.ogg" type="audio/ogg">
             <source src="audios/songbirds/songbirds.wav" type="audio/wav">
-            <p>Infelizmente o seu navegador não consegue reproduzir áudio.
+            <p>Infelizmente o seu navegador não consegue reproduzir o áudio.
                 <br>
                 <a href="audios/songbirds/songbirds.mp3">clique aqui para baixar o arquivo mp3</a>
             </p>
@@ -223,32 +245,14 @@
         de banda larga a carretando em custos adicinais, torna o site lento e pode ocorrer incompatibilidade com alguns
         navegadores por causa do formato do video; para evitar problemas de incompatibilidade deve-se gerar vários
         formatos do mesmo video.</p>
-    <h4>Exemplos</h4>
-    
-    <p>Naruto</p>
-    <video controls preload="metadata" width="476" poster="videos/naruto/Poster de Naruto.jpg" class="video">
-        <source src="videos/naruto/Naruto_Boys.mp4" type="video/mp4">
-        <p>Seu navegador não tem compatibilidade com reprodução de vídeo. <br><a
-                href="videos/naruto/Naruto_Boys.mp4">clique
-                aqui para baixar o vídeo.</a></p>
-    </video>
-    <br>
-    
-    </video>
-    <br>
-    <p>Beautifull girl</p>
+    <h4>Exemplo</h4>
+  
+    <h5>Beautifull girl</h5>
     <video preload="metadata" controls width="476" height="400" poster="imagens/modelos_1280.jpg">
         <source src="videos/beautifull_girl/Beautifull Girl mp4v.mp4" type="video/mp4">
         <source src="videos/beautifull_girl/Beautifull Girl.webm" type="video/webm">
         <p>Seu navegador não tem compatibilidade com reprodução de vídeo. <br><a
                 href="videos/beautifull_girl/beautifull girl.mp4">clique aqui para baixar o vídeo.</a></p>
-    </video>
-    <br>
-    <p>Sports</p>
-    <video controls preload="metadata" width="476" poster="videos/sports/poster sports.jpg">
-        <source src="videos/sports/Sports.mp4" type="video/mp4">
-        <p>Seu navegador não tem compatibilidade com reprodução de vídeo. <br><a href="videos/sports/sports.mp4">clique
-                aqui para baixar o vídeo.</a></p>
     </video>
     
     <h3>Hospedagem externa</h3>
@@ -265,13 +269,15 @@
     Desvantagens
     <ul>
         <li>Todos podem ter acesso ao video</li>
-        <li>Os videos relacionados que são apresentados podem ser de um concorrente;</li>
+        <li>Os videos relacionados que são apresentados podem ser de um concorrente;
+            <br> Para não mostrar videos relacionados no youtube use a configuração: "link_youtube?rel=0&autoplay=0"
+        </li>
     </ul>
     </p>
     
     <h5>Exemplos</h5>
     <p>Urbance</p>
-    <iframe width="476" height="315" src="https://www.youtube.com/embed/nrLdXY_lsy8" title="YouTube video player"
+    <iframe width="476" height="315" src="https://www.youtube.com/embed/nrLdXY_lsy8?rel=0&autoplay=0" title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
