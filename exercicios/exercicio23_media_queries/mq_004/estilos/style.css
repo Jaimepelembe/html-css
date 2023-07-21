@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/*Versao mobile first*/
+
+:root {
+  --cor-branco: hwb(0 100% 0% / 0.705);
+  --cor-preto: #000;
+  --cor-background-body: #36827f;
+  --cor-titulo: #a72608;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  box-sizing: border-box; /*Inclui a borda no calculo do width e height*/
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--cor-background-body);
+  background-image: url("../imagens/back-phone.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+main {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: var(--cor-branco);
+}
+
+h1 {
+  padding: 15px;
+  font-size: 28px;
+  font-weight: 700px;
+  text-align: center;
+  color: var(--cor-titulo);
+}
+
+#titulo::before {
+  content: "Mobile first";
+}
+
+.imagem {
+  margin: auto;
+  display: none;
+}
+
+#img_phone {
+  display: block;
+}

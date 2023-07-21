@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/*Versao para telas grandes*/
+
+body {
+  background-image: url(../imagens/back-tv.jpg);
+}
+
+
+main{max-width:1000px;}
+
+#titulo::before {
+  content: "TV";
+}
+
+#img_phone {
+  display: none;
+}
+
+#img_tv {
+  display: block;
+}

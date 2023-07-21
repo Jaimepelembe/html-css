@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/*Versao para tablet*/
+
+body {
+  background-image: url(../imagens/back-tablet.jpg);
+}
+main {
+  max-width: 600px;
+}
+
+#titulo::before {
+  content: "Tablet";
+}
+#img_phone {
+  display: none;
+}
+#img_tablet {
+  display: block;
+}

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/*Versão para impressora*/
+
+:root {
+  --cor-background-body: white;
+}
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-color: var(--cor-background-body);
+}
+
+main {
+  padding: 10px;
+}
+
+main::after {
+  content: "Este site foi desenvolvido por Pelembe Jaime Fernando";
+}
+
+#titulo::before {
+  content: "Impressora";
+}
+
+#img_phone {
+  display: none;
+}
+
+#img_print {
+  display: block;
+}

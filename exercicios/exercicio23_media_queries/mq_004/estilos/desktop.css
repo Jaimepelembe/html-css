@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/*Versao para Desktop*/
+
+body {
+  background-image: url(../imagens/back-pc.jpg);
+}
+
+main {
+  max-width: 800px;
+}
+
+#titulo::before {
+  content: "Desktop";
+}
+
+#img_phone {
+  display: none;
+}
+
+#img_pc {
+  display: block;
+}
