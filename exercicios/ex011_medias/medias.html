@@ -7,16 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../ex003/favicons/html_favicon.ico" type="image/x-icon">
     <title>Mídias</title>
+<!--Icone de hamburge-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    
 
     <link rel="stylesheet" href="estilos/style.css" media="all">
 <link rel="stylesheet" href="estilos/impresora.css" media="print">
+<link rel="stylesheet" href="estilos/grandes_telas.css" media="screen and (min-width:768px)">
+
+
+
 
 </head>
 
 <body>
 <header id="header">
-
-    <button class="btn_icon_header" class="sidebar" onclick="toggleSidebar()">
+    <button class="btn_icon_header"onclick="clickMenu()">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="35"
@@ -31,40 +38,44 @@
           />
         </svg>
       </button>
+    <h1 id="h1_titulo" onclick="fecharMenu()"><a href="#main" id="logotipo">Mídias</a></h1>
 
-    <a href="#main" id="link_home" class="link_nav"><img src="imagens/play_32.png" alt="Icone home"></a>
-    <nav> 
-        <button class="btn_icon_header" onclick="mudar_estado_sidebar()">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="35"
-              height="35"
-              fill="currentColor"
-              class="bi bi-x"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
-              />
-            </svg>
-          </button>
+    
+
+    <nav id="navigation_header"> 
+       
         
         <ul id="ul_nav">  
-         <li class="li_nav"><a href="#article_imagem" class="link_nav">Imagem</a></li> 
-          <li class="li_nav"><a href="#article_audio" class="link_nav">Áudio</a></li>
-         <li class="li_nav"><a href="#article_video" class="link_nav">Vídeo</a></li>
+            <li id="icone_fechar_menu" class="li_nav"><button class="btn_icon_header" onclick="clickMenu()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  fill="currentColor"
+                  class="bi bi-x"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </button></li>
+
+         <li class="li_nav"><a href="#article_imagem" class="link_nav" onclick="fecharMenu()">Imagem</a></li> 
+          <li class="li_nav"><a href="#article_audio" class="link_nav" onclick="fecharMenu()">Áudio</a></li>
+         <li class="li_nav"><a href="#article_video" class="link_nav" onclick="fecharMenu()">Vídeo</a></li>
     </ul> </nav>
 </header>
 
-<main id="main">
-    <article id="article_introducao">
+<main id="main" tabeindex="0" onclick="fecharMenu()">
+    <article id="article_introducao" class="artigo_medias">
         <h1 id="titulo_principal">Mídias</h1>
         <p>É muito importante possuir um site com responsividade pois isso melhora a experiência do usuario fazendo com
             que
             ele fique mais tempo no site. As principais mídias trabalhadas na internet são imagens, aúdio e video.</p>
     </article>
 
-    <article id="article_imagem">
+    <article id="article_imagem" class="artigo_medias">
         <h1>Imagens dinâmicas</h1>
     <p>Uma imagem dinâmica é aquela que se ajusta ao tamanho da tela.
         <br>
@@ -80,40 +91,40 @@
         ser
         colocadas em ordem decrescente de tamanho a partir da imagem padrão; <br> </p>
     <h2>Os principais parâmetros dessa tag <mark>source</mark></h2>
-    <ul>
-        <li><strong>type</strong>: indica o tipo da média;
-        </li>
-        <li><strong>srcset</strong>: indica o caminho da imagem a ser carregada;</li>
-        <li><strong>media</strong>: indica o tamanho de tela máximo a ser considerado para carregar a imagem; <br> o
+    <ul class="ul_elementos">
+        <li  class="li_elementos"><strong>type</strong>: indica o tipo da média;
+        </li class="li_elementos">
+        <li class="li_elementos"><strong>srcset</strong>: indica o caminho da imagem a ser carregada;</li>
+        <li class="li_elementos"><strong>media</strong>: indica o tamanho de tela máximo a ser considerado para carregar a imagem; <br> o
             tamanho máximo=tamanho da foto maior + 50, para evitar a barra de rolagem.</li>
     </ul>
-
+<section class="exemplo_imagem">
     <h3>Exemplo de sintaxe</h3>
-        <img src="imagens/tag_picture.PNG" alt="Tag picture">
+        <img src="imagens/tag_picture.PNG" alt="Tag picture" class="imagem"></section>
     <h2>Principais tamanhos de imagem</h2>
     <p>Os principais tamanhos de imagens usados para web são:
-    <ul>
-        <li><strong>144p</strong>: 256x144</li>
-        <li><strong>240p</strong>: 320x240</li>
-        <li><strong>480p</strong>: 848x480</li>
-        <li><strong>HD</strong>: 1280x720</li>
-        <li><strong>Full HD</strong>: 1920x1080</li>
-        <li><strong>4K</strong>: 3840x2160</li>
-        <li><strong>8K</strong>: 7680x4320</li>
+    <ul class="ul_elementos">
+        <li class="li_elementos"><strong>144p</strong>: 256x144</li>
+        <li class="li_elementos"><strong>240p</strong>: 320x240</li>
+        <li class="li_elementos"><strong>480p</strong>: 848x480</li>
+        <li class="li_elementos"><strong>HD</strong>: 1280x720</li>
+        <li class="li_elementos"><strong>Full HD</strong>: 1920x1080</li>
+        <li class="li_elementos"><strong>4K</strong>: 3840x2160</li>
+        <li class="li_elementos"><strong>8K</strong>: 7680x4320</li>
     </ul>
     </p>
     <h2>Proporção de uma imagem</h2>
     É a relação entre a largura e a altura da imagem;
     <h3>Os principais tamanhos de Proporção são:</h3>
-    <ul>
-        <li><strong>1:1</strong> formato quadrado
+    <ul class="ul_elementos">
+        <li class="li_elementos"><strong>1:1</strong> formato quadrado
             <br>é usado em mídias sociais;
         </li>
-        <li><strong>3:2</strong> formato rectângular
+        <li class="li_elementos"><strong>3:2</strong> formato rectângular
             <br> é usado em filmagem e fotografia digital;
         </li>
-        <li><strong>4:3</strong> é a proporção perfeita para conteúdos que vão preencher a tela;</li>
-        <li><strong>16:9</strong> essa proporção é mais comum em monitores e computadores;</li>
+        <li class="li_elementos"><strong>4:3</strong> é a proporção perfeita para conteúdos que vão preencher a tela;</li>
+        <li class="li_elementos"><strong>16:9</strong> essa proporção é mais comum em monitores e computadores;</li>
     </ul>
 
 
@@ -121,25 +132,25 @@
     <p> <strong>Paisagem</strong></p>
 
     <picture>
-        <source media="(max-width: 898px)" srcset="imagens/paisagem_720.jpg" type="image/jpg">
-        <img src="imagens/paisagem_1280.jpg" alt="Imagem grande">
+        <source media="(max-width: 898px)" srcset="imagens/paisagem_720.jpg" type="image/jpg" class="imagem">
+        <img src="imagens/paisagem_1280.jpg" alt="Imagem grande" class="imagem">
     </picture>
 
     <p> <strong>Carro</strong></p>
     <picture>
-        <source media="(max-width: 898px)" srcset="imagens/toyota_720.jpg" type="image/jpg">
-        <img src="imagens/toyota_1280.jpg" alt="Toyota">
+        <source media="(max-width: 898px)" srcset="imagens/toyota_720.jpg" type="image/jpg" class="imagem">
+        <img src="imagens/toyota_1280.jpg" alt="Toyota" class="imagem">
     </picture>
 
     <p><strong>Modelos</strong></p>
     <picture>
-        <source media="(max-width: 898px)" srcset="imagens/modelos_720.jpg" type="image/jpg">
-        <img src="imagens/modelos_1280.jpg" alt="Modelos">
+        <source media="(max-width: 898px)" srcset="imagens/modelos_720.jpg" type="image/jpg" class="imagem">
+        <img src="imagens/modelos_1280.jpg" alt="Modelos" class="imagem">
     </picture>
     </p>
 </article>
 
-    <article id="article_audio"><h1>Áudio</h1>
+    <article id="article_audio" class="artigo_medias"><h1>Áudio</h1>
         <p>O áudio é um recurso muito importante pois pode ser usado para apresentar várias
             informações ao
             usuario como músicas, podcasts, hinos, etc. <br> O áudio utilizado para apresentação de conteúdo deve ser de baixa qualidade para evitar arquivos muito grandes.
@@ -148,18 +159,18 @@
         </p>
     
         <h2>Os principais parâmetros da tag <mark>audio</mark> são:</h2>
-        <ul>
-            <li><strong>Preload</strong>: indica se o áudio será pre-carregado ou não;
+        <ul class="ul_elementos">
+            <li  class="li_elementos"><strong>Preload</strong>: indica se o áudio será pre-carregado ou não;
                  os valores desse parâmetro são: 
             </li>
                 <ul>
-                    <li><strong>metadata</strong> - carrega as informações do arquivo;</li>
-                    <li><strong>none</strong> - não carrega nenhuma informação do arquivo;</li>
-                    <li><strong>auto(padrão)</strong> - carrega todo o arquivo;</li>
+                    <li class="li_elementos"><strong>metadata</strong> - carrega as informações do arquivo;</li>
+                    <li class="li_elementos"><strong>none</strong> - não carrega nenhuma informação do arquivo;</li>
+                    <li class="li_elementos"><strong>auto(padrão)</strong> - carrega todo o arquivo;</li>
                 </ul>
-            <li><strong>controls</strong>: apresenta o player na tela;</li>
-            <li><strong>autoplay</strong>: toca o áudio automaticamente logo que a página é carregada;</li>
-            <li><strong>loop</strong>: repete o áudio infinitamente;</li>
+            <li class="li_elementos"><strong>controls</strong>: apresenta o player na tela;</li>
+            <li class="li_elementos"><strong>autoplay</strong>: toca o áudio automaticamente logo que a página é carregada;</li>
+            <li class="li_elementos"><strong>loop</strong>: repete o áudio infinitamente;</li>
         </ul>
     
         <h2>Componente source:src</h2>
@@ -170,20 +181,20 @@
         </p>
     
         <h2>Os principais formatos de áudio são:</h2>
-        <ul>
-            <li><strong>mp3</strong>(mpeg): é o padrão</li>
-            <li><strong>ogg</strong></li>
-            <li><strong>wav</strong>: é muito pesado
+        <ul class="ul_elementos">
+            <li class="li_elementos"><strong>mp3</strong>(mpeg): é o padrão</li>
+            <li class="li_elementos"><strong>ogg</strong></li>
+            <li class="li_elementos"><strong>wav</strong>: é muito pesado
             </li>
         </ul>
-    
+        <section class="exemplo_audio">
         <h3>Exemplos</h3>
         <h4>Sintaxe</h4>
-            <img src="imagens/tag_audio.PNG" alt="Tag audio">
+            <img src="imagens/tag_audio.PNG" alt="Tag audio" class="imagem">
 
-        <p>Naruto</p>
+        <p class="paragrafo_elementos">Naruto</p>
         <audio preload="metadata" controls loop>
-            <source src="audios/naruto/Naruto_Shippuden_Opening7_Toumei_Datta_Sekai.mp3" type="audio/mpeg">
+            <source src="audios/naruto/Naruto_Shippuden_Opening7_Toumei_Datta_Sekai.mp3" type="audio/mpeg" class="audio_personalizado">
             <source src="audios/naruto/Naruto_Shippuden_Opening7_Toumei_Datta_Sekai.ogg" type="audio/ogg">
             <p>Infelizmente o seu navegador não consegue reproduzir o áudio. <br>
                 <a href="audios/naruto/Naruto_Shippuden_Opening7_Toumei_Datta_Sekai.mp3">clique aqui para baixar o
@@ -192,7 +203,7 @@
             </p>
         </audio>
     
-        <p>Box cat games</p>
+        <p class="paragrafo_elementos" >Box cat games</p>
         <audio preload="metadata" controls loop>
             <source src="audios/boxcat/boxcatgames.mp3" type="audio/mpeg">
             <source src="audios/boxcat/boxcatgames.ogg" type="audio/ogg">
@@ -202,7 +213,7 @@
         </audio>
     
         <br>
-        <p>Songs of birds</p>
+        <p class="paragrafo_elementos">Songs of birds</p>
         <audio preload="metadata" controls loop>
             <source src="audios/songbirds/songbirds.mp3" type="audio/mpeg">
             <source src="audios/songbirds/songbirds.ogg" type="audio/ogg">
@@ -211,30 +222,31 @@
                 <br>
                 <a href="audios/songbirds/songbirds.mp3">clique aqui para baixar o arquivo mp3</a>
             </p>
-        </audio> </article>
+        </audio>
+    </section>
+    </article>
 
 
-<article id="article_video"><h1 >Vídeos</h1>
+<article id="article_video" class="artigo_medias"><h1 >Vídeos</h1>
     <p>Os videos são um recurso muito importante na internet pois conseguem estimular vários sentidos e captar a atenção
-        do usuario por muito tempo.
-        <br>Para inserir videos internos usamos a tag <strong>&lt;video&gt;</strong>;
+        do usuario por muito tempo.Para inserir videos internos usamos a tag <strong>&lt;video&gt;</strong>;
     </p>
     <h2>Os principais parâmetros da tag video:</h2>
     <p>
-    <ul>
-        <li><strong>width</strong>: indica o comprimento da janela do video;</li>
-        <li><strong>height</strong>: indica a altura da janela do video;</li>
-        <li><strong>poster</strong>: coloca uma imagem como a capa do video;</li>
-        <li><strong>controls</strong>: exibe o player do video;</li>
-        <li><strong>autoplay</strong>: reproduz o video automaticamente logo que a página é carregada;</li>
+    <ul class="ul_elementos">
+        <li  class="li_elementos"><strong>width</strong>: indica o comprimento da janela do video;</li>
+        <li class="li_elementos"><strong>height</strong>: indica a altura da janela do video;</li>
+        <li class="li_elementos"><strong>poster</strong>: coloca uma imagem como a capa do video;</li>
+        <li class="li_elementos"><strong>controls</strong>: exibe o player do video;</li>
+        <li class="li_elementos"><strong>autoplay</strong>: reproduz o video automaticamente logo que a página é carregada;</li>
     </ul>
     </p>
     <h2>Principais formatos de video:</h2>
     <p>Os principais formatos de videos suportados pelos navegadores são:
-    <ul>
-        <li><strong>mp4</strong> e <strong>mp4v</strong></li>
-        <li><strong>webm</strong></li>
-        <li><strong>ogv (ogg)</strong></li>
+    <ul class="ul_elementos">
+        <li  class="li_elementos"><strong>mp4</strong> e <strong>mp4v</strong></li>
+        <li class="li_elementos"><strong>webm</strong></li>
+        <li class="li_elementos"><strong>ogv (ogg)</strong></li>
     </ul>
     </p>
     <h2>Hospedagem de videos</h2>
@@ -245,15 +257,16 @@
         de banda larga a carretando em custos adicinais, torna o site lento e pode ocorrer incompatibilidade com alguns
         navegadores por causa do formato do video; para evitar problemas de incompatibilidade deve-se gerar vários
         formatos do mesmo video.</p>
+        <section class="exemplo_video">
     <h4>Exemplo</h4>
   
-    <h5>Beautifull girl</h5>
-    <video preload="metadata" controls width="476" height="400" poster="imagens/modelos_1280.jpg">
+    <p class="paragrafo_elementos">Beautifull girl</p>
+    <video preload="metadata" controls width="476" height="400" poster="imagens/modelos_1280.jpg" class="video video_interno">
         <source src="videos/beautifull_girl/Beautifull Girl mp4v.mp4" type="video/mp4">
         <source src="videos/beautifull_girl/Beautifull Girl.webm" type="video/webm">
         <p>Seu navegador não tem compatibilidade com reprodução de vídeo. <br><a
                 href="videos/beautifull_girl/beautifull girl.mp4">clique aqui para baixar o vídeo.</a></p>
-    </video>
+    </video> </section>
     
     <h3>Hospedagem externa</h3>
     <p>Os videos são mantidos em servidores externos. <br>
@@ -262,54 +275,101 @@
     <h4> hospedagem no YouTube:</h4>
     <p>
         Vantagens
-    <ul>
-        <li>Hospedagem grátis;</li>
-        <li>Servidores ultra rápidos;</li>
+    <ul class="ul_elementos">
+        <li class="li_elementos">Hospedagem grátis;</li>
+        <li class="li_elementos">Servidores ultra rápidos;</li>
     </ul>
     Desvantagens
-    <ul>
-        <li>Todos podem ter acesso ao video</li>
-        <li>Os videos relacionados que são apresentados podem ser de um concorrente;
+    <ul class="ul_elementos">
+        <li class="li_elementos">Todos podem ter acesso ao video</li>
+        <li class="li_elementos">Os videos relacionados que são apresentados podem ser de um concorrente;
             <br> Para não mostrar videos relacionados no youtube use a configuração: "link_youtube?rel=0&autoplay=0"
         </li>
     </ul>
     </p>
     
-    <h5>Exemplos</h5>
-    <p>Urbance</p>
-    <iframe width="476" height="315" src="https://www.youtube.com/embed/nrLdXY_lsy8?rel=0&autoplay=0" title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-    <br>
+    <section class="exemplo_video">
+        <h5>Exemplos</h5>
+        <p>Urbance</p>
+        <iframe width="476" height="315" src="https://www.youtube.com/embed/nrLdXY_lsy8?rel=0&autoplay=0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen class="video video_externo"></iframe>
+    </section>
+  
     
     <h4>Hospedagem no Vimeo:</h4>
     <p>Vantagens
-    <ul>
-        <li>Limita o acesso aos videos;</li>
-        <li>Os videos tem maior qualidade;</li>
+    <ul class="ul_elementos">
+        <li  class="li_elementos">Limita o acesso aos videos;</li>
+        <li class="li_elementos">Os videos tem maior qualidade;</li>
     </ul>
     Desvantagens
-    <ul>
-        <li>É pago anualmente;</li>
-        <li>Os algoritmos não são muito eficientes;</li>
+    <ul class="ul_elementos">
+        <li class="li_elementos">É pago anualmente;</li>
+        <li class="li_elementos">Os algoritmos não são muito eficientes;</li>
     </ul>
-    </p>
-    <h5>Exemplos</h5>
-    <p>Wargroove cinematic</p>
-    <iframe title="vimeo-player" src="https://player.vimeo.com/video/312931432?h=2235780c4c" width="476" height="315"
-        frameborder="0" allowfullscreen></iframe>
+    </p><section class="exemplo_video">
+        
+        <h5>Exemplos</h5>
+        <p>Wargroove cinematic</p>
+        <iframe title="vimeo-player" src="https://player.vimeo.com/video/312931432?h=2235780c4c" width="476" height="315"
+            frameborder="0" allowfullscreen class="video video_externo"></iframe>
+    </section>
 </article>             
 </main>
 
-<footer>
-    <div id="menu"> <a href="../../index.html"><img src="../../pagina_inicial/pagina-inicial_32.png"
-        alt="Simbolo de página inicial"></a></div>
+<footer id="footer">
+    <ul id="ul_footer">
+      <li class="li_footer" id="li_whatsssap">
+        <a
+          href="https://wa.me/258847502352?text=Sauda%C3%A7%C3%B5es,%20eu%20gostaria%20de%20fazer%20uma%20reserva%20para%20o%20Saara"
+          target="_blank"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            class="bi bi-whatsapp zoomable_svg footer_svg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+            />
+          </svg>
+        </a>
+      </li>
 
-    <p>Site desenvolvido por Pelembe, Jaime Fernando</p>
-  
-</footer>
+      <li class="li_footer"  id="li_instagram">
+        <a href="https://ig.me/m/jaimefernando2" target="_blank"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram zoomable_svg footer_svg" viewBox="0 0 16 16" >
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+          </svg></a>
+      </li>
+
+      <li class="li_footer" id="li_messenger">
+        <a href="https://m.me/jaimefppelembe" target="_blank"></a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            class="bi bi-facebook zoomable_svg footer_svg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+            />
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <p>Site desenvolvido por <a href="https://github.com/Jaimepelembe"
+      target="_blank" id="a_github">Pelembe Jaime Fernando</a></p>
+  </footer>
 
 </body>
+<script src="javascript.js"></script>
 
 </html>

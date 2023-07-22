@@ -7,7 +7,6 @@ var mostrarSidebar = false;
 function mudar_estado_sidebar() {
   mostrarSidebar = !mostrarSidebar;
   if (mostrarSidebar) {
-    /*header.style.position="fixed";*/
     navigation_header.style.position = "fixed";
 
     navigation_header.style.marginLeft = "0vw";

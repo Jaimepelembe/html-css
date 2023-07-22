@@ -1,45 +1,90 @@
 @charset "UTF-8";
 /*Mobile first*/
 
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 :root {
-  --cor-background-header: #f0426b;
-  --cor-titulo: #118ab2;
-  --cor-subtitulo: #06d6a0;
-  --cor-h3: #073b4c;
+  /*Cores*/
+  --cor-cerise: #f0426b;
+  --cor-cerise-escuro-20: #c03556;
+  --cor-azul: #118ab2;
+  --cor-verde-meia-noite: #073b4c;
   --cor-branco: #fff;
   --cor-preto: #000;
+  --cor-preto-claro-90: #e6e6e6;
+
+  /*Fontes*/
+  --fonte-titulo: "Bebas Neue", sans-serif;
+  --fonte-conteudo: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 * {
   margin: 0px;
   padding: 0px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--fonte-conteudo);
+  line-height: 28px;
   text-align: justify;
+}
+html,
+body {
+  width: 100%;
+  height: auto;
+  background-color: var(--cor-preto-claro-90);
 }
 
 header,
 nav {
   display: flex;
   align-items: center;
-  flex-direction: column;
 }
-
 header {
-  margin: auto;
-  padding-top: 15px;
   /*Fixar header na página*/
+  width: 100vw;
   position: fixed;
   top: 0;
-  width: 100%;
-  z-index: 3;
-  background-color: var(--cor-background-header);
+  z-index: 2;
+  background-color: var(--cor-cerise);
 }
-nav{position:absolute;
-top:0;
-width:180px;
-height:100%;
-background-color:var(--cor-h3);
 
+#h1_titulo {
+  max-width: 100px;
+  margin: auto;
+  padding: 25px;
+}
+#logotipo {
+  font-family: var(--fonte-titulo);
+  font-size: 44px;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--cor-branco);
+  padding: 15px;
+  cursor: pointer;
+}
+
+#logotipo:hover {
+  color: var(--cor-preto);
+}
+
+nav {
+  display: none;
+  /*margin-left:-100vw;*/
+  position: fixed;
+  flex-direction: column;
+  margin: auto;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: var(--cor-cerise-escuro-20);
+  animation-duration: 1s;
+}
+
+@keyframes showSidebar {
+  from {
+    margin-left: -100vw;
+  }
+  to {
+    margin-left: 0vw;
+  }
 }
 
 .btn_icon_header {
@@ -57,31 +102,34 @@ background-color:var(--cor-h3);
 }
 .li_nav {
   padding: 20px;
+  text-align: center;
+  border-top: 0px solid var(--cor-cerise);
+  margin: auto;
 }
 
 .link_nav {
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 100;
   text-decoration: none;
   color: var(--cor-branco);
 }
 
 .link_nav:hover {
-  text-decoration: underline;
-  color: var(--cor-titulo);
+  padding: 10px;
+  border-radius: 15px;
+  color: var(--cor-preto);
+  background-color: var(--cor-cerise);
 }
 
-main {
+#main {
   max-width: 800px;
   margin: auto;
-  padding-top: 100px;
-  background-color: #f8f7f9;
+  padding: 10px;
+  background-color: var(--cor-branco);
 }
 
-section {
-  padding-top: 45px;
-}
 #titulo_principal {
-  color: var(--cor-titulo);
+  color: var(--cor-azul);
   text-align: center;
 }
 h1,
@@ -92,24 +140,101 @@ h4 {
 }
 
 h1 {
-  color: var(--cor-titulo);
+  color: var(--cor-azul);
 }
 
 h2 {
-  color: var(--cor-subtitulo);
+  color: var(--cor-verde-meia-noite);
 }
 
-h4 {
-  color: var(--cor-h3);
+h3 {
+  color: var(--cor-preto);
 }
 
-picture > img {
-  max-width: 100%;
+.artigo_medias {
+  width: 100%;
+  padding-top: 80px;
+}
+
+.li_elementos {
+  margin-left: 25px;
+}
+
+.imagem {
+  width: 100%;
   height: auto;
   margin: auto;
-  padding: 20px;
+  padding: 10px 0px;
 }
-picture > source {
-  max-width: 100%;
-  height: auto;
+
+.paragrafo_elementos {
+  padding: 10px;
+}
+
+
+
+
+.video {
+  display: block;
+  margin: 1em auto;
+  width: 100%;
+  height: cal(0.5625 * 100vw);
+  /*
+  max-width:202px;
+  max-height:360px;*/
+}
+
+#article_video {
+  margin-bottom: 150px;
+}
+
+footer {
+  min-height: 80px;
+  text-align: center;
+  padding: 0 10%;
+  padding-top: 20px;
+  background-color: var(--cor-cerise);
+}
+
+#ul_footer {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 300px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.footer_svg {
+  color: black;
+}
+
+.footer_svg:hover {
+  color: var(--cor-branco);
+  /*border-radius: 50%;
+  overflow: hidden; /*Garante que o svg seja cortado pelo raio do canto*/
+}
+
+footer p {
+  color: var(--color-white);
+  font-weight: bold;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+#a_github {
+  text-decoration: none;
+  color: var(--cor-branco);
+}
+#a_github:hover {
+  text-decoration: underline;
+  color: var(--cor-preto-raisin-escuro-30);
+}
+
+.zoomable_svg {
+  transition: transform 0.3s ease; /*Adiciona transicao suave*/
+}
+.zoomable_svg:hover {
+  transform: scale(1.3); /*Aumenta o tamanho do svg*/
 }

@@ -7,5 +7,22 @@ header {
 
 main {
   width: 100vw;
-  padding-top:0px;
+  padding-top: 0px;
+}
+
+/*Seccoes que devem ser ocultadas na impressao*/
+.exemplo_imagem {
+  display: none;
+}
+
+.exemplo_audio {
+  display: none;
+}
+
+.exemplo_video {
+  display: none;
+}
+
+footer {
+  display: none;
 }
