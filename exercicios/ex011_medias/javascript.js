@@ -26,7 +26,9 @@ function fecharMenu() {
 function fechar_sidebar_redimensionartela() {
   if (window.innerWidth > 768) {
     navigation_header.style.display = "block";
-  } else {
+  } 
+  
+  else {
     fecharMenu();
   }
 }

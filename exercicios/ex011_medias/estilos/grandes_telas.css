@@ -8,17 +8,14 @@
 
 #navigation_header {
   width: 100%;
-  height: 5%;
+  height: 52px;
   display: block;
   position: relative;
+  padding:10px;
 }
 
-#main {
-  max-width: 900px;
-}
 
 .artigo_medias {
-  width: 100%;
   padding-top: 150px;
 }
 

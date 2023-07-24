@@ -65,9 +65,8 @@ header {
   color: var(--cor-preto);
 }
 
-nav {
+#navigation_header {
   display: none;
-  /*margin-left:-100vw;*/
   position: fixed;
   flex-direction: column;
   margin: auto;
@@ -152,7 +151,6 @@ h3 {
 }
 
 .artigo_medias {
-  width: 100%;
   padding-top: 80px;
 }
 
@@ -171,17 +169,11 @@ h3 {
   padding: 10px;
 }
 
-
-
-
 .video {
   display: block;
   margin: 1em auto;
   width: 100%;
   height: cal(0.5625 * 100vw);
-  /*
-  max-width:202px;
-  max-height:360px;*/
 }
 
 #article_video {
@@ -192,7 +184,7 @@ footer {
   min-height: 80px;
   text-align: center;
   padding: 0 10%;
-  padding-top: 20px;
+  padding-top: 30px;
   background-color: var(--cor-cerise);
 }
 
@@ -212,24 +204,22 @@ footer {
 
 .footer_svg:hover {
   color: var(--cor-branco);
-  /*border-radius: 50%;
-  overflow: hidden; /*Garante que o svg seja cortado pelo raio do canto*/
 }
 
-footer p {
-  color: var(--color-white);
+.paragrafo_footer {
+  color: var(--cor-preto);
   font-weight: bold;
   padding-bottom: 30px;
   text-align: center;
 }
 
-#a_github {
+#link_github {
   text-decoration: none;
   color: var(--cor-branco);
 }
-#a_github:hover {
-  text-decoration: underline;
-  color: var(--cor-preto-raisin-escuro-30);
+#link_github:hover {
+  text-decoration: dashed;
+  color: var(--cor-preto);
 }
 
 .zoomable_svg {
