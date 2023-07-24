@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  /*Cores*/
+  --cor-verde: #49a09d;
+  --cor-lilas: #5f2c82;
+  --cor-branco: #fff;
+  --cor-preto: #000;
+
+  /*Fontes*/
+  --fonte-conteudo: verdana, tahoma, sans-serif;
+  --fonte-titulo: "PT Serif";
+}
+
+main {
+  background-image: linear-gradient(
+    to left,
+    var(--cor-lilas),
+    var(--cor-verde)
+  );
+}
+
+#login {
+  width: 400px;
+  margin: auto;
+
+  background-color: var(--cor-branco);
+}
+
+.imagem_login {
+  width: 100%;
+}
