@@ -1,0 +1,72 @@
+:root {
+  /*Cores*/
+  --cor-azul: #20b2aa;
+  --cor-castanho: #ac7850;
+  --cor-preto: #000;
+  --cor-branco: #fff;
+  --cor-roxo: #4c2a85;
+
+  /*Fonte*/
+  --fonte-conteudo: verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--fonte-conteudo);
+}
+body {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1,
+h2 {
+  margin: 10px;
+}
+
+article {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+p {
+  padding: 10px;
+}
+
+/*Flutuando imagens*/
+img {
+  max-width: 100%;
+  float: left;
+  display: inline;
+  margin: 16px;
+}
+
+/*Flutuando elementos de texto*/
+.tip {
+  float: right;
+  margin: 16px;
+  padding: 16px;
+  width: 200px;
+  color: var(--cor-branco);
+  background-color: var(--cor-azul);
+}
+
+#tartaruga {
+  background-color: var(--cor-castanho);
+  width: 150px;
+}
+
+#nome {
+  font-weight: 800;
+  background-color: var(--cor-preto);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--cor-branco);
+}
+
+.link:hover {
+  text-decoration: underline;
+}

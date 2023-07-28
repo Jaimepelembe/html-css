@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+ul {
+  display: inline;
+  width: 100px;
+}
+li {
+  display: inline;
+  margin-right: 40px;
+}
+
+img {
+  width: 32px;
+  display: inline;
+}
+
+p {
+  display: inline;
+}
