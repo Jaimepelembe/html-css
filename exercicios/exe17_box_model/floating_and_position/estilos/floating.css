@@ -32,13 +32,15 @@ article {
 
 p {
   padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 /*Flutuando imagens*/
-img {
+.imagem {
   max-width: 100%;
-  float: left;
-  display: inline;
+  float: right;
+  display: block;
   margin: 16px;
 }
 
@@ -69,4 +71,33 @@ img {
 
 .link:hover {
   text-decoration: underline;
+}
+
+/*Flutuando blocos*/
+.paragrafo {
+  border: 4px var(--cor-roxo) solid;
+}
+
+#paragrafo_flutuado {
+  float: left;
+  max-width: 300px;
+  margin: 16px;
+  background-color: var(--cor-castanho);
+  color: var(--cor-branco);
+}
+
+#limpar_paragrafo_flutuado {
+  clear: none;
+}
+
+/*Limpando elementos fluatuados*/
+#imagem_disney {
+  width: 400px;
+  height: 400px;
+  margin-right: 20px;
+  float: left;
+}
+
+.limpar_imagem_flutuada {
+  clear: left;
 }

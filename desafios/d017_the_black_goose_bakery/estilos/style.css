@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&display=swap");
+
+:root {
+  /*Cores*/
+  --cor-castanha: #783f27;
+  --cor-laranja: #dc6903;
+  --cor-laranja-claro: #f9ab33;
+  --cor-branco-esfomado: #f6f4f3;
+  --cor-branco: #fff;
+  --cor-preto: #000;
+  --cor-verde: #5eeb5b;
+
+  /*Fontes*/
+  --fonte-conteudo: Georgia, serif;
+  --fonte-header: verdana, Geneva, Tahoma, sans-serif;
+  --fonte-titulo: "Stint Ultra Expanded", cursive;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  width: 100vw;
+  height: 300px;
+  background-image: url(../imagens/croissants_banner.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#navigation_header {
+  background-color: var(--cor-castanha);
+  padding: 20px;
+}
+
+#ul_nav {
+  list-style: none;
+}
+.li_nav {
+  display: inline;
+  margin: 20px;
+  color: var(--cor-branco);
+  font-weight: 600;
+  font-size: 24px;
+}
