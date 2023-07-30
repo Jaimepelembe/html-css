@@ -5,12 +5,16 @@
 :root {
   /*Cores*/
   --cor-castanha: #783f27;
+  --cor-castanha-escuro-50: #3c2014;
   --cor-laranja: #dc6903;
   --cor-laranja-claro: #f9ab33;
   --cor-branco-esfomado: #f6f4f3;
   --cor-branco: #fff;
   --cor-preto: #000;
-  --cor-verde: #5eeb5b;
+  --cor-cinza: #555;
+  --cor-cinza-claro-70: #cccccc;
+  --cor-verde: #42a540;
+  --cor-verde-escuro-40: #358433;
 
   /*Fontes*/
   --fonte-conteudo: Georgia, serif;
@@ -21,29 +25,223 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: var(--fonte-conteudo);
+  font-size: 16px;
 }
 
 header {
   width: 100vw;
-  height: 300px;
+  min-height: 200px;
+  /*Fixar o header na página*/
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
   background-image: url(../imagens/croissants_banner.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-#navigation_header {
+#barra_header {
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
   background-color: var(--cor-castanha);
-  padding: 20px;
 }
 
-#ul_nav {
+#lista_header {
+  display: flex;
+  flex-direction: row;
+}
+
+#elemento_imagem_logo {
+  margin-left: 20%;
+}
+
+#navigation_header {
+  position: absolute;
+  top: 0;
+  margin-left: -100vw;
+  width: 200px;
+  height: 100vh;
+  background-color: var(--cor-castanha-escuro-50);
+}
+
+ul {
   list-style: none;
 }
 .li_nav {
-  display: inline;
-  margin: 20px;
+  max-width: 80px;
+  margin: auto;
+  padding-top: 25px;
   color: var(--cor-branco);
+}
+
+.btn_icon_header {
+  border: none;
+  background-color: transparent;
+  color: var(--cor-laranja);
+  cursor: pointer;
+}
+.link_nav {
+  font-size: 20px;
   font-weight: 600;
+  text-decoration: none;
+  color: var(--cor-branco);
+}
+
+.link_nav:hover {
+  color: var(--cor-laranja);
+}
+
+#logo {
+  width: 190px;
+  display: block;
+  margin: auto;
+
+  padding: 0px;
+}
+#imagem_logo {
+  display: inline;
+  height: 44px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  cursor: pointer;
+}
+.imagem {
+  max-width: 100%;
+}
+
+.imagem_flutuada {
+  float: left;
+  margin-right: 10px;
+}
+
+.paragrafo {
+  padding: 15px;
+  line-height: 28.8px;
+}
+
+#paragrafo_header {
+  max-width: 580px;
+  margin: auto;
+  padding: 10px;
+  font-family: var(--fonte-header);
+  font-style: italic;
   font-size: 24px;
+  color: var(--cor-branco);
+}
+
+#main {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 220px;
+  background-color: var(--cor-branco);
+  font-family: var(--fonte-titulo);
+}
+
+article {
+  margin-bottom: 50px;
+}
+
+h1,
+h2,
+h3 {
+  padding: 10px;
+}
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.titulo {
+  margin-bottom: 20px;
+  clear: left;
+  text-transform: uppercase;
+  color: var(--cor-laranja);
+}
+#titulo_conteudo {
+  color: var(--cor-cinza);
+}
+
+.link_conteudo {
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--cor-verde);
+}
+.link_conteudo:hover {
+  text-decoration: underline;
+  color: var(--cor-verde-escuro-40);
+}
+
+#horario_funcionamento {
+  max-width:100vw;
+  margin-top:90px;
+  margin-bottom: 100px;
+  background-color: var(--cor-cinza-claro-70);
+}
+
+#article_horario {
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+  
+}
+
+.horario {
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+
+.dia_semana {
+  color: var(--cor-laranja);
+}
+
+footer {
+  max-width: 100vw;
+  padding: 20px;
+  background-color: var(--cor-castanha);
+}
+
+#lista_redes_sociais {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.rede_social {
+  display: inline;
+  margin-right: 35px;
+}
+
+#paragrafo_footer {
+  margin: auto;
+  max-width: 500px;
+  font-weight: 700;
+  color: var(--cor-branco);
+}
+
+svg {
+  color: var(--cor-preto);
+}
+
+svg:hover {
+  color: var(--cor-laranja-claro);
+}
+
+#link_footer {
+  color: var(--cor-preto);
+  text-decoration: none;
+}
+#link_footer:hover {
+  color: var(--cor-laranja);
 }
