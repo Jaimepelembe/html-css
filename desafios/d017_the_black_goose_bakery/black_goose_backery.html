@@ -12,7 +12,11 @@
       <div id="barra_header">
         <ul id="lista_header">
           <li class="elemento_header">
-            <button id="botao_hamburger" class="btn_icon_header" onclick="mudar_estado_sidebar()">
+            <button
+              id="botao_hamburger"
+              class="btn_icon_header"
+              onclick="mudar_estado_sidebar()"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="35"
@@ -28,14 +32,18 @@
               </svg>
             </button>
           </li>
-          <li id="elemento_imagem_logo" class="elemento_header" id="logo" onclick="fecharSidebar()">
-              <img
-                src="imagens/bgb_logo.png"
-                alt="Imagem do logo"
-                id="imagem_logo"
-                class="imagem"
-              />
-        
+          <li
+            id="elemento_imagem_logo"
+            class="elemento_header"
+            id="logo"
+            onclick="fecharSidebar()"
+          >
+            <img
+              src="imagens/bgb_logo.png"
+              alt="Imagem do logo"
+              id="imagem_logo"
+              class="imagem"
+            />
           </li>
         </ul>
       </div>
@@ -114,15 +122,17 @@
           alt="Imagem de pão"
           class="imagem imagem_flutuada"
         />
-        <p class="paragrafo paragrafo_flutuado">
+        <p class="paragrafo">
           Our breads are made daily from highest-quality whole grain flour,
           water, salt, and yeast or sourdough starter. Simply and naturally, and
           never any preservatives. Patience is key to achieving the proper level
           of fermentation and baking each loaf to perfection. Available in whole
           grain, sourdough, olive loaf, classic rye, and potato-onion.
-          <a href="" class="link_conteudo"
-            >learn more about our baking process ...</a
-          >
+          <p class="paragrafo paragrafo_link_flutuado">
+            <a href="" class="link_conteudo" class="link_flutuado"
+              >learn more about our baking process ...</a
+            >
+          </p>
         </p>
       </article>
 
@@ -133,30 +143,46 @@
           alt="Imagem de muffim"
           class="imagem_flutuada"
         />
-        <p class="paragrafo paragrafo_flutuado">
+        <p class="paragrafo">
           Every day, we offer a large selection of muffins, including blueberry,
           multi-berry, bran, corn, lemon-poppyseed, and chocolate. Our muffins
           are made from scratch each day. Stop by to see our seasonal muffin
           flavors!
         </p>
 
-        <a href="" class="link_conteudo"
-          >learn more about how we make our muffins...</a
-        >
+        <p class="paragrafo paragrafo_link_flutuado">
+          <a href="#" class="link_conteudo"
+            >learn more about how we make our muffins...</a
+          >
+        </p>
       </article>
     </main>
-    <aside id="horario_funcionamento">
+    <aside id="horario_funcionamento" tabindex="0" onclick="fecharSidebar()">
       <article id="article_horario">
-        <h2>Hours</h2>
+        <h2 id="titulo_horario">Hours</h2>
 
         <ul id="lista_horario">
           <li class="horario">
-            <span class="dia_semana">MONDAY-FRIDAY:</span> 5am to 3pm
+            <span class="dia_semana">MONDAY:</span> 5am to 3pm
           </li>
           <li class="horario">
-            <span class="dia_semana">SATURDAY</span> and
-            <span class="dia_semana">SUNDAY:</span> 6am to 4pm
+            <span class="dia_semana">TUESDAY:</span> 5am to 3pm
           </li>
+          <li class="horario">
+            <span class="dia_semana">WEDNESDAY:</span> 5am to 3pm
+          </li>
+          <li class="horario">
+            <span class="dia_semana">THURSDAY:</span> 5am to 3pm
+          </li>
+          <li class="horario">
+            <span class="dia_semana">FRIDAY:</span> 5am to 3pm
+          </li>
+          
+          <li class="horario">
+            <span class="dia_semana">SATURDAY:</span> 6am to 4pm
+            
+          </li>
+          <li class="horario"><span class="dia_semana">SUNDAY:</span> 6am to 4pm</li>
         </ul>
       </article>
     </aside>
