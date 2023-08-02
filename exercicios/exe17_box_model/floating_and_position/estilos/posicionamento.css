@@ -1,0 +1,31 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  padding: 15px;
+}
+
+.posicionamento_relativo {
+  position: relative;
+  padding: 4px;
+  background-color: fuchsia;
+}
+article {
+  max-width: 500px;
+  height: 500px;
+  margin: auto;
+  padding: 15px;
+  background-color: rgb(173, 173, 167);
+}
+#nome {
+  top: 173px;
+  left: 135px;
+}
+#apelido {
+  left: 22px;
+  top: 147px;
+  background-color: blue;
+}

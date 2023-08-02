@@ -27,6 +27,7 @@ body {
 /*Flutuar o elemento*/
 #container {
   float: left;
+  margin-bottom: 50px;
 }
 .imagem {
   float: left;
@@ -52,4 +53,12 @@ body {
   margin-bottom: 10px;
   margin-top: 10px;
   float: left;
+}
+
+.poligno {
+  width: 300px;
+  height: 300px;
+  shape-outside: circle(150px);
+
+
 }
