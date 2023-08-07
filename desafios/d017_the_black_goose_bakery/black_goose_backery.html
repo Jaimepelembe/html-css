@@ -6,12 +6,12 @@
     <title>Black Goose Bakery</title>
     <link rel="shortcut icon" href="imagens/muffin.png" type="image/x-icon" />
     <link rel="stylesheet" href="estilos/style.css" media="all" />
+    <link rel="stylesheet" href="estilos/computador.css" media="screen and (min-width:768px)">
   </head>
   <body>
-    <header id="header" tabindex="0">
-      <div id="barra_header">
-        <ul id="lista_header">
-          <li class="elemento_header">
+  
+      <div id="background_header">
+        <header id="header" tabindex="0">
             <button
               id="botao_hamburger"
               class="btn_icon_header"
@@ -31,23 +31,15 @@
                 />
               </svg>
             </button>
-          </li>
-          <li
-            id="elemento_imagem_logo"
-            class="elemento_header"
-            id="logo"
-            onclick="fecharSidebar()"
-          >
+        
+         
             <img
               src="imagens/bgb_logo.png"
               alt="Imagem do logo"
               id="imagem_logo"
               class="imagem"
             />
-          </li>
-        </ul>
-      </div>
-
+          
       <p id="paragrafo_header">
         The delicious baked goods you love at Black Goose Bistro...now available
         to go!
@@ -112,6 +104,9 @@
         </ul>
       </nav>
     </header>
+       
+      </div>
+
 
     <main id="main" tabindex="0" onclick="fecharSidebar()">
       <h1 id="titulo_conteudo" class="titulo">Fresh from the Oven</h1>
@@ -259,6 +254,9 @@
           >Pelembe Jaime Fernando</a
         >
       </p>
+
+      <div id="div_award"><img src="imagens/award.png" alt="Farmers' Market Award" id="imagem_award" class="imagem"></div>
+
     </footer>
   </body>
   <script src="javascript.js"></script>

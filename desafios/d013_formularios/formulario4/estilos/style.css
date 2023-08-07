@@ -59,8 +59,17 @@ fieldset {
   border-width: 2px;
 }
 div {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
+}
+
+.div_input {
+  position: relative;
+}
+
+.label_entrada_dados {
+  
+  pointer-events: none;
+  transition: 0.5s;
 }
 
 .entrada_dados {
@@ -72,7 +81,9 @@ div {
   width: 100%;
 }
 
+
 #label_data_nascimento {
+  top: -25px;
   font-weight: 700;
   margin-right: 15px;
 }
@@ -102,9 +113,9 @@ ul {
   width: 60%;
   padding: 10px;
   font-weight: 700;
+  border:none;
   border-radius: 10px;
   margin: auto;
-
   color: var(--cor-preto);
 }
 .saida_dados:hover {

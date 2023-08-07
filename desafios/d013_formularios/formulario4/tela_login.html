@@ -23,7 +23,10 @@
           <fieldset>
             <legend id="legenda">Cadastro de clientes</legend>
             <div id="div_nome" class="div_input">
-              <label for="idnome" id="label_nome" class="label label_entrada_dados"
+              <label
+                for="idnome"
+                id="label_nome"
+                class="label label_entrada_dados"
                 >Nome completo</label
               ><input
                 type="text"
@@ -35,8 +38,7 @@
             </div>
 
             <div id="div_email" class="div_input">
-              <label for="idemail" class="label label_entrada_dados"
-                >E-mail</label
+              <label for="idemail" class="label_entrada_dados">E-mail</label
               ><input
                 type="email"
                 required
@@ -47,7 +49,7 @@
             </div>
 
             <div id="div_telefone" class="div_input">
-              <label for="idtelefone" class="label label_entrada_dados"
+              <label for="idtelefone" class="label_entrada_dados"
                 >Telefone</label
               ><input
                 type="number"
@@ -70,7 +72,12 @@
                     class="genero"
                     value="M"
                   />
-                  <label for="idmasculino" class="">Masculino</label>
+                  <label
+                    for="idmasculino"
+                    id="label_masculino"
+                    class="label_genero"
+                    >Masculino</label
+                  >
                 </li>
 
                 <li>
@@ -82,7 +89,12 @@
                     class="genero"
                     value="F"
                   />
-                  <label for="idfeminino" class="">Feminino</label>
+                  <label
+                    for="idfeminino"
+                    id="label_feminino"
+                    class="label_genero"
+                    >Feminino</label
+                  >
                 </li>
               </ul>
             </div>
@@ -156,4 +168,5 @@
       </div>
     </main>
   </body>
+  <script src="javascript.js"></script>
 </html>

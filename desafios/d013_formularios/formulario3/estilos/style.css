@@ -66,6 +66,7 @@ body {
   width: 90%;
   padding: 10px;
   font-size: 18px;
+  outline: none;
 }
 
 #div_senha {
@@ -78,7 +79,7 @@ body {
   top: 60%;
   left: 87%;
   color: var(--cor-preto);
-  cursor:pointer;
+  cursor: pointer;
 }
 
 #div_output {
@@ -90,6 +91,7 @@ body {
 .output {
   width: 40%;
   padding: 15px;
+  border: none;
   border-radius: 10px;
   font-size: 18px;
   font-weight: 700;

@@ -108,6 +108,10 @@ article {
   position: absolute;
 }
 
+.imagem {
+  max-width: 100px;
+}
+
 #imagem_a {
   top: 25%;
   left: 0%;
@@ -116,4 +120,49 @@ article {
 #imagem_b {
   top: 25%;
   right: 0%;
+}
+
+/*Empilhando elementos*/
+#article_empilhando_elementos {
+  position: relative;
+  height: 600px;
+  border: 5px double var(--cor-rosa-escuro);
+}
+
+.paragrafo_empilhado {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  font-size: 64px;
+  text-align:center;
+  color: var(--cor-preto);
+  border: 3px solid var(--cor-preto);
+  background-color:rgba(0, 0, 0, 0.986);
+}
+
+#paragrafo_a {
+  z-index: 3;
+  top: 175px;
+  left: 200px;
+  color: var(--cor-laranja);
+  border-color: var(--cor-laranja);
+  background-color:rgba(0, 0, 0);
+
+}
+
+#paragrafo_b {
+  z-index: 2;
+  top: 275px;
+  left: 100px;
+  color:var(--cor-azul);
+  background: blue;
+}
+
+#paragrafo_c {
+  z-index: 1;
+  top: 325px;
+  left: 250px;
+  color:var(--cor-rosa-escuro);
+  background: var(--cor-rosa-claro);
 }

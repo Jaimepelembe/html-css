@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+#navigation_header{
+  position:relative;
+  display:flex;
+  flex-direction:row;
+  width:100vw;
+  height:100px;
+  margin-left:0vw;
+}
+
+.btn_icon_header{display:block;}
+#div_award {
+  
+ top: 9%;
+  left: 6%;
+}
+#imagem_award{max-width:128px;}

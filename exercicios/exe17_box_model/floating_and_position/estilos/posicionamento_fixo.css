@@ -1,0 +1,89 @@
+@charset "UTF-8";
+:root {
+  /*Cores*/
+  --cor-rosa-escuro: purple;
+  --cor-rosa-claro: fuchsia;
+  --cor-amarelo-claro: #f2f5d5;
+  --cor-azul: aqua;
+  --cor-laranja: orange;
+  --cor-verde: #c6de89;
+  --cor-preto: black;
+  --cor-branco: white;
+
+  /*Fontes*/
+  --fonte-conteudo: verdana, Geneva, Tahoma, sans-serif;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--fonte-conteudo);
+}
+
+body {
+  max-width: 100vw;
+  background-color: var(--cor-amarelo-claro);
+}
+main {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: var(--cor-branco);
+  border-radius: 15px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+article {
+  margin-bottom: 40px;
+  padding: 15px;
+}
+
+.paragrafo {
+  margin-bottom: 10px;
+}
+
+.imagem {
+  position: fixed;
+  max-width: 128px;
+  cursor: pointer;
+}
+
+#imagem_cerebro_humano {
+  top: 30%;
+  left: 10%;
+}
+
+#imagem_alongamento {
+  top: 7%;
+  left: 10%;
+}
+
+/*Fixando elementos inline*/
+.span_fixo {
+  position: fixed;
+}
+
+#span_link_nome {
+  top: 7%;
+  right: 3%;
+}
+
+#span_link_cidade {
+  top: 15%;
+  right: 8%;
+}
+
+.link {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--cor-rosa-escuro);
+}
+.link:hover {
+  color: var(--cor-rosa-claro);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario 05</title>
+    <link rel="stylesheet" href="estilos/style_form05.css" />
+    <link
+      rel="shortcut icon"
+      href="../ex003/favicons/html_favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <form action="" method="post" id="formulario">
+      <h2 id="titulo">Login</h2>
+      <div id="div_nome" class="div_entrada_dados">
+        <input
+          type="text"
+          id="entrada_nome"
+          class="entrada_dado"
+          required
+          autocomplete="name"
+        />
+        <label for="entrada_nome" id="label_nome" class="label">Nome</label>
+      </div>
+
+      <div id="div_senha" class="div_entrada_dados">
+        <input
+          type="password"
+          id="entrada_senha"
+          class="entrada_dado"
+          required
+        /><label for="" id="label_senha" class="label">Senha</label>
+      </div>
+
+      <div id="div_botoes_saida">
+        <input
+          type="submit"
+          value="Enviar"
+          id="botao_enviar"
+          class="botao_saida"
+        />
+        <input
+          type="reset"
+          value="Limpar"
+          id="botao_limpar"
+          class="botao_saida"
+        />
+      </div>
+    </form>
+  </body>
+</html>

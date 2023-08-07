@@ -26,3 +26,18 @@ function fecharSidebar() {
     mudar_estado_sidebar();
   }
 }
+
+function fechar_sidebar_redimensionartela() {
+  if (window.innerWidth > 750) {
+    navigation_header.style.position =
+      "relative"; /*o nav volta acupar a sua posicao original na tela*/
+    fecharSidebar();
+  } else {
+    navigation_header.style.position =
+      "fixed"; /*O nav ocupa um espaco fixo na tela */
+  }
+}
+
+window.addEventListener("resize", function (event) {
+  fechar_sidebar_redimensionartela();
+});
