@@ -7,7 +7,9 @@
   --cor-roxo: #7d2ae8;
   --cor-roxo-escuro-40: #4b198b;
   --cor-rosa: #ea526f;
+  --cor-rosa-escuro-20: #bb4259;
   --cor-azul: #44ccff;
+  --cor-azul-escuro-20: #36a3cc;
 
   /*Fontes*/
   --fonte-conteudo: verdana, Geneva, Tahoma, sans-serif;
@@ -75,6 +77,20 @@ body {
   background-color: var(--cor-roxo-escuro-40);
 }
 
+.icone_olho {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 30%;
+  right: 32px;
+  cursor: pointer;
+  color: var(--cor-branco);
+}
+
+#icone_olho_fechado {
+  display: none;
+}
+
 #div_botoes_saida {
   display: flex;
   justify-content: space-around;
@@ -97,6 +113,14 @@ body {
   background-color: var(--cor-azul);
 }
 
+#botao_enviar:hover {
+  background-color: var(--cor-azul-escuro-20);
+}
+
 #botao_limpar {
   background-color: var(--cor-rosa);
+}
+
+#botao_limpar:hover {
+  background-color: var(--cor-rosa-escuro-20);
 }
