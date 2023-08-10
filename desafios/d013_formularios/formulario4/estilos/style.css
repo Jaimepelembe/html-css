@@ -30,7 +30,8 @@ body {
   padding-top: 40px;
 }
 
-#box_formulario {
+#formulario {
+  padding: 20px;
   max-width: 500px;
   margin: auto;
   margin-bottom: 30px;
@@ -39,9 +40,6 @@ body {
   border-radius: 20px;
 }
 
-#formulario {
-  padding: 20px;
-}
 
 #legenda {
   margin-bottom: 15px;
@@ -66,21 +64,25 @@ div {
   position: relative;
 }
 
-.label_entrada_dados {
-  
+.label_entrada_dado {
   pointer-events: none;
   transition: 0.5s;
 }
 
-.entrada_dados {
+.entrada_dado {
   background: none;
   border: none;
   border-bottom: 1px solid var(--cor-branco);
   outline: none;
-  color: white;
+  color: var(--cor-branco);
   width: 100%;
 }
 
+.entrada_dado:focus ~ .label_entrada_dado,
+.entrada_dado:valid ~ .label_entrada_dado {
+  color: orange;
+  font-size:12px;
+}
 
 #label_data_nascimento {
   top: -25px;
@@ -113,7 +115,7 @@ ul {
   width: 60%;
   padding: 10px;
   font-weight: 700;
-  border:none;
+  border: none;
   border-radius: 10px;
   margin: auto;
   color: var(--cor-preto);
