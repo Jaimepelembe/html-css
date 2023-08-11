@@ -6,6 +6,7 @@
   --cor-laranja-claro: #fcbf49;
   --cor-laranja-escuro: #8d4a0299;
   --cor-vermelho: #d62828;
+  --cor-azul:#0892A5;
   --cor-azul-escuro: #003049;
   --cor-branco: #fff;
   --cor-preto: #000;
@@ -70,3 +71,10 @@ p {
   padding: 10px;
   text-align: justify;
 }
+
+.link {
+  text-decoration: none;
+  color:var(--cor-azul);
+}
+
+.link:hover,.link:active{color:var(--cor-vermelho);}

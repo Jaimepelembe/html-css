@@ -91,6 +91,15 @@ body {
   display: none;
 }
 
+.entrada_dado:focus ~ .icone_olho,
+.entrada_dado:valid ~ .icone_olho {
+  display: block;
+}
+
+.entrada_dado:invalid ~ .icone_olho {
+  display: none;
+}
+
 #div_botoes_saida {
   display: flex;
   justify-content: space-around;

@@ -7,7 +7,7 @@
   --cor-background-formulario: #222;
   --cor-branco: #fff;
   --cor-preto: #000;
-  --cor-letra_label: #8f8f8f;
+  --cor-cinza: #8f8f8f;
   --cor-azul: #45f3ff;
   --cor-vermelho: #ff2770;
 
@@ -175,7 +175,7 @@ body {
   font-size: 20px;
   letter-spacing: 0.05em;
   transition: 0.5s;
-  color: var(--cor-letra_label);
+  color: var(--cor-cinza);
   pointer-events: none;
 }
 
@@ -208,9 +208,13 @@ body {
   height: 20px;
   position: absolute;
   top: 30%;
-  right: 32px;
+  right: 15px;
   cursor: pointer;
   color: var(--cor-preto);
+}
+
+#icone_olho_fechado {
+  display: none;
 }
 
 .input:focus ~ .icone_olho,
@@ -222,11 +226,6 @@ body {
   display: none;
 }
 
-
-#icone_olho_fechado {
-  display: none;
-}
-
 #div_links {
   display: flex;
   flex-direction: row;
@@ -235,9 +234,10 @@ body {
 }
 .link {
   text-decoration: none;
-  color: var(--cor-letra_label);
+  color: var(--cor-cinza);
 }
-.link:hover,.link:nth-child(2){
+.link:hover,
+.link:nth-child(2) {
   color: var(--cor-vermelho);
 }
 
