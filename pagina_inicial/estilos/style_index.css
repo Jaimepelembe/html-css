@@ -12,6 +12,13 @@
   --cor-azul-claro: #0892a5;
   --cor-azul-escuro: #003049;
   --cor-branco: #fff;
+
+  /*Fontes*/
+  --fonte-titulo: "Oswald", verdana, Geneva, Tahoma, sans-serif;
+  --fonte-conteudo: verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
   margin: 0px;
   padding: 0px;
   font-family: var(--fonte-conteudo);
@@ -93,7 +100,7 @@ p {
 
 li {
   margin-top: 10px;
-  margin-left:25px;
+  margin-left: 25px;
 }
 .elemento_formulario {
   margin-top: 20px;
