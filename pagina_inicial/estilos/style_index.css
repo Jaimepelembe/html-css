@@ -64,6 +64,8 @@ h3,
 h4 {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: var(--fonte-titulo);
+  font-weight:700;
 }
 
 h1 {
