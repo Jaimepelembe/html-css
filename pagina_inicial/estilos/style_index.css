@@ -1,21 +1,17 @@
 @charset "UTF-8";
 
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
+
 :root {
   /*Cores*/
   --cor-laranja: #f77f00;
   --cor-laranja-claro: #fcbf49;
   --cor-laranja-escuro: #8d4a0299;
   --cor-vermelho: #d62828;
-  --cor-azul:#0892A5;
+  --cor-azul: blue;
+  --cor-azul-claro: #0892a5;
   --cor-azul-escuro: #003049;
   --cor-branco: #fff;
-  --cor-preto: #000;
-
-  /*Fontes*/
-  --fonte-conteudo: verdana, Geneva, Tahoma, sans-serif;
-}
-
-* {
   margin: 0px;
   padding: 0px;
   font-family: var(--fonte-conteudo);
@@ -27,27 +23,32 @@ body {
     var(--cor-laranja-claro),
     var(--cor-laranja)
   );
-  background-attachment: fixed;
-  display: grid;
-  place-content: center;
 }
 
 main {
-  background-color: var(--cor-branco);
-
+  max-width: 800px;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: var(--cor-branco);
   border-radius: 15px;
   box-shadow: 10px 10px 10px var(--cor-laranja-escuro);
 }
 
 #article_principal {
-  max-width: 800px;
   padding: 40px;
 }
 
-.imagem {
-  width: 120px;
+section {
+  margin-top: 60px;
+}
+
+#section_html {
+  margin-top: 0px;
+}
+
+#section_css {
+  margin-top: 0px;
 }
 
 h1,
@@ -64,17 +65,53 @@ h1 {
 }
 
 h2 {
-  color: --cor-azul-escuro;
+  color: var(--cor-vermelho);
+}
+
+h3 {
+  color: var(--cor-azul-escuro);
 }
 
 p {
   padding: 10px;
   text-align: justify;
+  line-height: 20px;
+}
+
+.imagem {
+  width: 120px;
+  height: 100%;
+}
+
+.imagem_formulario {
+  display: none;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+li {
+  margin-top: 10px;
+  margin-left:25px;
+}
+.elemento_formulario {
+  margin-top: 20px;
+  max-width: 256px;
+  max-height: 400px;
+}
+
+.link_formulario:hover ~ .imagem_formulario,
+.link_formulario:active ~ .imagem_formulario {
+  display: block;
 }
 
 .link {
   text-decoration: none;
-  color:var(--cor-azul);
+  color: var(--cor-azul);
 }
 
-.link:hover,.link:active{color:var(--cor-vermelho);}
+.link:hover,
+.link:active {
+  color: var(--cor-vermelho);
+}
