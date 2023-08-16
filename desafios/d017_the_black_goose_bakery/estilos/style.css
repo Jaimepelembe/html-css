@@ -3,41 +3,86 @@
 @import url("https://fonts.googleapis.com/css2?family=Stint+Ultra+Expanded&display=swap");
 
 :root {
-  /*Cores*/
-  --cor-castanha: #783f27;
-  --cor-castanha-escuro-50: #3c2014;
-  --cor-laranja: #dc6903;
-  --cor-laranja-claro: #f9ab33;
-  --cor-branco-esfomado: #f6f4f3;
-  --cor-branco: #fff;
-  --cor-preto: #000;
-  --cor-cinza: #555;
-  --cor-cinza-claro-70: #cccccc;
-  --cor-verde: #42a540;
-  --cor-verde-escuro-40: #358433;
+  /*Colors*/
+  --color-brown: #783f27;
+  --color-brown-dark-50: #3c2014;
+  --color-orange: #dc6903;
+  --color-orange-light: #f9ab33;
+  --color-white: #fff;
+  --color-white-smoked: #f6f4f3;
+  --color-black: #000;
+  --color-gray: #555;
+  --color-gray-light-70: #cccccc;
+  --color-green: #42a540;
+  --color-green-dark-40: #358433;
 
-  /*Fontes*/
-  --fonte-conteudo: Georgia, serif;
-  --fonte-header: verdana, Geneva, Tahoma, sans-serif;
-  --fonte-titulo: "Stint Ultra Expanded", cursive;
+  /*Fonts*/
+  --font-title: "Stint Ultra Expanded", cursive;
+  --font-header: verdana, Geneva, Tahoma, sans-serif;
+  --font-content: Georgia, serif;
 }
 
 * {
   margin: 0px;
   padding: 0px;
-  font-family: var(--fonte-conteudo);
+  font-family: var(--font-content);
   font-size: 16px;
 }
 
 header {
   width: 100vw;
-  /*Fixar o header na página*/
+
+  /*Fix the header on the page*/
   position: fixed;
   top: 0;
   z-index: 2;
-background-color: var(--cor-castanha);
+  background-color: var(--color-brown);
 }
 
+#div_logo {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.btn_icon_header {
+  border: none;
+  background-color: transparent;
+  color: var(--color-black);
+  cursor: pointer;
+}
+
+.btn_icon_header:hover,
+.btn_icon_header:active {
+  color: var(--color-orange);
+}
+
+#image_logo {
+  position: absolute;
+  top: 20%;
+  right: 25%;
+  display: inline;
+  height: 44px;
+  cursor: pointer;
+}
+
+#image_award {
+  position: absolute;
+  right: 40%;
+  top: 60%;
+  display: block;
+  max-width: 90px;
+  cursor: pointer;
+}
+
+#navigation_header {
+  position: absolute;
+  top: 0;
+  margin-left: -100vw;
+  width: 180px;
+  height: 100vh;
+  background-color: var(--color-brown-dark-50);
+  animation-duration: 0.5s;
+}
 @keyframes showSidebar {
   from {
     margin-left: -100vw;
@@ -47,32 +92,25 @@ background-color: var(--cor-castanha);
   }
 }
 
-#background_header {
+#background_breads {
   width: 100%;
-  min-height: 300px;
+  min-height: 280px;
   background-image: url(../imagens/croissants_banner.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-#lista_header {
-  display: flex;
-  flex-direction: row;
-}
-
-#elemento_imagem_logo {
-  margin-left: 20%;
-}
-
-#navigation_header {
+#paragraph_breads {
   position: absolute;
-  top: 0;
-  margin-left: -100vw;
-  width: 200px;
-  height: 100vh;
-  background-color: var(--cor-castanha-escuro-50);
-  animation-duration: 0.5s;
+  top: 29%;
+  left: 10%;
+  max-width: 580px;
+  padding: 10px;
+  font-family: var(--font-header);
+  font-style: italic;
+  font-size: 20px;
+  color: var(--color-white);
 }
 
 ul {
@@ -82,76 +120,44 @@ ul {
   max-width: 80px;
   margin: auto;
   padding-top: 25px;
-  color: var(--cor-branco);
 }
 
-.btn_icon_header {
-  border: none;
-  background-color: transparent;
-  color: var(--cor-laranja);
-  cursor: pointer;
-}
 .link_nav {
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
-  color: var(--cor-branco);
+  color: var(--color-white);
 }
 
-.link_nav:hover {
-  color: var(--cor-laranja);
+.link_nav:hover,
+.link_nav:active {
+  color: var(--color-orange);
 }
 
-#logo {
-  width: 190px;
-  display: block;
-  margin: auto;
-
-  padding: 0px;
-}
-#imagem_logo {
-  display: inline;
-  height: 44px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-
-  cursor: pointer;
-}
-.imagem {
+.image {
   max-width: 100%;
 }
 
-.imagem_flutuada {
+.image_floated {
   float: left;
+  max-width: 128px;
   margin-right: 10px;
 }
 
 /*img[src*="imagens"]{width:16px;}*/
 
-.paragrafo {
+.paragraph {
   padding: 15px;
   line-height: 28.8px;
-}
-
-#paragrafo_header {
-  max-width: 580px;
-  margin: auto;
-  padding: 10px;
-  font-family: var(--fonte-header);
-  font-style: italic;
-  font-size: 20px;
-  color: var(--cor-branco);
 }
 
 #main {
   max-width: 800px;
   margin: auto;
-  margin-top: 270px;
+  margin-top: 65px;
   padding: 10px;
-  border: double 4px var(--cor-laranja-claro);
-  border-radius: 15px;
-  background-color: var(--cor-branco);
-  font-family: var(--fonte-titulo);
+  background-color: var(--color-white);
+  font-family: var(--font-title);
 }
 
 article {
@@ -161,7 +167,8 @@ article {
 h1,
 h2,
 h3 {
-  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 h1 {
   font-size: 32px;
@@ -171,7 +178,6 @@ h2 {
   font-size: 28px;
   border-top: 1px solid;
   border-left: 3px solid;
-  padding: 0px;
   padding-top: 5px;
   padding-left: 15px;
 }
@@ -180,105 +186,93 @@ h3 {
   font-size: 24px;
 }
 
-.titulo {
+.title {
   margin-bottom: 20px;
   clear: left;
   text-transform: uppercase;
-  color: var(--cor-laranja);
+  color: var(--color-orange);
 }
-#titulo_conteudo {
-  color: var(--cor-cinza);
+#title_content {
+  color: var(--color-gray);
 }
 
-.link_conteudo {
-  padding: 10px;
+.link_content {
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--cor-verde);
+  color: var(--color-green);
 }
-.link_conteudo:hover {
+.link_content:hover {
   text-decoration: underline;
-  color: var(--cor-verde-escuro-40);
+  color: var(--color-green-dark-40);
 }
 
-.paragrafo_link_flutuado {
+.paragraph_link_floated {
+  padding-top: 0px;
   clear: left;
 }
 
-#horario_funcionamento {
+#schedule_operating {
   max-width: 100vw;
-  margin-top: 90px;
+  margin-top: 60px;
   padding-bottom: 40px;
-  background-color: var(--cor-cinza-claro-70);
+  background-color: var(--color-gray-light-70);
 }
 
-#article_horario {
+#article_schedule {
   max-width: 800px;
   margin: auto;
   padding: 10px;
   padding-left: 80px;
 }
 
-#titulo_horario {
+#title_schedule {
   border: none;
   padding-left: 0px;
 }
-.horario {
+.schedule {
   margin-bottom: 15px;
-  /*margin-left: 30px;*/
 }
 
-.dia_semana {
-  color: var(--cor-laranja);
+.day_of_week {
+  color: var(--color-orange);
 }
 
 footer {
   max-width: 100vw;
   padding: 20px;
-  background-color: var(--cor-castanha);
+  background-color: var(--color-brown);
 }
 
-#lista_redes_sociais {
+#list_social_network {
   text-align: center;
   margin-bottom: 10px;
 }
 
-.rede_social {
+.social_network {
   display: inline;
   margin-right: 35px;
 }
 
-#paragrafo_footer {
+#paragraph_footer {
   margin: auto;
   max-width: 500px;
   font-weight: 700;
-  color: var(--cor-branco);
+  color: var(--color-white);
 }
 
 svg {
-  color: var(--cor-preto);
+  color: var(--color-black);
 }
 
 svg:hover {
-  color: var(--cor-laranja-claro);
+  color: var(--color-orange-light);
 }
 
 #link_footer {
-  color: var(--cor-preto);
+  margin-left: 10px;
+  color: var(--color-black);
   text-decoration: none;
 }
 #link_footer:hover {
-  color: var(--cor-laranja);
-}
-
-#div_award {
-  position: absolute;
-  top: 20%;
-  left: 40%;
-  z-index: 2;
-}
-
-#imagem_award {
-  display: none;
-  max-width: 90px;
+  color: var(--color-orange);
 }

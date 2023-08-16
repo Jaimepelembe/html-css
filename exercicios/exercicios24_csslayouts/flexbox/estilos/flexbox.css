@@ -1,51 +1,141 @@
 @charset "UTF-8";
 
 :root {
-  /*Cores*/
-  --cor-vermelho: red;
-  --cor-laranja: orange;
-  --cor-verde: green;
-  --cor-azul: blue;
-  --cor-rosa: purple;
+  /*Colors*/
+  --color-red: red;
+  --color-orange: orange;
+  --color-green: green;
+  --color-blue: blue;
+  --color-purple: purple;
+  --color-black: #000;
+  --color-white: #fff;
 
-  /*Fonte*/
-  --fonte-conteudo: verdana, Geneva, Tahoma, sans-serif;
+  /*Font*/
+  --font-content: verdana, Geneva, Tahoma, sans-serif;
 }
 
 * {
   margin: 0px;
   padding: 0px;
-  font-family: var(--fonte-conteudo);
-  font-size:32px;
+  font-family: var(--font-content);
+  font-size: 32px;
 }
 
-#container {
+main {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.article{
+margin-top:50px;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom:20px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+
+.container {
   display: flex;
- 
-  /*justify-content: center;
-*/
+  max-width: 300px;
+  padding: 0px;
+  border: 5px solid var(--color-black);
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.container_wrap {
+  flex-wrap: nowrap;
+}
+
+.container_column {
+  flex-flow: column wrap;
+  margin-bottom: 110px;
+  max-height: 350px;
+}
+
+#flex_direction_row {
+  flex-direction: row;
+}
+#flex_direction_row_reverse {
+  flex-direction: row-reverse;
+}
+#flex_direction_column {
+  flex-direction: column;
+}
+#flex_direction_column_reverse {
+  flex-direction: column-reverse;
+}
+
+#flex_wrap_nowrap {
+  flex-wrap: nowrap;
+}
+
+#flex_wrap_wrap {
+  flex-wrap: wrap;
+}
+#flex_wrap_wrap_reverse {
+  flex-wrap: wrap-reverse;
 }
 
 .box {
   min-width: 40px;
   min-height: 40px;
   text-align: center;
+  color: var(--color-white);
 }
 
+.box_wrap {
+  width: 60px;
+}
 
 #box1 {
-  background-color: var(--cor-vermelho);
-
+  background-color: var(--color-red);
 }
 #box2 {
-  background-color: var(--cor-laranja);
+  background-color: var(--color-orange);
 }
 #box3 {
-  background-color: var(--cor-verde);
+  background-color: var(--color-green);
 }
 #box4 {
-  background-color: var(--cor-azul);
+  background-color: var(--color-blue);
 }
 #box5 {
-  background-color: var(--cor-rosa);
+  background-color: var(--color-purple);
+}
+
+#box6 {
+  background-color: var(--color-red);
+}
+#box7 {
+  background-color: var(--color-orange);
+}
+#box8 {
+  background-color: var(--color-green);
+}
+#box9 {
+  background-color: var(--color-blue);
+}
+#box10 {
+  background-color: var(--color-purple);
 }

@@ -10,41 +10,43 @@
   </head>
   <body>
   
-      <div id="background_header">
+     
         <header id="header" tabindex="0">
-            <button
-              id="botao_hamburger"
-              class="btn_icon_header"
-              onclick="mudar_estado_sidebar()"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="35"
-                height="35"
-                fill="currentColor"
-                class="bi bi-list"
-                viewBox="0 0 16 16"
+            <div id="div_logo">
+              <button
+              id="button_hamburger"
+                class="btn_icon_header"
+                onclick="mudar_estado_sidebar()"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  fill="currentColor"
+                  class="bi bi-list"
+                  viewBox="0 0 16 16"
+              
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                  />
+                </svg>
+              </button>
+              <a href="#" onclick="fecharSidebar()" >
+                <img
+                  src="imagens/bgb_logo.png"
+                  alt="Imagem do logo"
+                  id="image_logo"
+                  class="image"
                 />
-              </svg>
-            </button>
-        
-         
-            <img
-              src="imagens/bgb_logo.png"
-              alt="Imagem do logo"
-              id="imagem_logo"
-              class="imagem"
-            />
-          
-      <p id="paragrafo_header">
-        The delicious baked goods you love at Black Goose Bistro...now available
-        to go!
-      </p>
+              </a>
+             <img src="imagens/award.png" alt="Farmers' Market Award" id="image_award" class="image" onclick="fecharSidebar()">
+            </div>
 
+
+          
+     
       <nav id="navigation_header">
         <ul id="ul_nav">
           <li class="li_nav">
@@ -104,27 +106,34 @@
         </ul>
       </nav>
     </header>
-       
+
+    
+    <div id="background_breads">
+      <p id="paragraph_breads">
+        The delicious baked goods you love at Black Goose Bistro...now available
+        to go!
+      </p>
+
       </div>
 
 
     <main id="main" tabindex="0" onclick="fecharSidebar()">
-      <h1 id="titulo_conteudo" class="titulo">Fresh from the Oven</h1>
+      <h1 id="title_content" class="title">Fresh from the Oven</h1>
       <article id="article_breads">
-        <h2 class="titulo">Breads</h2>
+        <h2 class="title">Breads</h2>
         <img
           src="imagens/bread.png"
           alt="Imagem de pão"
-          class="imagem imagem_flutuada"
+          class="image image_floated"
         />
-        <p class="paragrafo">
+        <p class="paragraph">
           Our breads are made daily from highest-quality whole grain flour,
           water, salt, and yeast or sourdough starter. Simply and naturally, and
           never any preservatives. Patience is key to achieving the proper level
           of fermentation and baking each loaf to perfection. Available in whole
           grain, sourdough, olive loaf, classic rye, and potato-onion.
-          <p class="paragrafo paragrafo_link_flutuado">
-            <a href="" class="link_conteudo" class="link_flutuado"
+          <p class="paragraph paragraph_link_floated">
+            <a href="" class="link_content"
               >learn more about our baking process ...</a
             >
           </p>
@@ -132,63 +141,63 @@
       </article>
 
       <article id="article_muffins">
-        <h2 class="titulo">Muffins</h2>
+        <h2 class="title">Muffins</h2>
         <img
           src="imagens/muffin.png"
           alt="Imagem de muffim"
-          class="imagem_flutuada"
+          class="image_floated"
         />
-        <p class="paragrafo">
+        <p class="paragraph">
           Every day, we offer a large selection of muffins, including blueberry,
           multi-berry, bran, corn, lemon-poppyseed, and chocolate. Our muffins
           are made from scratch each day. Stop by to see our seasonal muffin
           flavors!
         </p>
 
-        <p class="paragrafo paragrafo_link_flutuado">
-          <a href="#" class="link_conteudo"
+        <p class="paragraph paragraph_link_floated">
+          <a href="#" class="link_content"
             >learn more about how we make our muffins...</a
           >
         </p>
       </article>
     </main>
-    <aside id="horario_funcionamento" tabindex="0" onclick="fecharSidebar()">
-      <article id="article_horario">
-        <h2 id="titulo_horario">Hours</h2>
+    <aside id="schedule_operating" tabindex="0" onclick="fecharSidebar()">
+      <article id="article_schedule">
+        <h2 id="title_schedule">Hours</h2>
 
-        <ul id="lista_horario">
-          <li class="horario">
-            <span class="dia_semana">MONDAY:</span> 5am to 3pm
+        <ul id="list_schedule">
+          <li class="schedule">
+            <span class="day_of_week">MONDAY:</span> 5am to 3pm
           </li>
-          <li class="horario">
-            <span class="dia_semana">TUESDAY:</span> 5am to 3pm
+          <li class="schedule">
+            <span class="day_of_week">TUESDAY:</span> 5am to 3pm
           </li>
-          <li class="horario">
-            <span class="dia_semana">WEDNESDAY:</span> 5am to 3pm
+          <li class="schedule">
+            <span class="day_of_week">WEDNESDAY:</span> 5am to 3pm
           </li>
-          <li class="horario">
-            <span class="dia_semana">THURSDAY:</span> 5am to 3pm
+          <li class="schedule">
+            <span class="day_of_week">THURSDAY:</span> 5am to 3pm
           </li>
-          <li class="horario">
-            <span class="dia_semana">FRIDAY:</span> 5am to 3pm
+          <li class="schedule">
+            <span class="day_of_week">FRIDAY:</span> 5am to 3pm
           </li>
           
-          <li class="horario">
-            <span class="dia_semana">SATURDAY:</span> 6am to 4pm
+          <li class="schedule">
+            <span class="day_of_week">SATURDAY:</span> 6am to 4pm
             
           </li>
-          <li class="horario"><span class="dia_semana">SUNDAY:</span> 6am to 4pm</li>
+          <li class="schedule"><span class="day_of_week">SUNDAY:</span> 6am to 4pm</li>
         </ul>
       </article>
     </aside>
 
     <footer id="footer">
-      <ul id="lista_redes_sociais">
-        <li class="rede_social" id="rede_whatsssap">
+      <ul id="list_social_network">
+        <li class="social_network" id="rede_whatsssap">
           <a
             href="https://wa.me/258847502352?text=Sauda%C3%A7%C3%B5es,%20eu%20gostaria%20de%20fazer%20uma%20reserva%20para%20o%20Saara"
             target="_blank"
-            class="link_redes_sociais"
+            class="link_social_network"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -205,11 +214,11 @@
           </a>
         </li>
 
-        <li id="rede_instagram" class="rede_social">
+        <li id="rede_instagram" class="social_network">
           <a
             href="https://ig.me/m/jaimefernando2"
             target="_blank"
-            class="link_redes_sociais"
+            class="link_social_network"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -220,15 +229,14 @@
             >
               <path
                 d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-              /></svg
-          ></a>
+              /></svg></a>
         </li>
 
-        <li class="rede_social" id="rede_messenger">
+        <li class="social_network" id="rede_messenger">
           <a
             href="https://web.facebook.com/jaimefp.pelembe/"
             target="_blank"
-            class="link_redes_sociais"
+            class="link_social_network"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -245,8 +253,9 @@
           </a>
         </li>
       </ul>
-      <p id="paragrafo_footer" class="paragrafo">
-        Site Desenvolvido por
+      <p id="paragraph_footer" class="paragraph">
+        Site Desenvolvido por 
+
         <a
           href="https://github.com/Jaimepelembe"
           target="_blank"
@@ -255,7 +264,7 @@
         >
       </p>
 
-      <div id="div_award"><img src="imagens/award.png" alt="Farmers' Market Award" id="imagem_award" class="imagem"></div>
+      
 
     </footer>
   </body>

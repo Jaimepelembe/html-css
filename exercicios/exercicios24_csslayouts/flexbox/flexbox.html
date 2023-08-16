@@ -12,12 +12,152 @@
     <link rel="stylesheet" href="estilos/flexbox.css" media="all" />
   </head>
   <body>
-    <div id="container">
-      <div id="box1" class="box">1</div>
-      <div id="box2" class="box">2</div>
-      <div id="box3" class="box">3</div>
-      <div id="box4" class="box">4</div>
-      <div id="box5" class="box">5</div>
-    </div>
+    <main>
+      <article class="article">
+        <h1>Especificando direção do fluxo</h1>
+
+        <h2>Flex-direction</h2>
+<h3>1.Row</h3>
+
+        <div id="flex_direction_row" class="container">
+          <div id="box1" class="box">1</div>
+          <div id="box2" class="box">2</div>
+          <div id="box3" class="box">3</div>
+          <div id="box4" class="box">4</div>
+          <div id="box5" class="box">5</div>
+        </div>
+
+<h3>2.Row-reverse</h3>
+<div id="flex_direction_row_reverse" class="container">
+  <div id="box1" class="box">1</div>
+  <div id="box2" class="box">2</div>
+  <div id="box3" class="box">3</div>
+  <div id="box4" class="box">4</div>
+  <div id="box5" class="box">5</div>
+</div>
+
+<h3>3.Column</h3>
+<div id="flex_direction_column" class="container">
+  <div id="box1" class="box">1</div>
+  <div id="box2" class="box">2</div>
+  <div id="box3" class="box">3</div>
+  <div id="box4" class="box">4</div>
+  <div id="box5" class="box">5</div>
+</div>
+
+<h3>4.Column-reverse</h3>
+<div id="flex_direction_column_reverse" class="container">
+  <div id="box1" class="box">1</div>
+  <div id="box2" class="box">2</div>
+  <div id="box3" class="box">3</div>
+  <div id="box4" class="box">4</div>
+  <div id="box5" class="box">5</div>
+</div>
+
+
+      </article>
+
+<article class="article"><h1>Quebrando o conteúdo em multiplas linhas</h1>
+
+
+
+
+
+  <h2>Flex-wrap de elementos em linha</h2>
+  <h3>1.Nowrap</h3>
+  
+          <div id="flex_wrap_nowrap" class="container container_wrap">
+            <div id="box1" class="box box_wrap">1</div>
+            <div id="box2" class="box box_wrap">2</div>
+            <div id="box3" class="box box_wrap">3</div>
+            <div id="box4" class="box box_wrap">4</div>
+            <div id="box5" class="box box_wrap">5</div>
+            <div id="box6" class="box box_wrap">6</div>
+            <div id="box7" class="box box_wrap">7</div>
+            <div id="box8" class="box box_wrap">8</div>
+            <div id="box9" class="box box_wrap">9</div>
+            <div id="box10" class="box box_wrap">10</div>
+          </div>
+  
+          <h3>2.Wrap</h3>
+  
+          <div id="flex_wrap_wrap" class="container container_wrap">
+            <div id="box1" class="box box_wrap">1</div>
+            <div id="box2" class="box box_wrap">2</div>
+            <div id="box3" class="box box_wrap">3</div>
+            <div id="box4" class="box box_wrap">4</div>
+            <div id="box5" class="box box_wrap">5</div>
+            <div id="box6" class="box box_wrap">6</div>
+            <div id="box7" class="box box_wrap">7</div>
+            <div id="box8" class="box box_wrap">8</div>
+            <div id="box9" class="box box_wrap">9</div>
+            <div id="box10" class="box box_wrap">10</div>
+          </div>
+  
+          <h3>3.Wrap_reverse</h3>
+          <div id="flex_wrap_wrap_reverse" class="container container_wrap">
+            <div id="box1" class="box box_wrap">1</div>
+            <div id="box2" class="box box_wrap">2</div>
+            <div id="box3" class="box box_wrap">3</div>
+            <div id="box4" class="box box_wrap">4</div>
+            <div id="box5" class="box box_wrap">5</div>
+            <div id="box6" class="box box_wrap">6</div>
+            <div id="box7" class="box box_wrap">7</div>
+            <div id="box8" class="box box_wrap">8</div>
+            <div id="box9" class="box box_wrap">9</div>
+            <div id="box10" class="box box_wrap">10</div>
+          </div>
+
+
+          <h2>Flex-wrap de elementos em coluna</h2>
+          <h3>1.Nowrap</h3>
+          
+                  <div id="flex_wrap_nowrap" class="container container_wrap container_column">
+                    <div id="box1" class="box box_wrap">1</div>
+                    <div id="box2" class="box box_wrap">2</div>
+                    <div id="box3" class="box box_wrap">3</div>
+                    <div id="box4" class="box box_wrap">4</div>
+                    <div id="box5" class="box box_wrap">5</div>
+                    <div id="box6" class="box box_wrap">6</div>
+                    <div id="box7" class="box box_wrap">7</div>
+                    <div id="box8" class="box box_wrap">8</div>
+                    <div id="box9" class="box box_wrap">9</div>
+                    <div id="box10" class="box box_wrap">10</div>
+                  </div>
+          
+                  <h3>2.Wrap</h3>
+          
+                  <div id="flex_wrap_wrap" class="container container_wrap container_column">
+                    <div id="box1" class="box box_wrap">1</div>
+                    <div id="box2" class="box box_wrap">2</div>
+                    <div id="box3" class="box box_wrap">3</div>
+                    <div id="box4" class="box box_wrap">4</div>
+                    <div id="box5" class="box box_wrap">5</div>
+                    <div id="box6" class="box box_wrap">6</div>
+                    <div id="box7" class="box box_wrap">7</div>
+                    <div id="box8" class="box box_wrap">8</div>
+                    <div id="box9" class="box box_wrap">9</div>
+                    <div id="box10" class="box box_wrap">10</div>
+                  </div>
+          
+                  <h3>3.Wrap_reverse</h3>
+                  <div id="flex_wrap_wrap_reverse" class="container container_wrap container_column">
+                    <div id="box1" class="box box_wrap">1</div>
+                    <div id="box2" class="box box_wrap">2</div>
+                    <div id="box3" class="box box_wrap">3</div>
+                    <div id="box4" class="box box_wrap">4</div>
+                    <div id="box5" class="box box_wrap">5</div>
+                    <div id="box6" class="box box_wrap">6</div>
+                    <div id="box7" class="box box_wrap">7</div>
+                    <div id="box8" class="box box_wrap">8</div>
+                    <div id="box9" class="box box_wrap">9</div>
+                    <div id="box10" class="box box_wrap">10</div>
+                  </div>
+
+</article>
+
+    </main>
+
+   
   </body>
 </html>
