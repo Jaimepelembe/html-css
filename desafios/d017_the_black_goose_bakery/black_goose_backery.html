@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="imagens/muffin.png" type="image/x-icon" />
     <link rel="stylesheet" href="estilos/style.css" media="all" />
     <link rel="stylesheet" href="estilos/computador.css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="estilos/print.css" media="print">
   </head>
   <body>
   
@@ -115,7 +116,7 @@
       </div>
 
 
-    <main id="main" tabindex="0" onclick="endtheSidebar()">
+    <main id="main" tabindex="0" onclick="endtheSidebar()" class="element_print">
       <h1 id="title_content" class="title">Fresh from the Oven</h1>
       <article id="article_breads">
         <h2 class="title">Breads</h2>
@@ -159,7 +160,7 @@
         </p>
       </article>
     </main>
-    <aside id="schedule_operating" tabindex="0" onclick="endtheSidebar()">
+    <aside id="schedule_operating" tabindex="0" onclick="endtheSidebar()" class="element_print">
       <article id="article_schedule">
         <h2 id="title_schedule">Hours</h2>
 

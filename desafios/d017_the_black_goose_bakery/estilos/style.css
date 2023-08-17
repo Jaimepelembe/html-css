@@ -29,6 +29,12 @@
   font-size: 16px;
 }
 
+html,
+body {
+  height: 100vh;
+  overflow: auto; /*make to print only the pages that have content*/
+}
+
 header {
   width: 100vw;
 

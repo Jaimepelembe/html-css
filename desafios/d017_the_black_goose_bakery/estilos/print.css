@@ -1,0 +1,37 @@
+:root {
+  /*colors*/
+  --color-white: #fff;
+
+  /*Fonts*/
+  --font-content: "Courier New", Courier, monospace;
+}
+
+* {
+  font-family: var(--font-content);
+}
+
+@page {
+  size: auto;
+  margin: 0;
+}
+
+#navigation_header,
+#image_logo,
+#image_award,
+#background_breads,
+.btn_icon_header,
+#footer {
+  display: none;
+}
+
+#article_muffins {
+  margin-bottom: 10px;
+}
+#schedule_operating {
+  margin-top: 5px;
+  padding-bottom: 0px;
+}
+
+#article_schedule {
+  background-color: var(--color-white);
+}
