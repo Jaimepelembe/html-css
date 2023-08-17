@@ -16,7 +16,7 @@
               <button
               id="button_hamburger"
                 class="btn_icon_header"
-                onclick="mudar_estado_sidebar()"
+                onclick="changeStatusSidebar()"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +33,7 @@
                   />
                 </svg>
               </button>
-              <a href="#" onclick="fecharSidebar()" >
+              <a href="#" onclick="endtheSidebar()" >
                 <img
                   src="imagens/bgb_logo.png"
                   alt="Imagem do logo"
@@ -41,16 +41,14 @@
                   class="image"
                 />
               </a>
-             <img src="imagens/award.png" alt="Farmers' Market Award" id="image_award" class="image" onclick="fecharSidebar()">
+             <img src="imagens/award.png" alt="Farmers' Market Award" id="image_award" class="image" onclick="endtheSidebar()">
             </div>
-
-
-          
+ 
      
       <nav id="navigation_header">
         <ul id="ul_nav">
           <li class="li_nav">
-            <button class="btn_icon_header" onclick="mudar_estado_sidebar()">
+            <button class="btn_icon_header" onclick="changeStatusSidebar()">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="35"
@@ -69,17 +67,17 @@
             <a
               href="#"
               class="link_nav"
-              onclick="fecharSidebar()"
+              onclick="endtheSidebar()"
               target="_self"
               >Menu</a
             >
           </li>
 
-          <li class="li_nav" onclick="fecharSidebar()">
+          <li class="li_nav" onclick="endtheSidebar()">
             <a
               href="#"
               class="link_nav"
-              onclick="fecharSidebar()"
+              onclick="endtheSidebar()"
               target="_self"
               >News</a
             >
@@ -89,7 +87,7 @@
             <a
               href="#"
               class="link_nav"
-              onclick="fecharSidebar()"
+              onclick="endtheSidebar()"
               target="_self"
               >About</a
             >
@@ -98,7 +96,7 @@
             <a
               href="#"
               class="link_nav"
-              onclick="fecharSidebar()"
+              onclick="endtheSidebar()"
               target="_self"
               >Contact</a
             >
@@ -117,7 +115,7 @@
       </div>
 
 
-    <main id="main" tabindex="0" onclick="fecharSidebar()">
+    <main id="main" tabindex="0" onclick="endtheSidebar()">
       <h1 id="title_content" class="title">Fresh from the Oven</h1>
       <article id="article_breads">
         <h2 class="title">Breads</h2>
@@ -161,7 +159,7 @@
         </p>
       </article>
     </main>
-    <aside id="schedule_operating" tabindex="0" onclick="fecharSidebar()">
+    <aside id="schedule_operating" tabindex="0" onclick="endtheSidebar()">
       <article id="article_schedule">
         <h2 id="title_schedule">Hours</h2>
 
