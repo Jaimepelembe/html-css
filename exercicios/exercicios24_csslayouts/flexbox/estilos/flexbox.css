@@ -28,9 +28,8 @@ main {
   margin-bottom: 20px;
 }
 
-.article{
-margin-top:50px;
-
+.article {
+  margin-top: 50px;
 }
 
 h1,
@@ -43,7 +42,7 @@ h4 {
 
 h1 {
   font-size: 36px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 h2 {
   font-size: 30px;
@@ -99,7 +98,7 @@ h4 {
 
 .box {
   min-width: 40px;
-  min-height: 40px;
+  height: 40px;
   text-align: center;
   color: var(--color-white);
 }
@@ -138,4 +137,132 @@ h4 {
 }
 #box10 {
   background-color: var(--color-purple);
+}
+
+/*Align itens in the main axi*/
+
+.container_align {
+  width: 600px;
+  justify-content: flex-start;
+}
+
+.container_align_column {
+  width: 200px;
+  height: 300px;
+  justify-content: flex-start;
+}
+
+.align_flex_end {
+  justify-content: flex-end;
+}
+
+.align_center {
+  justify-content: center;
+}
+
+.align_space_between {
+  justify-content: space-between;
+}
+.align_space_around {
+  justify-content: space-around;
+}
+
+.box_aligned_column {
+  width: 40px;
+  height: 80px;
+}
+
+/*Alinhando itens no eixo transversal(y)*/
+.container_align_items {
+  height: 200px;
+  align-items: flex-start;
+}
+
+.containerflex_start {
+  align-items: flex-start;
+}
+
+.containerflex_end {
+  align-items: flex-end;
+}
+
+.containercenter {
+  align-items: center;
+}
+.containerbaseline {
+  align-items: baseline;
+}
+
+.containerstretch {
+  align-items: stretch;
+}
+
+.box_stretched {
+  max-height: 100%;
+  width: 40px;
+  color: var(--color-white);
+}
+
+/*Align a specify item in the cross axis*/
+.container_align_items_self {
+  height: 200px;
+  align-items: stretch;
+}
+
+.box_align_self_start {
+  align-self: flex-start;
+}
+
+.box_align_self_end {
+  align-self: flex-end;
+}
+
+.box_align_self_center {
+  align-self: center;
+}
+.box_align_self_baseline {
+  align-self: baseline;
+}
+
+.box_align_self_stretch {
+  align-self: stretch;
+}
+
+/*Alinhamento em multiplas linhas*/
+.container_multilines {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 350px;
+  height: 200px;
+  align-items: flex-start;
+}
+
+.align_content_flex_start {
+  align-content: flex-start;
+}
+
+.align_content_flex_end {
+  align-content: flex-end;
+}
+
+.align_content_center {
+  align-content: center;
+}
+
+.align_content_space_between {
+  align-content: space-between;
+}
+.align_content_space_around {
+  align-content: space-around;
+}
+
+.align_content_stretch {
+  align-content: stretch;
+}
+
+.box_multilines {
+  width: 25%;
+  text-align: center;
+  color: var(--color-white);
 }
