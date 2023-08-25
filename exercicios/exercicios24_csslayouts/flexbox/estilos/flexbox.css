@@ -6,6 +6,7 @@
   --color-orange: orange;
   --color-green: green;
   --color-blue: blue;
+  --color_green_light: #00af8f;
   --color-purple: purple;
   --color-black: #000;
   --color-white: #fff;
@@ -265,4 +266,37 @@ h4 {
   width: 25%;
   text-align: center;
   color: var(--color-white);
+}
+
+/*Alignign items with margins*/
+#navigation {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  list-style: none;
+  background-color: var(--color_green_light);
+}
+
+.elements_navigation {
+  margin: 0 1em;
+}
+
+#element_logo {
+  margin-right: auto;
+}
+
+.image {
+  max-width: 64px;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 24px;
+}
+
+.link:hover,
+.link:active {
+  color: var(--color-blue);
 }
