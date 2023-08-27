@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-items</title>
+    <link
+      rel="shortcut icon"
+      href="../../ex003/favicons/html_favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="estilos/flex_items.css" />
+  </head>
+  <body>
+    <main>
+      <article id="flexibles_items">
+        <section>
+          <h2 class="title">flex-grow</h2>
+          <h3>Disable (0)</h3>
+          <ul class="list_numbers">
+            <li id="number1" class="number flex_grow_disable oddnumber">1</li>
+            <li id="number2" class="number flex_grow_disable evennumber">2</li>
+            <li id="number3" class="number flex_grow_disable oddnumber">3</li>
+            <li id="number4" class="number flex_grow_disable evennumber">4</li>
+            <li id="number5" class="number flex_grow_disable oddnumber">5</li>
+            <li id="number6" class="number flex_grow_disable evennumber">6</li>
+          </ul>
+
+          <h3>Enable (1)</h3>
+          <ul class="list_numbers">
+            <li id="number1" class="number flex_grow_enable oddnumber">1</li>
+            <li id="number2" class="number flex_grow_enable evennumber">2</li>
+            <li id="number3" class="number flex_grow_enable oddnumber">3</li>
+            <li id="number4" class="number flex_grow_enable evennumber">4</li>
+            <li id="number5" class="number flex_grow_enable oddnumber">5</li>
+            <li id="number6" class="number flex_grow_enable evennumber">6</li>
+          </ul>
+
+          <h3>Enable all (1) and expand number 5</h3>
+          <p class="paragraph">
+            The number 5 has 3X more space than the other elements.
+          </p>
+          <ul class="list_numbers">
+            <li id="number1" class="number flex_grow_enable oddnumber">1</li>
+            <li id="number2" class="number flex_grow_enable evennumber">2</li>
+            <li id="number3" class="number flex_grow_enable oddnumber">3</li>
+            <li id="number4" class="number flex_grow_enable evennumber">4</li>
+            <li
+              id="number5"
+              class="number flex_grow_enable oddnumber expand_number"
+            >
+              5
+            </li>
+            <li id="number6" class="number flex_grow_enable evennumber">6</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
