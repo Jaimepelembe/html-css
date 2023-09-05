@@ -20,8 +20,7 @@
 }
 
 main {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 25px;
   padding: 10px;
 }
 
@@ -29,13 +28,19 @@ main {
   max-width: 800px;
   margin: auto;
 }
+
+section {
+  margin-top: 25px;
+}
+
 .title {
   margin-top: 15px;
   margin-bottom: 15px;
   text-align: center;
+  color: var(--color-orange);
 }
 h3 {
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 .paragraph {
@@ -49,7 +54,6 @@ h3 {
   flex-wrap: wrap;
   margin: auto;
   padding: 10px;
-
   list-style: none;
   border: 3px solid var(--color-red);
 }
@@ -70,7 +74,11 @@ h3 {
   color: var(--color-purple);
   background-color: var(--color-orange);
 }
+.numberfive {
+  background-color: var(--color-purple-dark);
+}
 
+/*Flex-grow*/
 .flex_grow_disable {
   flex: 0 1 100px;
 }
@@ -80,5 +88,78 @@ h3 {
 
 .expand_number {
   flex: 3 1 100px;
-  background-color: var(--color-purple-dark);
+}
+
+/*Flex-shrink*/
+.list_shrink {
+  border: 3px dotted var(--color-blue-dark);
+}
+
+.flex_shrink_disable {
+  flex: 1 0 200px;
+}
+
+.flex_shrink_enable {
+  flex: 1 1 200px;
+}
+
+.shrink_number {
+  flex: 1 3 200px;
+}
+
+/*Flex basis*/
+.list_basis {
+  border: 3px solid var(--color-orange);
+}
+
+.flex_basis_auto {
+  width: 250px;
+  flex: 1 0 auto;
+}
+
+.flex_shrink_enabled {
+  flex: 0 1 auto;
+}
+
+.flex_basis_enable {
+  flex: 0 1 250px;
+}
+
+/*Handy shortcut*/
+.flex_initial {
+  flex: initial;
+}
+
+.flex_auto {
+  flex: auto;
+}
+
+.flex_none {
+  flex: none;
+}
+
+.flex_integer {
+  flex: 2; /*Shortcut value for flex: 2 1 0px*/
+}
+
+/*Flex Absolute versus Relative*/
+
+.flex_absolute {
+  flex: 1 0 0%;
+}
+
+.flex_grow2 {
+  flex: 2; /*Shortcut value for flex: 2 1 0px*/
+}
+
+.flex_grow3 {
+  flex: 3; /*Shortcut value for flex: 3 1 0px*/
+}
+
+/*Changing the order of flex items*/
+.orderone {
+  order: -1;
+}
+.ordertwo {
+  order: 2;
 }

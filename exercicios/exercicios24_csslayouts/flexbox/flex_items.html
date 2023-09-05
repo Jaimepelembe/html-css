@@ -15,7 +15,7 @@
     <main>
       <article id="flexibles_items">
         <section>
-          <h2 class="title">flex-grow</h2>
+          <h2 class="title">Flex-grow</h2>
           <h3>Disable (0)</h3>
           <ul class="list_numbers">
             <li id="number1" class="number flex_grow_disable oddnumber">1</li>
@@ -47,11 +47,181 @@
             <li id="number4" class="number flex_grow_enable evennumber">4</li>
             <li
               id="number5"
-              class="number flex_grow_enable oddnumber expand_number"
+              class="number flex_grow_enable oddnumber expand_number numberfive"
             >
               5
             </li>
             <li id="number6" class="number flex_grow_enable evennumber">6</li>
+          </ul>
+        </section>
+
+        <section id="flex_shrink">
+          <h2 class="title">Flex-shrink</h2>
+          <h3>Disable (0)</h3>
+          <ul class="list_numbers list_shrink">
+            <li id="number1" class="number flex_shrink_disable oddnumber">1</li>
+            <li id="number2" class="number flex_shrink_disable evennumber">
+              2
+            </li>
+            <li id="number3" class="number flex_shrink_disable oddnumber">3</li>
+            <li id="number4" class="number flex_shrink_disable evennumber">
+              4
+            </li>
+            <li id="number5" class="number flex_shrink_disable oddnumber">5</li>
+            <li id="number6" class="number flex_shrink_disable evennumber">
+              6
+            </li>
+          </ul>
+
+          <h3>Enable (1)</h3>
+          <ul class="list_numbers list_shrink">
+            <li id="number1" class="number flex_shrink_enable oddnumber">1</li>
+            <li id="number2" class="number flex_shrink_enable evennumber">2</li>
+            <li id="number3" class="number flex_shrink_enable oddnumber">3</li>
+            <li id="number4" class="number flex_shrink_enable evennumber">4</li>
+            <li id="number5" class="number flex_shrink_enable oddnumber">5</li>
+            <li id="number6" class="number flex_shrink_enable evennumber">6</li>
+          </ul>
+
+          <h3>Enable all (1) and shrink number 5</h3>
+          <p class="paragraph">
+            The number 5 shrink 3X more fast than the other elements.
+          </p>
+          <ul class="list_numbers list_shrink">
+            <li id="number1" class="number flex_shrink_enable oddnumber">1</li>
+            <li id="number2" class="number flex_shrink_enable evennumber">2</li>
+            <li id="number3" class="number flex_shrink_enable oddnumber">3</li>
+            <li id="number4" class="number flex_shrink_enable evennumber">4</li>
+            <li
+              id="number5"
+              class="number flex_shrink_enable oddnumber shrink_number numberfive"
+            >
+              5
+            </li>
+            <li id="number6" class="number flex_shrink_enable evennumber">6</li>
+          </ul>
+        </section>
+        <section id="flex_basis">
+          <h2 class="title">Flex-basis</h2>
+          <h3>auto and flex-shrink disable</h3>
+          <ul class="list_numbers list_basis">
+            <li id="number1" class="number flex_basis_auto oddnumber">1</li>
+            <li id="number2" class="number flex_basis_auto evennumber">2</li>
+            <li id="number3" class="number flex_basis_auto oddnumber">3</li>
+          </ul>
+
+          <h3>auto and flex-shrink enable</h3>
+          <ul class="list_numbers list_basis">
+            <li
+              id="number1"
+              class="number flex_basis_auto flex_shrink_enabled oddnumber"
+            >
+              1
+            </li>
+            <li
+              id="number2"
+              class="number flex_basis_auto flex_shrink_enabled evennumber"
+            >
+              2
+            </li>
+            <li
+              id="number3"
+              class="number flex_basis_auto flex_shrink_enabled oddnumber"
+            >
+              3
+            </li>
+          </ul>
+
+          <h3>With 250px and flex-shrink enable</h3>
+          <ul class="list_numbers list_basis">
+            <li id="number1" class="number flex_basis_enable oddnumber">1</li>
+            <li id="number2" class="number flex_basis_enable evennumber">2</li>
+            <li id="number3" class="number flex_basis_enable oddnumber">3</li>
+          </ul>
+        </section>
+
+        <section id="handy_shortcut">
+          <h2 class="title">Handy shortcut</h2>
+          <h3>flex:initial</h3>
+          <ul class="list_numbers list_short_hand">
+            <li id="number1" class="number flex_initial oddnumber">1</li>
+            <li id="number2" class="number flex_initial evennumber">2</li>
+            <li id="number3" class="number flex_initial oddnumber">3</li>
+            <li id="number4" class="number flex_initial evennumber">4</li>
+            <li id="number5" class="number flex_initial oddnumber">5</li>
+            <li id="number6" class="number flex_initial evennumber">6</li>
+          </ul>
+
+          <h3>flex:auto</h3>
+          <ul class="list_numbers list_short_hand">
+            <li id="number1" class="number flex_auto oddnumber">1</li>
+            <li id="number2" class="number flex_auto evennumber">2</li>
+            <li id="number3" class="number flex_auto oddnumber">3</li>
+            <li id="number4" class="number flex_auto evennumber">4</li>
+            <li id="number5" class="number flex_auto oddnumber">5</li>
+            <li id="number6" class="number flex_auto evennumber">6</li>
+          </ul>
+
+          <h3>flex:none</h3>
+          <ul class="list_numbers list_short_hand">
+            <li id="number1" class="number flex_none oddnumber">1</li>
+            <li id="number2" class="number flex_none evennumber">2</li>
+            <li id="number3" class="number flex_none oddnumber">3</li>
+            <li id="number4" class="number flex_none evennumber">4</li>
+            <li id="number5" class="number flex_none oddnumber">5</li>
+            <li id="number6" class="number flex_none evennumber">6</li>
+          </ul>
+
+          <h3>flex:integer</h3>
+
+          <ul class="list_numbers list_short_hand">
+            <li id="number1" class="number flex_integer oddnumber">1</li>
+            <li id="number2" class="number flex_integer evennumber">2</li>
+            <li id="number3" class="number flex_integer oddnumber">3</li>
+            <li id="number4" class="number flex_integer evennumber">4</li>
+            <li id="number5" class="number flex_integer oddnumber numberfive">
+              5
+            </li>
+            <li id="number6" class="number flex_integer evennumber">6</li>
+          </ul>
+        </section>
+
+        <section id="flex_absolute">
+          <h2 class="title">Absolute Versus Relative Flex</h2>
+
+          <ul class="list_numbers list_short_hand">
+            <li id="number1" class="number flex_absolute flex_grow2 oddnumber">
+              1
+            </li>
+            <li id="number2" class="number flex_absolute evennumber">2</li>
+            <li id="number3" class="number flex_absolute oddnumber">3</li>
+            <li id="number4" class="number flex_absolute flex_grow3 evennumber">
+              4
+            </li>
+            <li id="number5" class="number flex_absolute oddnumber numberfive">
+              5
+            </li>
+          </ul>
+        </section>
+
+        <section id="changing_order_elements">
+          <h2 class="title">Changing the Order of flex items</h2>
+          <h3>Order of one item</h3>
+          <ul class="list_numbers">
+            <li id="number1" class="number oddnumber">1</li>
+            <li id="number2" class="number evennumber">2</li>
+            <li id="number3" class="number orderone oddnumber">3</li>
+            <li id="number4" class="number evennumber">4</li>
+            <li id="number5" class="number oddnumber numberfive">5</li>
+          </ul>
+
+          <h3>Order of multi items <strong>(Ordinal group)</strong></h3>
+          <ul class="list_numbers">
+            <li id="number1" class="number ordertwo oddnumber">1</li>
+            <li id="number2" class="number orderone evennumber">2</li>
+            <li id="number3" class="number oddnumber">3</li>
+            <li id="number4" class="number ordertwo evennumber">4</li>
+            <li id="number5" class="number orderone oddnumber numberfive">5</li>
           </ul>
         </section>
       </article>
