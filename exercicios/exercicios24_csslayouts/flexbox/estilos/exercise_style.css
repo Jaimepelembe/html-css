@@ -36,23 +36,45 @@ article {
   padding: 10px;
   flex: 1 1 60%;
 }
-aside {
-  padding: 10px;
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 20px;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
   flex: 1 1 20%;
+  color: var(--color-white);
 }
 
 #news {
   background-color: var(--color-yellow);
+}
+
+.list {
+  list-style: none;
+}
+li {
+  margin-bottom: 10px;
+  font-size: 16px;
   color: var(--color-white);
 }
 
-.link{text-decoration:none;
-color:var(--color-black);}
+.link {
+  text-decoration: none;
+  color: var(--color-black);
+}
 #contact {
   background-color: var(--color-orange);
-  color: var(--color-white);
   order: -1;
+}
+
+.contact {
+  cursor: pointer;
 }
 
 footer {
