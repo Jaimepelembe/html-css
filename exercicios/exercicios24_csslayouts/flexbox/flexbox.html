@@ -210,7 +210,7 @@
         <h3>1.Flex-start</h3>
 
         <div class="container container_align_column align_flex_start">
-          <div id="box1" class="box_aligned_column">1</div>
+          <div id="box1" class="box box_aligned_column">1</div>
           <div id="box2" class="box box_aligned box_aligned_column">2</div>
           <div id="box3" class="box box_aligned box_aligned_column">3</div>
           <div id="box4" class="box box_aligned box_aligned_column">4</div>
@@ -253,6 +253,8 @@
         </div>
 
         <h2>Alinhamento no eixo transversal(y)</h2>
+        <p class="paragraph">align-items</p>
+        <h2>Elementos em Linha</h2>
         <h3>1.Flex-start</h3>
         <div class="container containerflex_start container_align_items">
           <div id="box1" class="box box_align_items">1</div>
@@ -297,7 +299,53 @@
           <div id="box5" class="box_align_items box_stretched">5</div>
         </div>
 
+        <h2>Elementos em Coluna</h2>
+        <h3>1.Flex-start</h3>
+        <div class="container container_column containerflex_start container_align_items ">
+          <div id="box1" class="box box_align_items">1</div>
+          <div id="box2" class="box box_align_items">2</div>
+          <div id="box3" class="box box_align_items">3</div>
+          <div id="box4" class="box box_align_items">4</div>
+          <div id="box5" class="box box_align_items">5</div>
+        </div>
+        <h3>2.Flex-end</h3>
+        <div class="container container_column containerflex_end container_align_items">
+          <div id="box1" class="box box_align_items">1</div>
+          <div id="box2" class="box box_align_items">2</div>
+          <div id="box3" class="box box_align_items">3</div>
+          <div id="box4" class="box box_align_items">4</div>
+          <div id="box5" class="box box_align_items">5</div>
+        </div>
+
+        <h3>3.Center</h3>
+        <div class="container container_column containercenter container_align_items">
+          <div id="box1" class="box box_align_items">1</div>
+          <div id="box2" class="box box_align_items">2</div>
+          <div id="box3" class="box box_align_items">3</div>
+          <div id="box4" class="box box_align_items">4</div>
+          <div id="box5" class="box box_align_items">5</div>
+        </div>
+
+        <h3>4.Baseline</h3>
+        <div class="container container_column containerbaseline container_align_items">
+          <div id="box1" class="box box_align_items">1</div>
+          <div id="box2" class="box box_align_items">2</div>
+          <div id="box3" class="box box_align_items">3</div>
+          <div id="box4" class="box box_align_items">4</div>
+          <div id="box5" class="box box_align_items">5</div>
+        </div>
+
+        <h3>5.Stretch</h3>
+        <div class="container container_column containerstretch container_align_items">
+          <div id="box1" class="box_align_items box_stretched">1</div>
+          <div id="box2" class="box_align_items box_stretched">2</div>
+          <div id="box3" class="box_align_items box_stretched">3</div>
+          <div id="box4" class="box_align_items box_stretched">4</div>
+          <div id="box5" class="box_align_items box_stretched">5</div>
+        </div>
+
         <h2>Alinhamento de um elemento no eixo transversal</h2>
+        <p class="paragraph">align-self</p>
         <h3>1.Flex-start<h3>
         <div class="container containerflex_center container_align_items_self">
           <div id="box1" class="box box_align_items box_align_self_start">
@@ -352,6 +400,7 @@
         </div>
 
         <h2>Alinhamento de multiplas linhas</h2>
+      <p class="paragraph">align-content</p>
         <h3>1.Flex-start<h3>
         <div class="container container_multilines align_content_flex_start">
           <div id="box1" class="box_multilines">
