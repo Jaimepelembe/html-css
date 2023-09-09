@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hotel</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" media="all" />
+    <link
+      rel="stylesheet"
+      href="styles/computer.css"
+      media="screen and (min-width:768px)"
+    />
+    <link rel="stylesheet" href="styles/print.css" media="print" />
+    <link
+      rel="shortcut icon"
+      href="../../exercicios/ex003/favicons/html_favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Hotel Paraíso</title>
+  </head>
+  <body>
+    <header>
+      <button
+        id="button_hamburger"
+        class="btn_icon_header"
+        onclick="changeStatusSidebar()"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </button>
+
+      <a href="#" id="link_logo"
+        ><img
+          src="images/logo.png"
+          alt="Logo hotel Paraíso"
+          id="img_logo"
+          class="image"
+      /></a>
+      <nav>
+        <button class="btn_icon_header" onclick="changeStatusSidebar()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            fill="currentColor"
+            class="bi bi-x"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </button>
+        <li id="element_home" class="link">
+          <a href="#" id="link_home" class="link_nav">Home</a>
+        </li>
+        <li class="link">
+          <a href="#" id="link_about" class="link_nav">Sobre</a>
+        </li>
+        <li class="link">
+          <a href="#" id="link_reserve" class="link_nav">Reservas</a>
+        </li>
+        <li id="element_contact" class="link">
+          <a href="#" id="link_contact" class="link_nav">Contacto</a>
+        </li>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Conheça este paraíso chamado Itacaré</h1>
+      <h3>"Aconchego, conforto, simpatia e alto astral"</h3>
+      <a href="#" class="button">Saiba mais</a>
+    </section>
+
+    <section class="know_hotel">
+      <h3>Conheça o Hotel Paraíso</h3>
+      <p class="paragraph">
+        Feche os olhos e imagine o paraíso. Um lugar no meio da Mata Atlântica e
+        banhado pelo mar, onde você encontra paz, tranquilidade, conforto e
+        comodidade.
+      </p>
+      <hr class="line" />
+      <ul class="grid">
+        <li class="small"><img src="images/itacare-01.jpg" alt="Itacaré 1" class="image"></li>
+        <li class="large"><img src="images/itacare-02.jpg" alt="Itacaré 2" class="image"></li>
+        <li class="large"><img src="images/itacare-03.jpg" alt="Itacaré 3" class="image"></li>
+        <li class="small" ><img src="images/itacare-04.jpg" alt="Itacaré 4" class="image"></li>
+      </ul>
+    </section>
+
+
+
+
+  </body>
 </html>

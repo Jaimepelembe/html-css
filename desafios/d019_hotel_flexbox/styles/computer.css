@@ -1,0 +1,18 @@
+header {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#element_home {
+  margin-left: 0px;
+}
+#element_contact {
+  margin-right: 0px;
+}
+
+/*Section hero*/
+.button {
+
+}
+
+/*End hero*/
